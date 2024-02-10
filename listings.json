@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2023/análisis-de-secuencias.html",
+      "/posts/2023/bases-de-datos.html",
+      "/posts/2022/physics.html",
+      "/posts/2022/coffee-tremors.html",
+      "/posts/2021/repressilator-C++.html",
+      "/posts/2020/fibonacci.html",
+      "/posts/2020/caos/caos.html"
+    ]
+  }
+]

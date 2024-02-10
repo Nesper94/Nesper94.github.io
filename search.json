@@ -1,0 +1,303 @@
+[
+  {
+    "objectID": "posts/2020/caos/caos.html",
+    "href": "posts/2020/caos/caos.html",
+    "title": "La teoría del Caos",
+    "section": "",
+    "text": "Antes de hablar sobre la teoría del caos, vamos a hablar un poco sobre cómo ha evolucionado el pensamiento científico.\nPuede decirse que el método científico tal y como lo conocemos hoy en día empezó a tomar fuerza desde los trabajos de Galileo Galilei, él insistió mucho en que para conocer el mundo era necesario observar los fenómenos y sobre todo cuantificarlos, por eso dijo:\n\n«Mide lo que se pueda medir; y lo que no, hazlo medible»\n- Galileo Galilei\n\nBasados en estas ideas, muchos personajes de la época y posteriores empezaron a hacer grandes avances científicos. Por ejemplo, las leyes de Newton explicaron montones de fenómenos, y lo más importante: lograron poder predecir el comportamiento de la naturaleza usando el lenguaje de las matemáticas.\nEstos increíbles logros llevaron a muchos científicos a pensar que estábamos en la capacidad de descubrir y predecir todo el comportamiento del mundo natural. Nació así el determinismo, el pensamiento de que todo el comportamiento del universo y su evolución está determinado por leyes y por el estado del sistema en un momento dado. El pensamiento determinista lo vemos ejemplificado en el demonio de Laplace.\nLaplace, el gran físico, astrónomo y matemático, dijo alrededor de 1814 que si existiera una inteligencia que conociera la posición y la velocidad y masa de cada partícula del universo, esa entidad podría usar las leyes de la mecánica clásica para predecir todo el desarrollo futuro del universo.\n\n\n\nPierre Simon Laplace"
+  },
+  {
+    "objectID": "posts/2020/caos/caos.html#los-inicios-de-la-ciencia-y-el-auge-del-determinismo",
+    "href": "posts/2020/caos/caos.html#los-inicios-de-la-ciencia-y-el-auge-del-determinismo",
+    "title": "La teoría del Caos",
+    "section": "",
+    "text": "Antes de hablar sobre la teoría del caos, vamos a hablar un poco sobre cómo ha evolucionado el pensamiento científico.\nPuede decirse que el método científico tal y como lo conocemos hoy en día empezó a tomar fuerza desde los trabajos de Galileo Galilei, él insistió mucho en que para conocer el mundo era necesario observar los fenómenos y sobre todo cuantificarlos, por eso dijo:\n\n«Mide lo que se pueda medir; y lo que no, hazlo medible»\n- Galileo Galilei\n\nBasados en estas ideas, muchos personajes de la época y posteriores empezaron a hacer grandes avances científicos. Por ejemplo, las leyes de Newton explicaron montones de fenómenos, y lo más importante: lograron poder predecir el comportamiento de la naturaleza usando el lenguaje de las matemáticas.\nEstos increíbles logros llevaron a muchos científicos a pensar que estábamos en la capacidad de descubrir y predecir todo el comportamiento del mundo natural. Nació así el determinismo, el pensamiento de que todo el comportamiento del universo y su evolución está determinado por leyes y por el estado del sistema en un momento dado. El pensamiento determinista lo vemos ejemplificado en el demonio de Laplace.\nLaplace, el gran físico, astrónomo y matemático, dijo alrededor de 1814 que si existiera una inteligencia que conociera la posición y la velocidad y masa de cada partícula del universo, esa entidad podría usar las leyes de la mecánica clásica para predecir todo el desarrollo futuro del universo.\n\n\n\nPierre Simon Laplace"
+  },
+  {
+    "objectID": "posts/2020/caos/caos.html#la-caída-del-determinismo",
+    "href": "posts/2020/caos/caos.html#la-caída-del-determinismo",
+    "title": "La teoría del Caos",
+    "section": "La caída del determinismo",
+    "text": "La caída del determinismo\nEste hermoso sueño de Laplace y muchos otros científicos de poder predecirlo todo con certeza usando ecuaciones fue tristemente derribado al estudiar más a fondo la misma naturaleza. Uno de los duros golpes al determinismo fue la teoría cuántica, que dice que a una escala muy muy muy pequeña las cosas que componen el universo (la luz, los átomos, etc.) se comportan de manera probabilística y no podemos determinar con certeza ni siquiera su posición, velocidad y masa al mismo tiempo (lo que se conoce como el principio de incertidumbre de Heisenberg).\n\nPero la teoría cuántica es otro cuento para otro hilo. Hoy vinimos a hablar sobre el Caos y ya casi llegamos allí, pues la teoría del Caos fue otro de esos duros golpes al determinismo."
+  },
+  {
+    "objectID": "posts/2020/caos/caos.html#el-caos-de-lorenz",
+    "href": "posts/2020/caos/caos.html#el-caos-de-lorenz",
+    "title": "La teoría del Caos",
+    "section": "El caos de Lorenz",
+    "text": "El caos de Lorenz\nEdward Lorenz fue un matemático y meteorólogo que por allá en los 60 se puso a estudiar cómo se comportaba el clima usando modelos matemáticos que incluían la temperatura, la velocidad del aire y cosas así.\nSu modelo consistía en ecuaciones diferenciales, y para resolverlas estaba usando un computador de esos mamotretos antiguos de los 60. Hizo una simulación de su sistema registrando los valores de las variables y todo bien, todo bonito.\nPero luego quizo repetir su análisis y para ahorrar algo de tiempo no puso al computador a calcular todo desde el principio sino desde la mitad, indicándole los valores de las variables.\nSeguro habrán escuchado que la matemática es una ciencia exacta y que si utilizas los mismos valores de las cosas y no tienes nada de aleatorio por ahí tienes que obtener los mismos resultados.\nPues qué sorpresa se debe haber llevado Lorenz porque en su segundo análisis obtuvo valores completamente diferentes a los de antes. Analizando de nuevo qué era lo que había pasado se dio cuenta de que el computador hacía los cálculos con 6 dígitos de precisión, pero los valores que él ingresaba estaban redondeados a 3 dígitos, entonces por ejemplo el computador calculaba que el valor de una variable era 0.271828 pero al mostrarlo lo redondeaba a 0.272. No es mucha diferencia, ¿no?\nPues Lorenz descubrió que esas pequeñas diferencias eran las que causaban que los valores de las variables fueran absolutamente diferentes entre la primera simulación y la segunda, Lorenz había descubierto el Caos. El siguiente es un sistema de ecuaciones diferenciales caótico, es una simplificación del sistema original de Lorenz.\n\n\n\nSistema de Lorenz\n\n\nEn la siguiente imagen vemos dos simulaciones del sistema anterior, la primera simulación en rojo y la segunda en azul, aquí mostramos cómo cambia el valor de la misma variable en el tiempo, solo que la primera vez la variable empezó en 5.88 y la otra en 5.89.\n\nMiren cómo después de un tiempo los valores se vuelven completamente diferentes, ¡uno incluso es negativo cuando el otro es positivo!\n¿Y entonces qué implicó esto para el determinismo? Implica que incluso aunque uno esté estudiando un sistema del que conozca muy bien sus leyes (por ejemplo las ecuaciones diferenciales de la evolución de su comportamiento), si este sistema es caótico, tendrías que conocer el estado del sistema CON INFINITA PRECISIÓN, para poder hacer predicciones a largo plazo.\nEl problema, como ya les había contado con el principio de incertidumbre de Heisenberg, es que en la vida real no podemos medir nada con infinita precisión por más que lo deseemos (lo se, esto es demasiado triste y a mí también me hace llorar en las noches). Así que hay sistemas deterministas, que no tienen nada de aleatorio, pero que aun así no podemos predecir cómo será su evolución.\nLa teoría del Caos ha inspirado a la ciencia ficción, tal vez algunos recuerden a Ian Malcolm hablando de ello en Jurassic Park, y seguro han escuchado por ahí sobre el efecto mariposa o han visto el episodio de los Simpsons donde Homero va al pasado y mata un mosquito.\n\n\n\nIan Malcolm intentando explicar la teoría del Caos\n\n\nPues resulta que muchos creemos que el universo es un sistema caótico, y que cualquier mínima perturbación, por ejemplo el aleteo de una mariposa, puede terminar desencadenando un huracán que no hubiera existido en un universo paralelo donde la mariposa no existiera.\n\nLo bello es que si uno grafica las 3 variables del sistema de Lorenz y su evolución en el tiempo esto se parece a… sí señores, ¡una mariposa! (bueno, usando un poco la imaginación).\n\n\n\nAtractor de Lorenz\n\n\nDesde un punto de vista más personal, para mí la teoría del Caos significa también que cada ser humano puede cambiar el mundo, porque todas nuestras acciones, por pequeñas que sean, en un universo caótico como el nuestro, pueden tener inmensas consecuencias."
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html",
+    "href": "posts/2023/análisis-de-secuencias.html",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "",
+    "text": "Las bases de datos están llenas de secuencias biológicas, pero ¿cómo analizar esa información? Aquí aprenderemos algunos análisis básicos que nos pueden dan información muy útil sobre la Biología."
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html#introducción",
+    "href": "posts/2023/análisis-de-secuencias.html#introducción",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "Introducción",
+    "text": "Introducción\nYa conocimos diferentes bases de datos con información biológica; sin embargo, estos datos solo son útiles si son analizados. Debido a la gran cantidad de datos existentes y a la necesidad de hacer múltiples cálculos y procedimientos rápidamente, la mayoría de análisis de datos biológicos en la actualidad se realizan con la ayuda de programas computacionales y algoritmos capaces de procesas grandes cantidades de información. A pesar de esto, sigue siendo esencial que los investigadores y en general usuarios de estos programas, comprendan aspectos básicos de su funcionamiento y las teorías biológicas en las que se fundamentan para poder interpretar adecuadamente sus resultados.\nEn este práctica conoceremos algunas de las herramientas más útiles para el análisis de secuencias biológicas."
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html#objetivos",
+    "href": "posts/2023/análisis-de-secuencias.html#objetivos",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nConocer métodos de análisis de secuencias biológicas.\nConocer herramientas para el análisis de secuencias biológicas.\nComprender en qué consiste un alineamiento de secuencias y su relevancia para entender la biología de un organismo y su evolución."
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html#alineamiento-de-secuencias",
+    "href": "posts/2023/análisis-de-secuencias.html#alineamiento-de-secuencias",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "Alineamiento de secuencias",
+    "text": "Alineamiento de secuencias\nEl alineamiento de secuencias consiste en hacer concordar lo mejor posible dos o más secuencias, tanto de ADN como de proteína y son una de las formas más comunes de comparar dos o más secuencias biológicas.\n¿Cuál es el propósito o la utilidad de hacer un alineamiento de secuencias?\nLos alineamientos permiten obtener información filogenética, estructural y funcional, y siguen siendo uno de los principales análisis bioinformáticos realizados en diversos estudios biológicos.\n\nAlineamiento local vs. alineamiento global.\nVeamos varios tipos de alineamientos:\n\n¿Cómo alinear secuencias?\n\nY si las alineamos así…\n\nBusquemos secuencias (por ejemplo del gen Smaug) en la base de datos OrthoDB y hagamos un alineamiento con MAFFT.\nPara visualizar el alineamiento vamos a usar el software gratuito JalView."
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html#blast-basic-local-alignment-search-tool",
+    "href": "posts/2023/análisis-de-secuencias.html#blast-basic-local-alignment-search-tool",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "BLAST (Basic Local Alignment Search Tool)",
+    "text": "BLAST (Basic Local Alignment Search Tool)\nBLAST es una herramienta del NCBI que permite hacer búsqueda de secuencias por similaridad, tanto para secuencias de ADN como para secuencias de proteínas. Local significa que se alinean solo segmentos de las secuencias.\nHagamos un BLAST:\n&gt;Secuencia misteriosa 1\nGCCTCTCATACTAGGAGCTCCTGACATAGCCTTCCCACGATTAAATAATATAAGATTTTGACTACTGCCC\nCCCTCTTTAACTCTTCTTATTATAAGAACACTAGCTGATAAAGGAGCAGGAACTGGGTGAACAGTCTACC\nCACCTCTGTCTGCAAATTTGGCCCATGAAGGAACATCTGTAGATTTAGCCATCTTCAGTCTCCATATAGC\nAGGAGTCTCTTCTATCTTAGGAGCTATAAATTTCATCTCTACAATTATCAATATACGGCCGAAAGGTATA\nAGGACAGATCGAATACCTTTATTTGTATGAGCAGTGCTAATCACTGCCATTCTATTACTTCTTTCTTTAC\n&gt;Secuencia misteriosa 2\nQIHRQISSTSPANRVSPASILASPSPPAPTSPSSSSISVRKKLPSGTKQKPLPPKSSSSKLSSPVAVQDE\nIEIEIAEVLYGMMRMPSTSKQEAAGNDLTEAAKSTVEVKSRVSSPISNPQTLPQSSITLAANSSSSNVSA\nIAPKRKKPRHVKYEDDNSSRVTTIKSEAEAPSKSQVPFSNQLKSSGSGEGNSSVLDSIIPLTRESNASLD\nSEKKENNLSKDETILPKVESSSGFRSDGEGAKSSSPEKEKFEIDLMAPPPVRSSSERGGEMMECVAAEAK\nPKVTEVETEAKPLLKEDRSDPAIHDSQEKKRPRMVAEAEHHKFERNCELKLDLDKSDHVGLVNKHHVQKP\nPPQQQLSVPDKTAQASHLPLHMSMPGWPGGLPTMGYMAPTQGVVP\n&gt;Secuencia misteriosa 3\nACCAGAAGAGCACCGAACTGCTCATCCGCAAGTTGCCCTTCCAGCGACTGGTCCGCGAAATCGCCCAGGA\nCTTCAAGACCGACCTACGCTTCCAGAGCTCCGCCGTCATGGCGCTGCAGGAAGCCAGCGAGGCCTACCTG\nGTCGGCCTCTTCGAGGATACCAATCTCTGCGCCATCCACGCCAAGCGG\n&gt;Secuencia misteriosa 4\nTMYLILGAWSAMLGTALSMLIRAELGQPGSLIGDDQIYNVIVTAHAFIMIFFMVMPIMIGGFGNWLVPLM\nLGAPDMAFPRLNNMSFWLLPPSLTLLLAGSAVENGAGTGWTVYPPLASNMAHAGASVDLTIFSLHLAGAS\nSILGAINFITTVINMRTQGMTMERMPLFVWAVFITAFLLLLSLPVLAGAITMLLTDRNLNTSFFDPAGGG\nDPILYQHLFWFFGHP\n&gt;Secuencia misteriosa 5\nILYFMFGMWAGMIGMSMSLIIRMELSTSGSILKNDQIYNGMVTLHAFIMIFFMVMPIMIGGFGNWLIPLM\nLGAPDMAFPRMNNMSFWLLIPSLLFLLMSGIINTGVGTGWTMYPPLSSLIGHNSISIDMSIFSLHLAGAS\nSIMGAINFISTIFNMN\nPara una información más detallada sobre cómo usar BLAST descarga este documento."
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html#búsqueda-de-homología-con-hmmer",
+    "href": "posts/2023/análisis-de-secuencias.html#búsqueda-de-homología-con-hmmer",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "Búsqueda de homología con HMMER",
+    "text": "Búsqueda de homología con HMMER\nEn muchas ocasiones nos interesa conocer la estructura o función de una secuencia de ADN o de una proteína. Un paso importante para conocer mejor las secuencias de nuestro interés es compararla con otras secuencias conocidas y detectar homologías (es decir, parentesco o relaciones evolutivas). HMMER es un programa que usa modelos estadísticos basados en cadenas de Markov para comparar una secuencia de interés con secuencias depositadas en las bases de datos para detectar homologías."
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html#online-vs.-local",
+    "href": "posts/2023/análisis-de-secuencias.html#online-vs.-local",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "Online vs. Local",
+    "text": "Online vs. Local\n¿Es mejor usar herramientas disponibles en la web o instalar el programa en nuestro propio computador?"
+  },
+  {
+    "objectID": "posts/2023/análisis-de-secuencias.html#recursos-adicionales",
+    "href": "posts/2023/análisis-de-secuencias.html#recursos-adicionales",
+    "title": "Herramientas bioinformáticas para el análisis de secuencias",
+    "section": "Recursos adicionales",
+    "text": "Recursos adicionales\nhttps://viralzone.expasy.org/e_learning/alignments/content.html"
+  },
+  {
+    "objectID": "posts/2021/repressilator-C++.html",
+    "href": "posts/2021/repressilator-C++.html",
+    "title": "Simulando el Represilador en C++",
+    "section": "",
+    "text": "En este tutorial vamos a simular el comportamiento del circuito genético conocido como Represilador. Este circuito fue descrito por Elowitz et. al en el año 2000 en su artículo “A synthetic oscillatory network of transcriptional regulators”."
+  },
+  {
+    "objectID": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
+    "href": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
+    "title": "Simulando el Represilador en C++",
+    "section": "¿Qué es el Represilador?",
+    "text": "¿Qué es el Represilador?\nEl Represilador es una red de regulación genética sintética, es decir, no existe en la naturaleza sino que fue diseñada y creada en el laboratorio. Esta red consiste básicamente en 3 genes: LacI, tetR y cI, los cuales son todos ellos represores de la expresión genética. Cada gen produce una proteína que reprime al siguiente gen como se muestra en la siguiente imagen:"
+  },
+  {
+    "objectID": "posts/2021/repressilator-C++.html#código-fuente",
+    "href": "posts/2021/repressilator-C++.html#código-fuente",
+    "title": "Simulando el Represilador en C++",
+    "section": "Código fuente",
+    "text": "Código fuente\nPuedes descargar el código fuente del represilador aquí. Brevemente, lo que hacemos es definir una función en la cual le asignamos valores a los parámetros del sistema y luego definimos las ecuaciones diferenciales.\nPara compilar nuestro código, ejecutamos el siguiente comando:\ng++ -I /path/to/boost/ -o represilador represilador.cpp\nPara ejecutar el programa y guardar los resultados de la simulación en un archivo llamado rep.tsv, ejecutamos el siguiente comando:\n./represilador &gt; rep.tsv\nYa que tenemos los datos de la simulación, vamos a visualizarlos usando Python.\nimport matplotlib.pyplot as plt\nfrom pandas import read_csv\n\ndf = read_csv('rep.tsv', sep='\\t')\n\nplt.figure(figsize=(15,5))\nplt.plot(df.Tiempo, df.LacI, 'r', label='LacI')\nplt.plot(df.Tiempo, df.TetR, 'y', label='TetR')\nplt.plot(df.Tiempo, df.cI, 'b', label='cI')\nplt.legend()"
+  },
+  {
+    "objectID": "posts/2022/physics.html",
+    "href": "posts/2022/physics.html",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "",
+    "text": "This post is about my thoughts on the nature of mass."
+  },
+  {
+    "objectID": "posts/2022/physics.html#the-problem-of-physics",
+    "href": "posts/2022/physics.html#the-problem-of-physics",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "The problem of physics",
+    "text": "The problem of physics\nAs many people know, the biggest problem of modern physics is that there are two powerfull theories, relativity and quantum mechanics, but that they are not yet able to merge together into a coherent and unified theory that explain both gravity and the microscopic world of particles.\nSome of the symptoms of the disease of physics (the lack of a unified theory) can be seen in aspects such as the Lorentz factor, a mathematical expression that appears frequently in relativity:\n\\[\n\\frac{1}{\\sqrt{1 - \\frac{v^2}{c^2}}},\n\\]\nwhere \\(v\\) is the velocity of a given object and \\(c\\) is the speed of light.\nThis factor appears in the denominator of equations such as that of relativistic momentum:\n\\[\np = \\frac{m_0 v}{\\sqrt{1 - \\frac{v^2}{c^2}}},\n\\]\nwhere \\(m_0\\) is the rest mass (i. e., the mass of the object when it is not moving).\nWe can see that when this equation is applied to massive objects moving at lower speed than light, it gives an answer according to the theory of relativity, and the Lorentz factor is close to 1 when the speed of the object is very small compared to the speed of ligth, giving a value very similar to the momentum in classical mechanics: \\(p = m v\\).\nHowever, if we want to know the momentum of light by using this equation, the Lorentz factor becomes zero and we end up with a mathematical indetermination. This is not a big problem, as we can calculate the momentum of a photon very easily by other means, for example with the equation \\(p = \\frac{h}{\\lambda}\\), where \\(h\\) is the Planck constant and \\(\\lambda\\) is the photon wavelength.\nWhy then we should worry about the indetermination in the equation of the relativistic momentum? Because it shows that moderns theories are incomplete. A good and solid theory should give only one consistent equation that gives the correct answer for the momentum of anything, without making distinctions between photons and other kind of particles."
+  },
+  {
+    "objectID": "posts/2022/physics.html#mass-is-a-heavy-topic",
+    "href": "posts/2022/physics.html#mass-is-a-heavy-topic",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "Mass is a heavy topic",
+    "text": "Mass is a heavy topic\nAs it turns out, it seems that the answer to the problem of the modern physics lies in solving an apparently simple question: What exactly is the mass? Why some particles have mass and other don’t?\nAs Einstein found out, mass has a strong connection with energy, which is reflected in the most famous equation of physics:\n\\[\nE = m c^2\n\\]\nHowever, thinking more profoundly about some questions, it seems to me that mass has a very strong connection with a specific kind of energy: Kinetic energy. And in the next lines I will expose why I think mass and movement are closely related."
+  },
+  {
+    "objectID": "posts/2022/physics.html#gravity-and-acceleration",
+    "href": "posts/2022/physics.html#gravity-and-acceleration",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "Gravity and acceleration",
+    "text": "Gravity and acceleration\nLet’s think in a famous mental experiment (Gedankenexperiment). We will imagine we wake up in a super high technology spaceship equipped with all sort of equipment for experimental physics. When we wake up, we notice that there is a force keeping the objects fixed to the ground. The question is, how can we know if the spaceship is still on earth or if it is accelerating through space? As physicists know, there is no way, not even with the most advanced equipment, to know if the force keeping you on the ground is caused by a gravitational field or if it is caused by accelerated movement. This is known as the Equivalence Principle. My question is: If there is no way to distinguish gravity from accelerated movement, why do we consider them as different things? Can be gravity or mass just an special form of movement? Or perhaps movement can be considered as a special form of mass?\n\n\n\nGedankenexperiment. Taken from Medium.com"
+  },
+  {
+    "objectID": "posts/2022/physics.html#dont-stop-me-now",
+    "href": "posts/2022/physics.html#dont-stop-me-now",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "Don’t stop me now",
+    "text": "Don’t stop me now\nWhat I think is another manifestation of the underlying connection between mass and movement is the fact that massless particles (such as photons of light) are unstopable, they are constantly moving around, while particles with mass are “stopable” and are easier to move if they have less mass.\nThis seems to me as it there were a law of conservation. If we consider mass as a kind of movement, it would seem like every particle had to possess a basal amount of movement, in some of them manifesting as mass.\nThe stuff exposed above is just divagation based on intuition; however, it leads me to some questions, for example:\n\nAre there different limits for the “minimum temperature” of particles with different masses?\nIf some of the mass of protons comes from the movement of gluons, why not to assume that all the mass in the universe comes from a kind of movement?\n\n\nThis is an unfinished article. I will continue to write and improve the ideas in the future."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Juan Camilo Arboleda Rivera",
+    "section": "",
+    "text": "I am a biologist currently working in the Grupo de Fundamentos y Enseñanza de la Física y los Sistemas Dinámicos and the Grupo de Biología Computacional at the University of Antioquia (UdeA), Colombia. I obtained my Master degree in Biology with emphasis on Systems Biology. I also work as professor of the course of Genetics in the Institute of Biology at the UdeA."
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Juan Camilo Arboleda Rivera",
+    "section": "Interests",
+    "text": "Interests\nI am mainly interested in the fields of Systems Biology, Molecular Biology, Genetics and Bioinformatics. I am also an enthusiast of Linux and FOSS and would like to learn more about programming and its applications to biology."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\n\nJun 27, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "I have broad research interests ranging from molecular biology and botany to computer science and mathematics."
+  },
+  {
+    "objectID": "research.html#currently",
+    "href": "research.html#currently",
+    "title": "Research",
+    "section": "Currently",
+    "text": "Currently\nI am currently engaged in research projects related to Systems Biology, Machine Learning, X chromosome inactivation and CRISPR systems."
+  },
+  {
+    "objectID": "research.html#as-master-student",
+    "href": "research.html#as-master-student",
+    "title": "Research",
+    "section": "As master student",
+    "text": "As master student\nMy master thesis consisted mainly in studying network motifs in gene regulatory networks able to produce cell differentiation."
+  },
+  {
+    "objectID": "research.html#as-undergraduate-student",
+    "href": "research.html#as-undergraduate-student",
+    "title": "Research",
+    "section": "As undergraduate student",
+    "text": "As undergraduate student\nDuring my time as undergraduate student I worked in “wet lab” research related to infectious diseases in the Biología y Control de Enfermedades Infecciosas (BCEI) lab. I worked mainly with vector competence of the mosquito Aedes aegypti and its interactions with Dengue Virus and Chikungunya Virus. I worked a lot with cell cultures and plaque assays."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I am convinced that education is the most powerful tool to transform societies, for this reason teaching is a passion and a duty for me.\nAs part of a scholarship during my MSc I had the opportunity to teach some courses for undergraduate students:\nCurrently I continue to be assistant professor in the courses of General Genetics, Molecular Genetics and Introduction to Cellular Biology. Eventually, I also give introductory courses to Linux and Python."
+  },
+  {
+    "objectID": "teaching.html#didactic-material-in-spanish",
+    "href": "teaching.html#didactic-material-in-spanish",
+    "title": "Teaching",
+    "section": "Didactic material (in Spanish)",
+    "text": "Didactic material (in Spanish)\n\nGuía de instalación de Linux\nIntroducción a Git y GitHub\nGenética con VGLII\nLa teoría del caos\nIntroducción a las bases de datos biológicas\nHerramientas para el análisis de secuencias"
+  },
+  {
+    "objectID": "posts/2022/coffee-tremors.html",
+    "href": "posts/2022/coffee-tremors.html",
+    "title": "Maths and coffee tremors",
+    "section": "",
+    "text": "Maths and coffee, two of the most beatiful things in life combined here in this little analysis of a map equation.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html",
+    "href": "posts/2023/bases-de-datos.html",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "",
+    "text": "¿Qué son las bases de datos biológicas y cómo usarlas?"
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#introducción",
+    "href": "posts/2023/bases-de-datos.html#introducción",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Introducción",
+    "text": "Introducción\nEn la era de la información las bases datos son herramientas esenciales. Como su nombre lo indica, las bases de datos se encargan de almacenar de una forma organizada montones de datos para que los usuarios de la base de datos puedan hacer búsquedas y disponer de estos datos. En particular, las bases de datos biológicas almacenan información biológica proveniente de diferentes experimentos alrededor del mundo, así como literatura publicada y análisis computacionales.\nLa disponibilidad de los datos procedentes de diferentes experimentos es esencial para asegurar la transparencia en la ciencia, así como su reproducibilidad. Además, estos datos pueden ser usados múltiples veces por diferentes investigadores para realizar diferentes tipos de análisis que permitan el avance de nuestro conocimiento sobre los seres vivos.\nCada base de datos se especializa en un tipo de información determinada, de forma que existen algunas especializadas en almacenar secuencias biológicas, otras en información taxonómica, otras en información estructural de moléculas biológicas, otras en interacciones entre proteínas y muchas más. Cada una de estas bases de datos maneja formatos de archivos diferentes según el tipo de información que maneje y sus diferentes necesidades. En esta práctica conoceremos algunos de los formatos más usados, como el formato .fasta, el .gb y el .pdb."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#objetivos",
+    "href": "posts/2023/bases-de-datos.html#objetivos",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nConocer las principales bases de datos usadas en bioinformática.\nConocer los principales formatos de archivos para almacenar información biológica."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#bases-de-datos-biológicas",
+    "href": "posts/2023/bases-de-datos.html#bases-de-datos-biológicas",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Bases de datos biológicas",
+    "text": "Bases de datos biológicas\n\nNCBI\n\nGenBank: Base de datos primaria\nSequence Read Archive (SRA): Primaria\nBasic Local Alignment Search Tool (BLAST): En realidad no es una base de datos sino una herramienta de alineamiento de secuencias\nRefSeq: Base de datos curada\nExpressed Sequence Tags (ESTs)\n\nOnline Mendelian Inheritance in Man (OMIM)\nENA\nProtein Data Bank (PDB)\nUniprot/Swiss-Prot: Curada\nProtein families (Pfam)\n\n¡Hay muchísimas más bases de datos!"
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#mantenerse-actualizado",
+    "href": "posts/2023/bases-de-datos.html#mantenerse-actualizado",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Mantenerse actualizado",
+    "text": "Mantenerse actualizado\nSi quieren estar al día con las bases de datos biológicas, revisen la primera publicación de cada año de la revista Nucleic Acids Research, esta es dedicada a bases de datos."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#genbank",
+    "href": "posts/2023/bases-de-datos.html#genbank",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "GenBank",
+    "text": "GenBank\nBase de datos de secuencias públicas. Es una de las bases de datos más grandes por el hecho de ser primaria.\nVamos a descargar archivos y ver su estructura interna.\n\nEl formato FASTA\nEs el principal formato de archivo para almacenar secuencias biológicas (principalmente nucleótidos y proteínas). Tiene la siguiente estructura:\n&gt; Mouse Pikachurin\nMDLISTFSLHFLLLACSLPPGAVSLRTALRKSGKVGPPLDIKLGALNCTAFSIQWKTPKR\nSGSSIIGYTVFYSEVGSDKSLRERSHNVPVGQDTLITEEVIGDLKPGTEYQVSVAAYSQT\nGKGRLSFPRHVTTLSQDSCLPPAAPQQPHVLVVSDSEVALSWRPGENEGSAPIQSYSVEF\nIRPDFDKSWTIIQERLQMDSMVIKGLDPDTNYQFAVKAMNAHGFSPRSWPSNTVRTLGPG\nEAGSGHYGPGYITNPGVSEDDDGSEDELDLDVSFEEVKPLPATKVGNKKFSVESKKTSVS\nNSVMGSRLAQPTSASLHETTVAIPPTPAQRKGKNSVAMMSRLFDMSCDETLCSADSFCVN\nDYAWGGSRCHCNLGKGGEACSEDIFIQYPQFFGHSYVTFEPLKNSYQAFQVTLEFRAEAE\nDGLLLYCGESEHGRGDFMSLALIRRSLHFRFNCGTGIAIIISETKIKLGAWHTVTLYRDG\nLNGMLQLNNGTPVTGQSQGQYSKITFRTPLYLGGAPSAYWLVRATGTNRGFQGCVQSLSV\nNGKKIDMRPWPLGKALNGADVGECSSGICDEASCIHGGTCAAIKADSYICLCPLGFRGRH\nCEDAFALTIPQFRESLRSYAATPWPLEPQHYLSFTEFEITFRPDSGDGVLLYSYDTGSKD\nFLSINMAAGHVEFRFDCGSGTGVLRSEAPLTLGQWHDLRVSRTAKNGILQVDKQKVVEGM\nAEGGFTQIKCNTDIFIGGVPNYDDVKKNSGILHPFSGSIQKIILNDRTIHVKHDFTSGVN\nVENAAHPCVGAPCAHGGSCRPRKEGYECDCPLGFEGLNCQKECGNHCLNTIIEAIEIPQF\nIGRSYLTYDNPNILKRVSGSRSNAFMRFKTTAKDGLLLWRGDSPMRPNSDFISLGLRDGA\nLIFSYNLGSGVASIMVNGSFSDGRWHRVKAVRDGQSGKITVDDYGARTGKSPGLMRQLNI\nNGALYVGGMKEIALHTNRQYLRGLVGCISHFTLSTDYHISLVEDAVDGKNINTCGAK"
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#sra-sequence-read-archive",
+    "href": "posts/2023/bases-de-datos.html#sra-sequence-read-archive",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "SRA (Sequence Read Archive)",
+    "text": "SRA (Sequence Read Archive)\nBase de datos con secuencias en bruto. Busquemos en esta base de datos el gen Zelda y descarguemos archivos en formato FASTQ.\n\nEl formato FASTQ\nEl formato FASTQ (FASTA with Quality) es muy similar al FASTA pero incluye también información sobre la calidad de la secuencia:\n\n\n\nFormato FASTQ\n\n\nUtilizando la línea de comandos en Linux también es posible descargar archivos FASTQ después de instalar la herramienta SRA Toolkit:\nfastq-dump --stdout -X 2 SRR390728\nTambién hay servidores que hacen sus datos disponibles mediante FTP, a ellos podemos acceder mediante una interfaz web o también mediante una línea de comandos en Linux:\nftp ftp.1000genomes.ebi.ac.uk"
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#ena-european-nucleotide-archive",
+    "href": "posts/2023/bases-de-datos.html#ena-european-nucleotide-archive",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "ENA (European Nucleotide Archive)",
+    "text": "ENA (European Nucleotide Archive)\nEste es un repositorio de datos similar al NCBI y que contiene información de muchos tipos diferentes. Vayamos allí y busquemos una secuencia."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#omim-online-mendelian-inheritance-in-man",
+    "href": "posts/2023/bases-de-datos.html#omim-online-mendelian-inheritance-in-man",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "OMIM (Online Mendelian Inheritance in Man)",
+    "text": "OMIM (Online Mendelian Inheritance in Man)\nOMIM como su nombre lo indica es una base de datos especializada en caracteres de Herencia Mendeliana en el ser humano."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#protein-data-bank",
+    "href": "posts/2023/bases-de-datos.html#protein-data-bank",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Protein Data Bank",
+    "text": "Protein Data Bank\nEsta es una base de datos de estructuras de proteínas, muy útil en biología estructural y dinámica molecular.\nVamos al tutorial y descarguemos algunos archivos.\nPara visualizarlos vamos a usar el software PyMOL que es Software Libre ;)"
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#uniprot",
+    "href": "posts/2023/bases-de-datos.html#uniprot",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Uniprot",
+    "text": "Uniprot\nEsta es una base de datos de proteínas, en donde se puede encontrar gran cantidad de información asociada a ellas."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#interpro-antes-llamado-pfam",
+    "href": "posts/2023/bases-de-datos.html#interpro-antes-llamado-pfam",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Interpro (Antes llamado Pfam)",
+    "text": "Interpro (Antes llamado Pfam)\nBase de datos sobre análisis funcional de proteínas, su clasificación en familias de proteínas y predicción de dominios funcionales y sitios importantes. También se pueden encontrar alineamientos múltiples de proteínas.\n\n\n\nalineamiento múltiple de proteínas\n\n\nSi quieres aprender más sobre bioinformática puedes seguir este tutorial."
+  },
+  {
+    "objectID": "posts/2020/fibonacci.html",
+    "href": "posts/2020/fibonacci.html",
+    "title": "Another conection between phi and Fibonacci numbers",
+    "section": "",
+    "text": "The relationship between the number Phi and the Fibonacci sequence is well known. Here, I show yet another connection between these two mathematical objects.\nDownload document here\n\n\n\n Back to top"
+  }
+]
