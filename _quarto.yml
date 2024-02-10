@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "Juan C. Arboleda R."
+  favicon: imgs/nea-onnim.svg
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.md
+        text: About
+      - research.md
+      - teaching.md
+      - posts.md
+
+    tools:
+      - icon: envelope-fill
+        href: mailto:juan.arboleda2@udea.edu.co
+      - icon: mastodon
+        href: https://biologists.social/@Nesper94
+      - icon: github
+        href: https://github.com/Nesper94
+      - icon: twitter
+        href: https://twitter.com/Nesper94
+    
+    logo: imgs/nea-onnim.svg
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: cyborg
+    css: styles.css
+    toc: true
+

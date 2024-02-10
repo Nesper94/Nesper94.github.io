@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Genética en VGLII</title>
+	</head>
+
+  <style media="screen">
+    html{text-align: justify;}
+    body{width: 700px; margin: auto;}
+    h1{text-align: center;}
+    img{display: block; margin-left: auto; margin-right: auto;}
+    table, th, td{border: 1px solid black; text-align: center;
+        border-collapse: collapse; padding: .2em; margin: auto;}
+    #header{text-align: center;}
+  </style>
+
+	<body>
+		<h1>Genética en VGLII</h1>
+		<p id="header">Juan C. Arboleda R. <br>
+			Laboratorio de Genética General <br>
+			2020-06-08</p>
+
+		<p>El siguiente es un ejemplo de un ejercicio de genética general usando el
+		software <a href="http://vgl.umb.edu/">VGLII</a>. Para este ejemplo escogimos
+		un problema de la carpeta <i>OneGene</i>, específicamente el archivo <i>OneGene08.pr2</i>.
+		Estos son los organismos "colectados en campo":</p>
+
+		<img src="figs/cage1.png" alt="Caja 1">
+
+		<p>A partir de los organismos de la caja 1 se realizaron cruces entre organismos
+		con las mismas características durante 8 generaciones con el fin de obtener
+		cepas puras.</p>
+
+		<p>Los cruces entre organismos con antenas grises se llevaron a cabo de la caja 2
+		a la 9, en esta última se puede suponer con cierta seguridad que se tiene una
+		cepa pura.</p>
+
+		<p>Los cruces entre organismos con antenas púrpura se realizaron en las cajas 10 a
+		18, en los primeros cruces (e.g. caja 11) aparecieron organismos con antenas
+		rojas, lo que indica que organismos con antenas púrpura portan información
+		genética capaz de producir descendencia roja.</p>
+
+		<p>Los cruces entre organismos con antenas rojas se realizaron en las cajas 19 a
+		26, en estos cruces todos los descendientes tuvieron antenas color rojo.</p>
+
+		<img src="figs/cepas-puras.png" alt="Cepas puras">
+
+		<p>Con las cepas que suponemos puras se realizaron supercruces de
+		2000 descendientes para saber qué tipo de relación se presenta entre los
+		fenotipos de las antenas.</p>
+
+		<hr>
+		<h2>Cruce entre organismos de antenas grises y antenas púrpura</h2>
+
+		<p>Se cruzó un macho de antenas grises de la caja 9 con una hembra de antena
+		púrpura de la caja 18. Los resultados de este cruce se encuentran en la caja 29
+		y fueron:</p>
+
+		<img src="figs/caja29.png" alt="Caja 29">
+
+		<p>El hecho de no encontrar ningún macho de antenas grises y ninguna hembra de
+		antenas púrpuras nos indica que estas características pueden estar ligadas al
+		sexo.</p>
+
+		<p>También se realizó el cruce recíproco (hembra de antenas grises x macho de
+		antenas púrpuras) para evaluar si los resultados diferían de los del cruce
+		anterior y si soportaban la hipótesis de que el color de la antena es una
+		característica ligada al sexo.</p>
+
+		<p>Los resultados de este cruce (caja 28) fueron:</p>
+
+		<img src="figs/caja28.png" alt="Caja 28">
+
+		<p>Este resultado soporta la hipótesis de que el color de antena está ligado al
+		sexo, pero además nos indica que la característica de antenas grises es
+		dominante sobre la de antenas púrpuras.</p>
+
+		<p>Supongamos que estos organismos tienen sistema de determinación sexual XY, y que
+		el gen que determina el color de antena está en el cromosoma X. Ya vimos que en
+		la población se presentan los fenotipos "antena gris", "antena roja" y "antena
+		púrpura", así que podemos plantear la hipótesis de que existe un alelo para
+		cada uno de estos colores en la población.</p>
+
+		<p>Si asumimos las anteriores hipótesis, los cruces que realizamos corresponderían
+		a los siguientes cuadros de Punnet:</p>
+
+		<p>X<sup>G</sup>: Alelo para antenas grises <br>
+		X<sup>p</sup>: Alelo para antenas púrpuras</p>
+
+		<p><b>1er cruce:</b> macho de antenas grises x hembra de antena púrpura</p>
+		<table>
+			<tr>
+				<th></th>
+				<th>X<sup>p</sup></th>
+			</tr>
+			<tr>
+				<th>X<sup>G</sup></th>
+				<td>X<sup>p</sup> X<sup>G</sup></td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>X<sup>p</sup> Y</td>
+			</tr>
+		</table>
+
+		<p>En este caso obtendríamos que la mitad de los descendientes serían hembras
+		de antenas grises y la otra mitad machos de antenas púrpuras.</p>
+
+		<p>Comprobemos si los resultados concuerdan con nuestras hipótesis:</p>
+
+		<img src="figs/chi-caja29.png" alt="Chi-cuadrado caja 29">
+
+		<p><b>2do cruce:</b> hembra de antenas grises x macho de antenas púrpuras</p>
+
+		<table>
+			<tr>
+				<th></th>
+				<th>X<sup>G</sup></th>
+			</tr>
+			<tr>
+				<th>X<sup>p</sup></th>
+				<td>X<sup>G</sup> X<sup>p</sup></td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>X<sup>G</sup> Y</td>
+			</tr>
+		</table>
+
+		<p>En este caso obtendríamos que la mitad de los descendientes serían hembras
+		de antenas grises y la otra mitad machos de antenas grises.</p>
+
+		<p>Comprobemos si los resultados concuerdan con nuestras hipótesis:</p>
+
+		<img src="figs/chi-caja28.png" alt="Chi-cuadrado caja 28">
+
+		<p><b>NOTA:</b> El programa tiene un bug, este debería aceptar valores esperados iguales
+		a cero y ajustar de acuerdo a esto los grados de libertad de la prueba de
+		chi-cuadrado.</p>
+
+		<hr>
+		<p>Se cruzó un macho de antenas púrpuras con una hembra de antenas rojas. Los
+		siguientes fueron los resultados (caja 30):</p>
+
+		<img src="figs/caja30.png" alt="Caja 30">
+
+		<p>Como las hipótesis de que los organismos tienen sistema de determinación sexual
+		XY y de que el gen para el color de antenas está en el cromosoma X nos han
+		funcionado bien para explicar los datos que observamos, entonces seguiremos
+		trabajando bajo esta hipótesis. Para este nuevo cruce tendríamos:</p>
+
+		<table>
+			<tr>
+				<th></th>
+				<th>X<sup>r</sup></th>
+			</tr>
+			<tr>
+				<th>X<sup>p</sup></th>
+				<td>X<sup>r</sup> X<sup>p</sup></td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>X<sup>r</sup> Y</td>
+			</tr>
+		</table>
+
+		<p>En este caso obtendríamos que la mitad de los descendientes serían hembras
+		de antenas púrpura y la otra mitad machos de antenas rojas.</p>
+
+		<p>Hacemos la prueba estadística:</p>
+
+		<img src="figs/chi-caja30.png" alt="Chi-cuadrado caja 30">
+
+		<p>Nuestra hipótesis sigue estando de acuerdo con los datos (suspiro de alivio).</p>
+
+		<p>Además, los datos y nuestra hipótesis nos indican que el alelo para color
+		púrpura es dominante sobre el alelo para color rojo.</p>
+
+		<p>Ahora que confiamos más en nuestra hipótesis podemos hacer predicciones con
+		ella ¡Para eso es la ciencia! ¿no?</p>
+
+		<p>El cruce recíproco (hembra de antenas púrpura x macho de antenas rojas), según
+		nuestra hipótesis debería darnos los siguientes resultados:</p>
+
+		<table>
+			<tr>
+				<th></th>
+				<th>X<sup>p</sup></th>
+			</tr>
+			<tr>
+				<th>X<sup>r</sup></th>
+				<td>X<sup>p</sup> X<sup>r</sup></td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>X<sup>p</sup> Y</td>
+			</tr>
+		</table>
+
+		<p>En este caso obtendríamos que la mitad de los descendientes serían hembras
+		de antenas púrpura y la otra mitad machos de antenas púrpura.</p>
+
+		<p>Hacemos el cruce y obtenemos los resultados en la caja 31 (qué suspenso).
+		Miremos si los resultados sí concuerdan con nuestra hipótesis:</p>
+
+		<img src="figs/caja31.png" alt="Caja 31"> <br>
+		<img src="figs/chi-caja31.png" alt="Chi-cuadrado caja 31">
+
+		<p>¡Todavía concuerdan! Esta hipótesis parece muy buena.</p>
+
+		<hr>
+		<p>Lo último que nos falta por probar es cómo es la relación entre los alelos
+		para color gris y color rojo.</p>
+
+		<p>Según nuestra hipótesis podemos hacer la siguiente predicción para un cruce
+		entre un macho de antenas grises y una hembra de antenas rojas.</p>
+
+		<table>
+			<tr>
+				<th></th>
+				<th>X<sup>r</sup></th>
+			</tr>
+			<tr>
+				<th>X<sup>G</sup></th>
+				<td>X<sup>r</sup> X<sup>G</sup></td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>X<sup>r</sup> Y</td>
+			</tr>
+		</table>
+
+		<p>En este caso obtendríamos que la mitad de los descendientes serían hembras
+		de antenas grises y la otra mitad machos de antenas rojas.</p>
+
+		<p>Todavía no tenemos evidencia para decir que el alelo para antenas grises es
+		dominante sobre el alelo para antenas rojas, aquí solo hicimos una suposición
+		dado que no teníamos más datos.</p>
+
+		<p>Los resultados están en la caja 32 ¡y parece que concuerdan con nuestra
+		predicción!</p>
+
+		<img src="figs/caja32.png" alt=""> <br>
+		<img src="figs/chi-caja32.png" alt="">
+
+		<p>Ahora hagamos la predicción para el cruce recíproco (hembra de antenas grises
+		x macho de antenas rojas):</p>
+
+		<table>
+			<tr>
+				<th></th>
+				<th>X<sup>G</sup></th>
+			</tr>
+			<tr>
+				<th>X<sup>r</sup></th>
+				<td>X<sup>G</sup> X<sup>r</sup></td>
+			</tr>
+			<tr>
+				<th>Y</th>
+				<td>X<sup>G</sup> Y</td>
+			</tr>
+		</table>
+
+		<p>En este caso obtendríamos que la mitad de los descendientes serían hembras
+		de antenas grises y la otra mitad machos de antenas grises.</p>
+
+		<p>Los resultados están en la caja 33 y también se ajustan a nuestra hipótesis.</p>
+
+		<img src="figs/caja33.png" alt=""> <br>
+		<img src="figs/chi-caja33.png" alt="">
+
+		<p>Por lo tanto podemos concluir que:</p>
+
+		<ul>
+			<li>Estamos trabajando con un gen ligado al sexo.</li>
+			<li>Los organismos tienen sistema de determinación sexual XY.</li>
+			<li>Hay 3 alelos diferentes en la población, uno produce color de antenas grises,
+			el otro color púrpura y el otro color rojo.</li>
+		</ul>
+
+	</body>
+</html>
