@@ -29,3 +29,5 @@ I also give introductory courses to Linux and Python.
   biológicas](posts/2023/bases-de-datos.md)
 - [Herramientas para el análisis de
   secuencias](posts/2023/análisis-de-secuencias.md)
+- [Práctica de laboratorio
+  Electroforesis](teaching/electroforesis/electroforesis.md)
