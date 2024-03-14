@@ -222,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
 <p>En la era de la información las bases datos son herramientas esenciales. Como su nombre lo indica, las bases de datos se encargan de almacenar de una forma organizada montones de datos para que los usuarios de la base de datos puedan hacer búsquedas y disponer de estos datos. En particular, las bases de datos biológicas almacenan información biológica proveniente de diferentes experimentos alrededor del mundo, así como literatura publicada y análisis computacionales.</p>
 <p>La disponibilidad de los datos procedentes de diferentes experimentos es esencial para asegurar la transparencia en la ciencia, así como su reproducibilidad. Además, estos datos pueden ser usados múltiples veces por diferentes investigadores para realizar diferentes tipos de análisis que permitan el avance de nuestro conocimiento sobre los seres vivos.</p>
-<p>Cada base de datos se especializa en un tipo de información determinada, de forma que existen algunas especializadas en almacenar secuencias biológicas, otras en información taxonómica, otras en información estructural de moléculas biológicas, otras en interacciones entre proteínas y muchas más. Cada una de estas bases de datos maneja formatos de archivos diferentes según el tipo de información que maneje y sus diferentes necesidades. En esta práctica conoceremos algunos de los formatos más usados, como el formato <code>.fasta</code>, el <code>.gb</code> y el <code>.pdb</code>.</p>
+<p>Cada base de datos se especializa en un tipo de información determinada, de forma que existen algunas especializadas en almacenar secuencias biológicas, otras en información taxonómica, otras en información estructural de moléculas biológicas, otras en interacciones entre proteínas y muchas más. Cada una de estas bases de datos maneja formatos de archivos diferentes según el tipo de información que maneje y sus diferentes necesidades. En esta práctica conoceremos algunos de los formatos más usados, como el formato <code>.fasta</code>, el <code>.gb</code>, el <code>.fastq</code> y el <code>.pdb</code>.</p>
 </section>
 <section id="objetivos" class="level2">
 <h2 class="anchored" data-anchor-id="objetivos">Objetivos</h2>
@@ -258,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="genbank" class="level2">
 <h2 class="anchored" data-anchor-id="genbank"><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a></h2>
 <p>Base de datos de secuencias públicas. Es una de las bases de datos más grandes por el hecho de ser <strong>primaria</strong>.</p>
-<p>Vamos a descargar archivos y ver su estructura interna.</p>
+<p>Busquemos el gen <em>Sonic hedgehog</em> en GenBank y descarguemos la información en los formatos GenBank y FASTA y veamos la estructura interna de estos archivos.</p>
 <section id="el-formato-fasta" class="level3">
 <h3 class="anchored" data-anchor-id="el-formato-fasta">El formato FASTA</h3>
 <p>Es el principal formato de archivo para almacenar secuencias biológicas (principalmente nucleótidos y proteínas). Tiene la siguiente estructura:</p>
@@ -285,6 +285,19 @@ NGALYVGGMKEIALHTNRQYLRGLVGCISHFTLSTDYHISLVEDAVDGKNINTCGAK</code></pre>
 <section id="sra-sequence-read-archive" class="level2">
 <h2 class="anchored" data-anchor-id="sra-sequence-read-archive"><a href="https://www.ncbi.nlm.nih.gov/sra">SRA (Sequence Read Archive)</a></h2>
 <p>Base de datos con secuencias en bruto. Busquemos en esta base de datos el gen <em>Zelda</em> y descarguemos archivos en formato FASTQ.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Los archivos FASTQ pueden ser muy pesados, para evitar una descarga lenta, podemos descargar archivos de ejemplo mucho más ligeros en <a href="https://zenodo.org/records/3736457">este enlace</a>.</p>
+</div>
+</div>
 <section id="el-formato-fastq" class="level3">
 <h3 class="anchored" data-anchor-id="el-formato-fastq">El formato FASTQ</h3>
 <p>El formato <a href="https://en.wikipedia.org/wiki/FASTQ_format">FASTQ</a> (FASTA with Quality) es muy similar al FASTA pero incluye también información sobre la calidad de la secuencia:</p>
