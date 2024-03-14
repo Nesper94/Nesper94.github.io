@@ -33,7 +33,7 @@ moléculas biológicas, otras en interacciones entre proteínas y muchas más.
 Cada una de estas bases de datos maneja formatos de archivos diferentes según 
 el tipo de información que maneje y sus diferentes necesidades. En esta 
 práctica conoceremos algunos de los formatos más usados, como el formato 
-`.fasta`, el `.gb` y el `.pdb`.
+`.fasta`, el `.gb`, el `.fastq` y el `.pdb`.
 
 ## Objetivos
 
@@ -73,7 +73,9 @@ esta es dedicada a bases de datos.
 Base de datos de secuencias públicas. Es una de las bases de datos más grandes 
 por el hecho de ser **primaria**.
 
-Vamos a descargar archivos y ver su estructura interna.
+Busquemos el gen *Sonic hedgehog* en GenBank y descarguemos la información
+en los formatos GenBank y FASTA y veamos la estructura interna de estos
+archivos.
 
 ### El formato FASTA
 
@@ -106,6 +108,12 @@ NGALYVGGMKEIALHTNRQYLRGLVGCISHFTLSTDYHISLVEDAVDGKNINTCGAK
 Base de datos con secuencias en bruto.
 Busquemos en esta base de datos el gen *Zelda* y descarguemos archivos en
 formato FASTQ.
+
+::: {.callout-tip}
+Los archivos FASTQ pueden ser muy pesados, para evitar una descarga lenta,
+podemos descargar archivos de ejemplo mucho más ligeros en [este
+enlace](https://zenodo.org/records/3736457).
+:::
 
 ### El formato FASTQ
 
