@@ -6,12 +6,18 @@ website:
   favicon: imgs/nea-onnim.svg
   back-to-top-navigation: true
   navbar:
+    background: '#202025'
+    foreground: '#dcdcff'
+
     left:
       - href: index.md
         text: About
-      - research.md
-      - teaching.md
-      - posts.md
+      - icon: journal-code
+        href: research.md
+      - icon: journal-text
+        href: teaching.md
+      - icon: pencil-square
+        href: posts.md
 
     tools:
       - icon: envelope-fill
