@@ -17,6 +17,8 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/Nesper94
+    - text: '{{< fa brands gitlab >}} GitLab'
+      href: https://gitlab.com/Nesper94
     - icon: twitter
       text: Twitter
       href: https://twitter.com/Nesper94
