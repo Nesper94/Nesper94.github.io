@@ -52,7 +52,7 @@ realizados en diversos estudios biológicos.
 
 Veamos varios tipos de alineamientos:
 
-![](imgs/alignment-types.jpg)
+![](imgs/alignment-types.jpg){.lightbox}
 
 ¿Cómo alinear secuencias?
 
@@ -60,7 +60,7 @@ Veamos varios tipos de alineamientos:
 
 Y si las alineamos así...
 
-![](imgs/align2.gif)
+![](imgs/align2.gif){.lightbox}
 
 Busquemos secuencias (por ejemplo del gen Smaug) en la base de datos
 [OrthoDB](https://www.orthodb.org/?) y hagamos un
