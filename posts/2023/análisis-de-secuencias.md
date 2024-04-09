@@ -52,15 +52,15 @@ realizados en diversos estudios biológicos.
 
 Veamos varios tipos de alineamientos:
 
-<img src="https://2.bp.blogspot.com/-Wn08q25ELNI/VzRNSOlv1vI/AAAAAAAADrQ/vcBmnN-Sgo88WwtteTIXiNjgCW9w8U_TwCLcB/s1600/Pair%2Bwise%2Balignment%2Bvs%2Bmultiple%2Bsequence%2Balignment.jpg" width="800px">
+![](imgs/alignment-types.jpg)
 
 ¿Cómo alinear secuencias?
 
-![](https://www.genome.gov/sites/default/files/genome-old/images/EdKit/bio3c_large.gif)
+![](imgs/align1.gif){.lightbox}
 
 Y si las alineamos así...
 
-![](https://www.genome.gov/sites/default/files/genome-old/images/EdKit/bio3d_large.gif)
+![](imgs/align2.gif)
 
 Busquemos secuencias (por ejemplo del gen Smaug) en la base de datos
 [OrthoDB](https://www.orthodb.org/?) y hagamos un
