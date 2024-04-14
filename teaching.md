@@ -22,7 +22,7 @@ I also give introductory courses to Linux and Python.
 
 - [Guía de instalación de
   Linux](https://biologia-computacional.github.io/posts/2023/instalación-linux.html)
-- [Introducción a Git y GitHub](files/intro-git-github.html)
+- [Introducción a Git y GitHub](teaching/git/git.md)
 - [Genética con VGLII](/files/vglii-example/genetics-vgl2.html)
 - [La teoría del caos](posts/2020/caos/caos.md)
 - [Introducción a las bases de datos
