@@ -140,18 +140,88 @@
     "text": "Don’t stop me now\nWhat I think is another manifestation of the underlying connection between mass and movement is the fact that massless particles (such as photons of light) are unstopable, they are constantly moving around, while particles with mass are “stopable” and are easier to move if they have less mass.\nThis seems to me as it there were a law of conservation. If we consider mass as a kind of movement, it would seem like every particle had to possess a basal amount of movement, in some of them manifesting as mass.\nThe stuff exposed above is just divagation based on intuition; however, it leads me to some questions, for example:\n\nAre there different limits for the “minimum temperature” of particles with different masses?\nIf some of the mass of protons comes from the movement of gluons, why not to assume that all the mass in the universe comes from a kind of movement?\n\n\nThis is an unfinished article. I will continue to write and improve the ideas in the future."
   },
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
+    "objectID": "teaching/git/git.html",
+    "href": "teaching/git/git.html",
+    "title": "Introducción a Git y GitHub",
     "section": "",
-    "text": "I am convinced that education is the most powerful tool to transform societies, for this reason teaching is a passion and a duty for me.\nAs part of a scholarship during my MSc I had the opportunity to teach some courses for undergraduate students:\nCurrently I continue to be assistant professor in the courses of General Genetics, Molecular Genetics and Introduction to Cellular Biology. Eventually, I also give introductory courses to Linux and Python."
+    "text": "Seguramente ustedes ya han realizado “control de versiones”, y muy probablemente haya sido algo como esto:\n\n\n\n\n\nDado que este sistema no es muy útil, se han creado programas que permiten hacer un control de versiones sobre los proyectos en los que trabajemos. Git es el más usado de ellos, y aunque fue creado pensando en desarrolladores de software, es muy útil en diferentes contextos."
   },
   {
-    "objectID": "teaching.html#didactic-material-in-spanish",
-    "href": "teaching.html#didactic-material-in-spanish",
-    "title": "Teaching",
-    "section": "Didactic material (in Spanish)",
-    "text": "Didactic material (in Spanish)\n\nGuía de instalación de Linux\nIntroducción a Git y GitHub\nGenética con VGLII\nLa teoría del caos\nIntroducción a las bases de datos biológicas\nHerramientas para el análisis de secuencias\nPráctica de laboratorio Electroforesis"
+    "objectID": "teaching/git/git.html#qué-es-el-control-de-versiones",
+    "href": "teaching/git/git.html#qué-es-el-control-de-versiones",
+    "title": "Introducción a Git y GitHub",
+    "section": "",
+    "text": "Seguramente ustedes ya han realizado “control de versiones”, y muy probablemente haya sido algo como esto:\n\n\n\n\n\nDado que este sistema no es muy útil, se han creado programas que permiten hacer un control de versiones sobre los proyectos en los que trabajemos. Git es el más usado de ellos, y aunque fue creado pensando en desarrolladores de software, es muy útil en diferentes contextos."
+  },
+  {
+    "objectID": "teaching/git/git.html#empezando-con-git",
+    "href": "teaching/git/git.html#empezando-con-git",
+    "title": "Introducción a Git y GitHub",
+    "section": "2 Empezando con Git",
+    "text": "2 Empezando con Git\nEn primer lugar verificamos si tenemos instalado Git en la línea de comandos de Ubuntu:\ngit --version\nSi no lo tenemos instalado lo instalamos con el comando sudo apt install git.\nEmpecemos a usar Git con unos pequeños ejemplos. En primer lugar vamos a crear un nuevo proyecto, cualquier cosa en la que estemos trabajando.\n# Crear una carpeta que será nuestro repositorio de ejemplo\nmkdir proyecto\nSi es la primera vez que usamos Git en nuestro computador, debemos ejecutar los siguientes comandos para definir nuestro nombre de usuario y nuestro email:\ngit config --global user.name \"Godzilla Pérez\"\ngit config --global user.email \"godzilla@gmail.com\"\nDespués de hacer esto podemos comenzar a usar Git y nuestro primer paso será indicarle a Git que queremos hacerle un seguimiento a la carpeta donde estamos y todo lo que pongamos en ella, para ello usamos el comando git init:\ncd proyecto\ngit init\nObservemos que se creó una nueva carpeta llamada .git, recordemos que en Linux todos los archivos que comiencen con un punto se consideran archivos ocultos y los programas no los muestran.\nEn .git es donde Git almacenará todos los datos para poder hacer el control de versiones de nuestro proyecto. Ahora aprenderemos el comando git status que nos permite ver el estado de nuestro repositorio:\ngit status\n¿Rama master? ¿Commits? ¿git add? ¿Qué es todo esto? En un momento lo veremos."
+  },
+  {
+    "objectID": "teaching/git/git.html#haciendo-seguimiento-a-los-archivos",
+    "href": "teaching/git/git.html#haciendo-seguimiento-a-los-archivos",
+    "title": "Introducción a Git y GitHub",
+    "section": "3 Haciendo seguimiento a los archivos",
+    "text": "3 Haciendo seguimiento a los archivos\nAhora vamos a crear un nuevo archivo de texto en la carpeta del proyecto, por ejemplo cuento.txt:\n\n\ncuento.txt\n\nCuando despertó, el dinosaurio todavía estaba allí.\n\n--Augusto Monterroso\n\nNos dice que hay un nuevo archivo pero que no se está realizando seguimiento para ver sus cambios. Así que le empezamos a hacer seguimiento con git add &lt;archivo&gt;:\ngit add cuento.txt\nTambién podemos usar el comando git add * o git add . si queremos añadir todos los archivos que hayan en la carpeta donde estamos.\nVolvamos a ver de nuevo el estado de nuestro proyecto:\ngit status\n¿Área de stage?"
+  },
+  {
+    "objectID": "teaching/git/git.html#panorama-de-trabajo-de-git",
+    "href": "teaching/git/git.html#panorama-de-trabajo-de-git",
+    "title": "Introducción a Git y GitHub",
+    "section": "4 Panorama de trabajo de Git",
+    "text": "4 Panorama de trabajo de Git\nInternamente, Git crea un índice con los archivos a los que se les está haciendo seguimiento, a este índice se le llama el área de “Stage”. Cuando ejecutamos git add cuento.txt, Git añade el archivo cuento.txt al índice. ¡Ahora estamos listos para hacer nuestro primer commit!\n\n\n4.1 ¿Qué es un commit?\nUn commit es básicamente un registro de cambios. También podemos pensar en un commit como una “foto” de nuestro proyecto en un momento dado, los commits son los que nos permitirán llevar un registro de los cambios y volver a versiones anteriores de nuestros archivos.\nHagamos el primer commit:\ngit commit -m 'Añadir el archivo cuento.txt'\nVeamos de nuevo el estado del repositorio:\ngit status\nPodemos ver el historial de commits con el comando git log:\n$ git log\ncommit 54ec0016d7629b175d435a4214056e85b1027a1d (HEAD -&gt; main)\nAuthor: Juan Camilo Arboleda Rivera &lt;juan.arboleda2@udea.edu.co&gt;\nDate:   Sun Apr 14 11:13:56 2024 -0500\n\n    Añadir el archivo cuento.txt\nA cada commit se le asigna un hash, es decir, un código único. El hash del commit anterior sería 54ec0016d7629b175d435a4214056e85b1027a1d.\nAhora vamos a hacer modificaciones en nuestro cuento:\n\n\ncuento.txt\n\nCuando despertó, el dinosaurio todavía estaba allí.\nDespués empezó a comer tamal.\n\n--Augusto Monterroso\n\nLuego de hacerlo, volvamos a ver el estado de nuestro repositorio con git log:\n$ git log\nOn branch main\nChanges not staged for commit:\n  (use \"git add &lt;file&gt;...\" to update what will be committed)\n  (use \"git restore &lt;file&gt;...\" to discard changes in working directory)\n        modified:   cuento.txt\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\nCon el comando git diff podemos ver cuáles son las diferencias entre nuestros archivos actuales (el working directory) y la última “foto” que tomamos de estos, es decir, el último commit:\n$ git diff\ndiff --git a/cuento.txt b/cuento.txt\nindex c2496c2..30d1e0f 100644\n--- a/cuento.txt\n+++ b/cuento.txt\n@@ -1,3 +1,4 @@\n Cuando despertó, el dinosaurio todavía estaba allí.\n+Después empezó a comer tamal.\n\n --Augusto Monterroso\nCuando se añade una nueva línea a un archivo, este cambio se representa con un +, cuando se quita una línea se representa con un -.\nSi queremos añadir la modificación y hacer el commit al mismo tiempo podemos usar el comando git commit -am 'descripción del cambio' solo debemos tener en cuenta que si cambiamos muchos archivos este comando nos guardaría todos esos cambios al mismo tiempo.\ngit commit -am 'Modificar el cuento'"
+  },
+  {
+    "objectID": "teaching/git/git.html#volver-al-pasado",
+    "href": "teaching/git/git.html#volver-al-pasado",
+    "title": "Introducción a Git y GitHub",
+    "section": "5 Volver al pasado",
+    "text": "5 Volver al pasado\nSi queremos volver a un estado anterior de nuestro trabajo, utilizamos el comando git checkout &lt;commit hash&gt;. Para ver los hashes de los commits usamos:\n$ git log --oneline\na511e93 (HEAD -&gt; main) Modificar el cuento\n54ec001 Añadir el archivo cuento.txt\nSabiendo el hash del commit podemos volver a una versión anterior:\ngit checkout 54ec001\nPara devolvernos al estado actual ejecutamos:\ngit checkout main\ndonde main corresponde al nombre de la rama en la que estamos trabajando."
+  },
+  {
+    "objectID": "teaching/git/git.html#ramas",
+    "href": "teaching/git/git.html#ramas",
+    "title": "Introducción a Git y GitHub",
+    "section": "6 Ramas",
+    "text": "6 Ramas\nLas ramas nos permiten mayor flexibilidad al modificar nuestro proyecto. Una rama es una “línea de tiempo” que diverge de otra rama y puede tener sus propios cambios.\n\n6.1 Ramas en paralelo para versiones alternativas\nAhora supongamos que nos gusta cómo va el trabajo y ya hicimos un commit con los últimos cambios, pero se nos ocurre una idea, queremos explorar. Por ejemplo, podríamos escribir un final alternativo para el cuento.\nEn este caso podemos crear una nueva rama del proyecto:\n\n\n\n\n\nCreemos una nueva rama (branch):\ngit checkout -b final-alternativo\nSi miramos el estado del repositorio nos mostrará que estamos en una nueva rama:\ngit status\nEscribamos un final alternativo:\n\n\ncuento.txt\n\nCuando despertó, el dinosaurio todavía estaba allí.\nDespués empezó a comer empanada.\n\n--Augusto Monterroso\n\nY hacemos el commit con git commit -am 'Añadir final alternativo'. Si queremos volver a la rama main ejecutamos git checkout main.\n\n\n6.2 Ramas para explorar\nLas ramas también nos sirven para realizar nuevos cambios como prueba sin alterar la versión “funcional” de nuestro repositorio. En el futuro, si decidimos conservar los cambios de la nueva rama, podemos volver a fusionar las dos ramas:"
+  },
+  {
+    "objectID": "teaching/git/git.html#trabajando-remotamente",
+    "href": "teaching/git/git.html#trabajando-remotamente",
+    "title": "Introducción a Git y GitHub",
+    "section": "7 Trabajando remotamente",
+    "text": "7 Trabajando remotamente\n\n7.1 Subiendo nuestro repositorio a la red\nAhora queremos subir nuestro proyecto a un servidor para poder compartirlo con otras personas y trabajar juntos en él, así que decidimos subirlo a GitHub. Para esto, antes debemos crear un nuevo repositorio en nuestra cuenta de GitHub y configurar una clave SSH para autenticarnos. Después de hacerlo y obtener la url del nuevo repositorio podemos ejecutar:\ngit remote add origin https://github.com/Nesper94/proyecto.git\ngit push -u origin main\n\n\n7.2 Bajando un repositorio ya existente para trabajar en él\nNuestro amigo King Gidorah está trabajando en un proyecto, él ya lo tiene en GitHub y quiere que colaboremos con él. Lo primero que debemos hacer es ir al repositorio del proyecto.\nPrimero vamos a la carpeta donde queramos guardar el repositorio:\ncd ~\nLuego lo clonamos en nuestra carpeta con git clone:\ngit clone https://github.com/Nesper94/king-ghidorah-project.git\nVamos a la carpeta con cd king-ghidorah-project y una vez allí, al ser un repositorio de Git podemos usar muchos comandos de Git; por ejemplo, podemos ver la historia de este repositorio con git log.\nHagamos algunos cambios en el repositorio que acabamos de descargar, recordemos que este proyecto ahora está guardado en nuestro computador.\nDespués de modificar los archivos debemos hacer el respectivo commit. Una vez realizados y registrados los cambios los podemos subir al repositorio remoto ejecutando:\ngit push origin main"
+  },
+  {
+    "objectID": "teaching/git/git.html#más-información",
+    "href": "teaching/git/git.html#más-información",
+    "title": "Introducción a Git y GitHub",
+    "section": "8 Más información",
+    "text": "8 Más información\n\nLibro Pro Git en español\ngit - the simple guide - no deep shit\nGit para científicos\nGetting started with Git and GitHub: the complete begginer’s guide"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Juan Camilo Arboleda Rivera",
+    "section": "",
+    "text": "I am a biologist currently working in the Grupo de Fundamentos y Enseñanza de la Física y los Sistemas Dinámicos and the Grupo de Biología Computacional at the University of Antioquia (UdeA), Colombia. I obtained my Master degree in Biology with emphasis on Systems Biology. I also work as professor of the course of Genetics in the Institute of Biology at the UdeA."
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Juan Camilo Arboleda Rivera",
+    "section": "Interests",
+    "text": "Interests\nI am mainly interested in the fields of Systems Biology, Molecular Biology, Genetics and Bioinformatics. I am also an enthusiast of Linux and FOSS and would like to learn more about programming and its applications to biology."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "research.html",
@@ -182,25 +252,18 @@
     "text": "As undergraduate student\nDuring my time as undergraduate student I worked in “wet lab” research related to infectious diseases in the Biología y Control de Enfermedades Infecciosas (BCEI) lab. I worked mainly with vector competence of the mosquito Aedes aegypti and its interactions with Dengue Virus and Chikungunya Virus. I worked a lot with cell cultures and plaque assays."
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Blog posts",
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n  \n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\n\nJun 27, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "I am convinced that education is the most powerful tool to transform societies, for this reason teaching is a passion and a duty for me.\nAs part of a scholarship during my MSc I had the opportunity to teach some courses for undergraduate students:\nCurrently I continue to be assistant professor in the courses of General Genetics, Molecular Genetics and Introduction to Cellular Biology. Eventually, I also give introductory courses to Linux and Python."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Juan Camilo Arboleda Rivera",
-    "section": "",
-    "text": "I am a biologist currently working in the Grupo de Fundamentos y Enseñanza de la Física y los Sistemas Dinámicos and the Grupo de Biología Computacional at the University of Antioquia (UdeA), Colombia. I obtained my Master degree in Biology with emphasis on Systems Biology. I also work as professor of the course of Genetics in the Institute of Biology at the UdeA."
-  },
-  {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
-    "title": "Juan Camilo Arboleda Rivera",
-    "section": "Interests",
-    "text": "Interests\nI am mainly interested in the fields of Systems Biology, Molecular Biology, Genetics and Bioinformatics. I am also an enthusiast of Linux and FOSS and would like to learn more about programming and its applications to biology."
+    "objectID": "teaching.html#didactic-material-in-spanish",
+    "href": "teaching.html#didactic-material-in-spanish",
+    "title": "Teaching",
+    "section": "Didactic material (in Spanish)",
+    "text": "Didactic material (in Spanish)\n\nGuía de instalación de Linux\nIntroducción a Git y GitHub\nGenética con VGLII\nLa teoría del caos\nIntroducción a las bases de datos biológicas\nHerramientas para el análisis de secuencias\nPráctica de laboratorio Electroforesis"
   },
   {
     "objectID": "teaching/electroforesis/electroforesis.html",

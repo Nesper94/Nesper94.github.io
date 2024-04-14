@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -50,7 +50,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -59,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -97,6 +104,33 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -104,9 +138,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./imgs/nea-onnim.svg" alt="" class="navbar-logo">
     </a>
@@ -121,34 +155,34 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target=""><i class="bi bi-person" role="img">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-person" role="img">
 </i> 
- <span class="menu-text">About</span></a>
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html" rel="" target=""><i class="bi bi-journal-code" role="img">
+    <a class="nav-link" href="./research.html"> <i class="bi bi-journal-code" role="img">
 </i> 
- <span class="menu-text">Research</span></a>
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html" rel="" target=""><i class="bi bi-journal-text" role="img">
+    <a class="nav-link" href="./teaching.html"> <i class="bi bi-journal-text" role="img">
 </i> 
- <span class="menu-text">Teaching</span></a>
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" rel="" target="" aria-current="page"><i class="bi bi-pencil-square" role="img">
+    <a class="nav-link active" href="./posts.html" aria-current="page"> <i class="bi bi-pencil-square" role="img">
 </i> 
- <span class="menu-text">Blog posts</span></a>
+<span class="menu-text">Blog posts</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto tools-wide">
-    <a href="mailto:juan.arboleda2@udea.edu.co" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope-fill"></i></a>
-    <a href="https://biologists.social/@Nesper94" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mastodon"></i></a>
-    <a href="https://github.com/Nesper94" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/Nesper94" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools tools-wide">
+    <a href="mailto:juan.arboleda2@udea.edu.co" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope-fill"></i></a>
+    <a href="https://biologists.social/@Nesper94" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mastodon"></i></a>
+    <a href="https://github.com/Nesper94" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/Nesper94" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -177,7 +211,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 
 
@@ -210,19 +246,19 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Alineamiento de secuencias,Biología Computacional,Bioinformática" data-listing-date-sort="1696654800000" data-listing-file-modified-sort="1712630616513" data-listing-date-modified-sort="1712630616000" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="Alineamiento de secuencias,Biología Computacional,Bioinformática" data-listing-date-sort="1696654800000" data-listing-file-modified-sort="1712632761312" data-listing-date-modified-sort="1712632761000" data-listing-reading-time-sort="3" data-listing-word-count-sort="435">
 <div class="thumbnail">
-<p><a href="./posts/2023/análisis-de-secuencias.html"> <p class="card-img-top"><img src="posts/2023/imgs/alignment-types.jpg"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2023/análisis-de-secuencias.html" class="no-external"></a></p><a href="./posts/2023/análisis-de-secuencias.html" class="no-external">
+<p class="card-img-top"><img src="posts/2023/imgs/alignment-types.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023/análisis-de-secuencias.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023/análisis-de-secuencias.html">
 <h3 class="no-anchor listing-title">
-Herramientas bioinformáticas para el análisis de secuencias
+<a href="./posts/2023/análisis-de-secuencias.html" class="no-external">Herramientas bioinformáticas para el análisis de secuencias</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023/análisis-de-secuencias.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Alineamiento de secuencias'); return false;">
 Alineamiento de secuencias
@@ -234,14 +270,12 @@ Biología Computacional
 Bioinformática
 </div>
 </div>
-<a href="./posts/2023/análisis-de-secuencias.html">
 <div class="listing-description">
-Las bases de datos…
+<a href="./posts/2023/análisis-de-secuencias.html" class="no-external">Las bases de datos están llenas de secuencias biológicas, pero ¿cómo analizar esa información? Aquí aprenderemos algunos análisis básicos que nos pueden dan información muy…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023/análisis-de-secuencias.html">
+<a href="./posts/2023/análisis-de-secuencias.html" class="no-external">
 <div class="listing-date">
 Oct 7, 2023
 </div>
@@ -251,19 +285,19 @@ Juan Camilo Arboleda Rivera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Bases de datos,Biología Computacional,Bioinformática" data-listing-date-sort="1696222800000" data-listing-file-modified-sort="1711686164208" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="1" data-categories="Bases de datos,Biología Computacional,Bioinformática" data-listing-date-sort="1696222800000" data-listing-file-modified-sort="1711686164208" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
 <div class="thumbnail">
-<p><a href="./posts/2023/bases-de-datos.html"> <p class="card-img-top"><img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1005128.g001" alt="Comic bases de datos biología"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2023/bases-de-datos.html" class="no-external"></a></p><a href="./posts/2023/bases-de-datos.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2023/bases-de-datos.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023/bases-de-datos.html">
 <h3 class="no-anchor listing-title">
-Introducción a las bases de datos biológicas
+<a href="./posts/2023/bases-de-datos.html" class="no-external">Introducción a las bases de datos biológicas</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023/bases-de-datos.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Bases de datos'); return false;">
 Bases de datos
@@ -275,14 +309,12 @@ Biología Computacional
 Bioinformática
 </div>
 </div>
-<a href="./posts/2023/bases-de-datos.html">
 <div class="listing-description">
-¿Qué son las bases de datos biológicas y cómo usarlas?
+<a href="./posts/2023/bases-de-datos.html" class="no-external">¿Qué son las bases de datos biológicas y cómo usarlas?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023/bases-de-datos.html">
+<a href="./posts/2023/bases-de-datos.html" class="no-external">
 <div class="listing-date">
 Oct 2, 2023
 </div>
@@ -292,19 +324,19 @@ Juan Camilo Arboleda Rivera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Physics,Gravity,Quantum theory,Mass" data-listing-date-sort="1664254800000" data-listing-file-modified-sort="1707607011026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="2" data-categories="Physics,Gravity,Quantum theory,Mass" data-listing-date-sort="1664254800000" data-listing-file-modified-sort="1707607011026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="761">
 <div class="thumbnail">
-<p><a href="./posts/2022/physics.html"> <p class="card-img-top"><img src="posts/2022/gedankenexperiment.jpeg"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2022/physics.html" class="no-external"></a></p><a href="./posts/2022/physics.html" class="no-external">
+<p class="card-img-top"><img src="posts/2022/gedankenexperiment.jpeg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2022/physics.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022/physics.html">
 <h3 class="no-anchor listing-title">
-Thoughts of a biologist about the problem of physics
+<a href="./posts/2022/physics.html" class="no-external">Thoughts of a biologist about the problem of physics</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022/physics.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
 Physics
@@ -319,14 +351,12 @@ Quantum theory
 Mass
 </div>
 </div>
-<a href="./posts/2022/physics.html">
 <div class="listing-description">
-This post is about my thoughts on the nature of mass.
+<a href="./posts/2022/physics.html" class="no-external">This post is about my thoughts on the nature of mass.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022/physics.html">
+<a href="./posts/2022/physics.html" class="no-external">
 <div class="listing-date">
 Sep 27, 2022
 </div>
@@ -336,19 +366,19 @@ Juan Camilo Arboleda Rivera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Maths,Coffee" data-listing-date-sort="1641531600000" data-listing-file-modified-sort="1707607011026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="Maths,Coffee" data-listing-date-sort="1641531600000" data-listing-file-modified-sort="1707607011026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail">
-<p><a href="./posts/2022/coffee-tremors.html"> <img src="https://i.pinimg.com/736x/f3/1c/eb/f31ceb99c14daaccab191f5269f3322c.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2022/coffee-tremors.html" class="no-external"></a></p><a href="./posts/2022/coffee-tremors.html" class="no-external">
+<p><img src="https://i.pinimg.com/736x/f3/1c/eb/f31ceb99c14daaccab191f5269f3322c.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2022/coffee-tremors.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022/coffee-tremors.html">
 <h3 class="no-anchor listing-title">
-Maths and coffee tremors
+<a href="./posts/2022/coffee-tremors.html" class="no-external">Maths and coffee tremors</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022/coffee-tremors.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Maths'); return false;">
 Maths
@@ -357,14 +387,12 @@ Maths
 Coffee
 </div>
 </div>
-<a href="./posts/2022/coffee-tremors.html">
 <div class="listing-description">
-Maths and coffee, two of the most beatiful things in life combined here in this little analysis of a map equation.
+<a href="./posts/2022/coffee-tremors.html" class="no-external">Maths and coffee, two of the most beatiful things in life combined here in this little analysis of a map equation.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022/coffee-tremors.html">
+<a href="./posts/2022/coffee-tremors.html" class="no-external">
 <div class="listing-date">
 Jan 7, 2022
 </div>
@@ -374,19 +402,19 @@ Juan Camilo Arboleda Rivera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Systems biology,ODEs,Synthetic circuits" data-listing-date-sort="1640062800000" data-listing-file-modified-sort="1707607011022" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="4" data-categories="Systems biology,ODEs,Synthetic circuits" data-listing-date-sort="1640062800000" data-listing-file-modified-sort="1707607011022" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
 <div class="thumbnail">
-<p><a href="./posts/2021/repressilator-C++.html"> <p class="card-img-top"><img src="posts/2021/repressilator.png" alt="Represilador"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2021/repressilator-C++.html" class="no-external"></a></p><a href="./posts/2021/repressilator-C++.html" class="no-external">
+<p class="card-img-top"><img src="posts/2021/repressilator.png" alt="Represilador"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2021/repressilator-C++.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2021/repressilator-C++.html">
 <h3 class="no-anchor listing-title">
-Simulando el Represilador en C++
+<a href="./posts/2021/repressilator-C++.html" class="no-external">Simulando el Represilador en C++</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2021/repressilator-C++.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Systems biology'); return false;">
 Systems biology
@@ -398,14 +426,12 @@ ODEs
 Synthetic circuits
 </div>
 </div>
-<a href="./posts/2021/repressilator-C++.html">
 <div class="listing-description">
-E…
+<a href="./posts/2021/repressilator-C++.html" class="no-external">En este tutorial vamos a simular el comportamiento del circuito genético conocido como Represilador. Este circuito fue descrito por Elowitz et. al en el año 2000 en su…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2021/repressilator-C++.html">
+<a href="./posts/2021/repressilator-C++.html" class="no-external">
 <div class="listing-date">
 Dec 21, 2021
 </div>
@@ -415,19 +441,19 @@ Juan Camilo Arboleda Rivera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Maths,Fibonacci" data-listing-date-sort="1597035600000" data-listing-file-modified-sort="1707607011022" data-listing-date-modified-sort="1707607011000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="5" data-categories="Maths,Fibonacci" data-listing-date-sort="1597035600000" data-listing-file-modified-sort="1707607011022" data-listing-date-modified-sort="1707607011000" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
 <div class="thumbnail">
-<p><a href="./posts/2020/fibonacci.html"> <img src="https://numeros.xyz/wp-content/uploads/2020/10/numero-aureo-caracol.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2020/fibonacci.html" class="no-external"></a></p><a href="./posts/2020/fibonacci.html" class="no-external">
+<p><img src="https://numeros.xyz/wp-content/uploads/2020/10/numero-aureo-caracol.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020/fibonacci.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020/fibonacci.html">
 <h3 class="no-anchor listing-title">
-Another conection between phi and Fibonacci numbers
+<a href="./posts/2020/fibonacci.html" class="no-external">Another conection between phi and Fibonacci numbers</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020/fibonacci.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Maths'); return false;">
 Maths
@@ -436,14 +462,12 @@ Maths
 Fibonacci
 </div>
 </div>
-<a href="./posts/2020/fibonacci.html">
 <div class="listing-description">
-The relationship between the number Phi and the Fibonacci sequence is well known. Here, I show yet another connection between these two mathematical objects.
+<a href="./posts/2020/fibonacci.html" class="no-external">The relationship between the number Phi and the Fibonacci sequence is well known. Here, I show yet another connection between these two mathematical objects.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020/fibonacci.html">
+<a href="./posts/2020/fibonacci.html" class="no-external">
 <div class="listing-date">
 Aug 10, 2020
 </div>
@@ -453,19 +477,19 @@ Juan Camilo Arboleda Rivera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Caos,Divulgación,Ciencia" data-listing-date-sort="1593234000000" data-listing-file-modified-sort="1707607011018" data-listing-date-modified-sort="1707607011000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="6" data-categories="Caos,Divulgación,Ciencia" data-listing-date-sort="1593234000000" data-listing-file-modified-sort="1707607011018" data-listing-date-modified-sort="1707607011000" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
 <div class="thumbnail">
-<p><a href="./posts/2020/caos/caos.html"> <p class="card-img-top"><img src="posts/2020/caos/butterfly-effect.jpg" alt="Efecto mariposa"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2020/caos/caos.html" class="no-external"></a></p><a href="./posts/2020/caos/caos.html" class="no-external">
+<p class="card-img-top"><img src="posts/2020/caos/butterfly-effect.jpg" alt="Efecto mariposa"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2020/caos/caos.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020/caos/caos.html">
 <h3 class="no-anchor listing-title">
-La teoría del Caos
+<a href="./posts/2020/caos/caos.html" class="no-external">La teoría del Caos</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020/caos/caos.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Caos'); return false;">
 Caos
@@ -477,14 +501,12 @@ Divulgación
 Ciencia
 </div>
 </div>
-<a href="./posts/2020/caos/caos.html">
 <div class="listing-description">
-<p>Breve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.</p>
+<a href="./posts/2020/caos/caos.html" class="no-external">Breve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020/caos/caos.html">
+<a href="./posts/2020/caos/caos.html" class="no-external">
 <div class="listing-date">
 Jun 27, 2020
 </div>
@@ -540,6 +562,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -608,13 +657,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -693,10 +744,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/Nesper94\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -706,8 +774,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -719,7 +796,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -763,6 +963,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -788,6 +989,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -848,6 +1075,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
