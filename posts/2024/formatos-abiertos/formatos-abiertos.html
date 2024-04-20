@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Juan Camilo Arboleda Rivera">
 
-<title>Juan C. Arboleda R. - Blog posts</title>
+<title>Juan C. Arboleda R. - La importancia de usar formatos abiertos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./imgs/nea-onnim.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../imgs/nea-onnim.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,67 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -141,10 +82,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./imgs/nea-onnim.svg" alt="" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../imgs/nea-onnim.svg" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Juan C. Arboleda R.</span>
     </a>
   </div>
@@ -155,22 +96,22 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> <i class="bi bi-person" role="img">
+    <a class="nav-link" href="../../../index.html"> <i class="bi bi-person" role="img">
 </i> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> <i class="bi bi-journal-code" role="img">
+    <a class="nav-link" href="../../../research.html"> <i class="bi bi-journal-code" role="img">
 </i> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> <i class="bi bi-journal-text" role="img">
+    <a class="nav-link" href="../../../teaching.html"> <i class="bi bi-journal-text" role="img">
 </i> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> <i class="bi bi-pencil-square" role="img">
+    <a class="nav-link" href="../../../posts.html"> <i class="bi bi-pencil-square" role="img">
 </i> 
 <span class="menu-text">Blog posts</span></a>
   </li>  
@@ -191,20 +132,33 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Alineamiento de secuencias">Alineamiento de secuencias <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bases de datos">Bases de datos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bioinformática">Bioinformática <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Biología Computacional">Biología Computacional <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Caos">Caos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ciencia">Ciencia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Coffee">Coffee <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Divulgación">Divulgación <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Fibonacci">Fibonacci <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Gravity">Gravity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mass">Mass <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Maths">Maths <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ODEs">ODEs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Physics">Physics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quantum theory">Quantum theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Synthetic circuits">Synthetic circuits <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Systems biology">Systems biology <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#qué-son-los-formatos-de-archivo" id="toc-qué-son-los-formatos-de-archivo" class="nav-link active" data-scroll-target="#qué-son-los-formatos-de-archivo">¿Qué son los formatos de archivo?</a></li>
+  <li><a href="#qué-son-los-formatos-abiertos" id="toc-qué-son-los-formatos-abiertos" class="nav-link" data-scroll-target="#qué-son-los-formatos-abiertos">¿Qué son los formatos abiertos?</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog posts</h1>
+<h1 class="title">La importancia de usar formatos abiertos</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Juan Camilo Arboleda Rivera <a href="mailto:juan.arboleda2@udea.edu.co" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+  </div>
     
   
     
@@ -215,340 +169,20 @@ window.Quarto = {
 </header>
 
 
+<section id="qué-son-los-formatos-de-archivo" class="level2">
+<h2 class="anchored" data-anchor-id="qué-son-los-formatos-de-archivo">¿Qué son los formatos de archivo?</h2>
+<p>En el contexto del mundo digital, podemos definir un archivo como un conjunto de bits, es decir ceros y unos, que representan una pieza de información, por ejemplo una foto, un documento, una presentación, etc.</p>
+<p>Ahora, el formato de un archivo es la <em>forma</em> en la que esta información está almacenada, y generalmente asociamos el formato a la extensión de un archivo, por ejemplo <code>.png</code> o <code>.jpg</code> para imágenes, <code>.txt</code> para texto, o <code>.pdf</code> para documentos.</p>
+</section>
+<section id="qué-son-los-formatos-abiertos" class="level2">
+<h2 class="anchored" data-anchor-id="qué-son-los-formatos-abiertos">¿Qué son los formatos abiertos?</h2>
+<p>Los formatos son formas de representar información en forma de cadenas de bits. Los formatos privativos son formatos diseñados por una compañía en particular, es decir, la compañía es la que define el formato, y es la única que puede modificarlo. A veces incluso, solo los programas escritos por la misma compañía son capaces de leer el formato privativo sin problemas.</p>
+<p>Por el contrario, los formatos abiertos no son propiedad de ninguna compañía, y cualquiera puede ver su definición.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1713502800000" data-listing-file-modified-sort="1713586872213" data-listing-date-modified-sort="1713586872000" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
-<div class="thumbnail">
-<p><a href="./posts/2024/curso-python/curso-python.html" class="no-external"></a></p><a href="./posts/2024/curso-python/curso-python.html" class="no-external">
-<p class="card-img-top"><img src="posts/2024/curso-python/20240408_115936.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2024/curso-python/curso-python.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024/curso-python/curso-python.html" class="no-external">Python course 2024-1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024/curso-python/curso-python.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2024/curso-python/curso-python.html" class="no-external">This semester, I offered a Python course at the Institute of Biology at the University of Antioquia. At first, I thought there were not many people interested; however, on…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2024/curso-python/curso-python.html" class="no-external">
-<div class="listing-date">
-Apr 19, 2024
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Alineamiento de secuencias,Biología Computacional,Bioinformática" data-listing-date-sort="1696654800000" data-listing-file-modified-sort="1712632761312" data-listing-date-modified-sort="1712632761000" data-listing-reading-time-sort="3" data-listing-word-count-sort="435">
-<div class="thumbnail">
-<p><a href="./posts/2023/análisis-de-secuencias.html" class="no-external"></a></p><a href="./posts/2023/análisis-de-secuencias.html" class="no-external">
-<p class="card-img-top"><img src="posts/2023/imgs/alignment-types.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2023/análisis-de-secuencias.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2023/análisis-de-secuencias.html" class="no-external">Herramientas bioinformáticas para el análisis de secuencias</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2023/análisis-de-secuencias.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Alineamiento de secuencias'); return false;">
-Alineamiento de secuencias
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Biología Computacional'); return false;">
-Biología Computacional
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Bioinformática'); return false;">
-Bioinformática
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2023/análisis-de-secuencias.html" class="no-external">Las bases de datos están llenas de secuencias biológicas, pero ¿cómo analizar esa información? Aquí aprenderemos algunos análisis básicos que nos pueden dan información muy…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2023/análisis-de-secuencias.html" class="no-external">
-<div class="listing-date">
-Oct 7, 2023
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Bases de datos,Biología Computacional,Bioinformática" data-listing-date-sort="1696222800000" data-listing-file-modified-sort="1711686164208" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
-<div class="thumbnail">
-<p><a href="./posts/2023/bases-de-datos.html" class="no-external"></a></p><a href="./posts/2023/bases-de-datos.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2023/bases-de-datos.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2023/bases-de-datos.html" class="no-external">Introducción a las bases de datos biológicas</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2023/bases-de-datos.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Bases de datos'); return false;">
-Bases de datos
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Biología Computacional'); return false;">
-Biología Computacional
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Bioinformática'); return false;">
-Bioinformática
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2023/bases-de-datos.html" class="no-external">¿Qué son las bases de datos biológicas y cómo usarlas?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2023/bases-de-datos.html" class="no-external">
-<div class="listing-date">
-Oct 2, 2023
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Physics,Gravity,Quantum theory,Mass" data-listing-date-sort="1664254800000" data-listing-file-modified-sort="1707607011026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="761">
-<div class="thumbnail">
-<p><a href="./posts/2022/physics.html" class="no-external"></a></p><a href="./posts/2022/physics.html" class="no-external">
-<p class="card-img-top"><img src="posts/2022/gedankenexperiment.jpeg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2022/physics.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2022/physics.html" class="no-external">Thoughts of a biologist about the problem of physics</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2022/physics.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Gravity'); return false;">
-Gravity
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Quantum theory'); return false;">
-Quantum theory
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Mass'); return false;">
-Mass
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2022/physics.html" class="no-external">This post is about my thoughts on the nature of mass.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2022/physics.html" class="no-external">
-<div class="listing-date">
-Sep 27, 2022
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Maths,Coffee" data-listing-date-sort="1641531600000" data-listing-file-modified-sort="1707607011026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
-<div class="thumbnail">
-<p><a href="./posts/2022/coffee-tremors.html" class="no-external"></a></p><a href="./posts/2022/coffee-tremors.html" class="no-external">
-<p><img src="https://i.pinimg.com/736x/f3/1c/eb/f31ceb99c14daaccab191f5269f3322c.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/2022/coffee-tremors.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2022/coffee-tremors.html" class="no-external">Maths and coffee tremors</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2022/coffee-tremors.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Maths'); return false;">
-Maths
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Coffee'); return false;">
-Coffee
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2022/coffee-tremors.html" class="no-external">Maths and coffee, two of the most beatiful things in life combined here in this little analysis of a map equation.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2022/coffee-tremors.html" class="no-external">
-<div class="listing-date">
-Jan 7, 2022
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Systems biology,ODEs,Synthetic circuits" data-listing-date-sort="1640062800000" data-listing-file-modified-sort="1707607011022" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
-<div class="thumbnail">
-<p><a href="./posts/2021/repressilator-C++.html" class="no-external"></a></p><a href="./posts/2021/repressilator-C++.html" class="no-external">
-<p class="card-img-top"><img src="posts/2021/repressilator.png" alt="Represilador"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2021/repressilator-C++.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2021/repressilator-C++.html" class="no-external">Simulando el Represilador en C++</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2021/repressilator-C++.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Systems biology'); return false;">
-Systems biology
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ODEs'); return false;">
-ODEs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Synthetic circuits'); return false;">
-Synthetic circuits
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2021/repressilator-C++.html" class="no-external">En este tutorial vamos a simular el comportamiento del circuito genético conocido como Represilador. Este circuito fue descrito por Elowitz et. al en el año 2000 en su…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2021/repressilator-C++.html" class="no-external">
-<div class="listing-date">
-Dec 21, 2021
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Maths,Fibonacci" data-listing-date-sort="1597035600000" data-listing-file-modified-sort="1707607011022" data-listing-date-modified-sort="1707607011000" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
-<div class="thumbnail">
-<p><a href="./posts/2020/fibonacci.html" class="no-external"></a></p><a href="./posts/2020/fibonacci.html" class="no-external">
-<p><img src="https://numeros.xyz/wp-content/uploads/2020/10/numero-aureo-caracol.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/2020/fibonacci.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2020/fibonacci.html" class="no-external">Another conection between phi and Fibonacci numbers</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2020/fibonacci.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Maths'); return false;">
-Maths
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Fibonacci'); return false;">
-Fibonacci
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2020/fibonacci.html" class="no-external">The relationship between the number Phi and the Fibonacci sequence is well known. Here, I show yet another connection between these two mathematical objects.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2020/fibonacci.html" class="no-external">
-<div class="listing-date">
-Aug 10, 2020
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="Caos,Divulgación,Ciencia" data-listing-date-sort="1593234000000" data-listing-file-modified-sort="1707607011018" data-listing-date-modified-sort="1707607011000" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
-<div class="thumbnail">
-<p><a href="./posts/2020/caos/caos.html" class="no-external"></a></p><a href="./posts/2020/caos/caos.html" class="no-external">
-<p class="card-img-top"><img src="posts/2020/caos/butterfly-effect.jpg" alt="Efecto mariposa"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2020/caos/caos.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2020/caos/caos.html" class="no-external">La teoría del Caos</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2020/caos/caos.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Caos'); return false;">
-Caos
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Divulgación'); return false;">
-Divulgación
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Ciencia'); return false;">
-Ciencia
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2020/caos/caos.html" class="no-external">Breve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2020/caos/caos.html" class="no-external">
-<div class="listing-date">
-Jun 27, 2020
-</div>
-<div class="listing-author">
-Juan Camilo Arboleda Rivera
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -774,7 +408,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Nesper94\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
