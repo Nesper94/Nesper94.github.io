@@ -3,7 +3,7 @@ title: 'Python course 2024-1'
 author:
   - name: Juan Camilo Arboleda Rivera
     email: juan.arboleda2@udea.edu.co
-date: today
+date: 2024-04-19
 date-modified: last-modified
 lightbox: true
 ---
@@ -26,7 +26,7 @@ As predicted, some students didn't return, but a large group of them is
 still actively participating in the course and are making big advances in
 learning Python, so I feel very proud of them.
 
-This is one of the efforts to promote computational Biology and I feel very
+This is one of the efforts to promote Computational Biology and I feel very
 glad with this experience. Here is a photo of me and some of the students:
 
 ![](20240408_115936.jpg)
