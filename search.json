@@ -105,130 +105,74 @@
     "text": "Código fuente\nPuedes descargar el código fuente del represilador aquí. Brevemente, lo que hacemos es definir una función en la cual le asignamos valores a los parámetros del sistema y luego definimos las ecuaciones diferenciales.\nPara compilar nuestro código, ejecutamos el siguiente comando:\ng++ -I /path/to/boost/ -o represilador represilador.cpp\nPara ejecutar el programa y guardar los resultados de la simulación en un archivo llamado rep.tsv, ejecutamos el siguiente comando:\n./represilador &gt; rep.tsv\nYa que tenemos los datos de la simulación, vamos a visualizarlos usando Python.\nimport matplotlib.pyplot as plt\nfrom pandas import read_csv\n\ndf = read_csv('rep.tsv', sep='\\t')\n\nplt.figure(figsize=(15,5))\nplt.plot(df.Tiempo, df.LacI, 'r', label='LacI')\nplt.plot(df.Tiempo, df.TetR, 'y', label='TetR')\nplt.plot(df.Tiempo, df.cI, 'b', label='cI')\nplt.legend()"
   },
   {
-    "objectID": "posts/2022/coffee-tremors.html",
-    "href": "posts/2022/coffee-tremors.html",
-    "title": "Maths and coffee tremors",
+    "objectID": "posts/2024/flisol/flisol.html",
+    "href": "posts/2024/flisol/flisol.html",
+    "title": "FliSol Medellín 2024",
     "section": "",
-    "text": "Maths and coffee, two of the most beatiful things in life combined here in this little analysis of a map equation.\n\n\n\n Back to top"
+    "text": "El FliSol es el Festival Latinoamericano de Instalación de Software Libre, y es un evento cuya finalidad es promover el Software Libre con conferencias, charlas e instalación de software. El FliSol se realiza en muchos países de Latinoamérica y Europa, generalmente el último sábado de Abril."
   },
   {
-    "objectID": "teaching/electroforesis/electroforesis.html",
-    "href": "teaching/electroforesis/electroforesis.html",
-    "title": "Electroforesis en gel de agarosa",
+    "objectID": "posts/2024/flisol/flisol.html#qué-es-el-flisol",
+    "href": "posts/2024/flisol/flisol.html#qué-es-el-flisol",
+    "title": "FliSol Medellín 2024",
     "section": "",
-    "text": "Hoy en día es posible separar regiones determinadas de ADN, obtenerlas en cantidades prácticamente ilimitadas y determinar su secuencia de nucleótidos a una gran velocidad. Mediante variaciones sobre estas mismas técnicas, un gen puede ser alterado y ser transferido a células en cultivo o a la línea germinal de animales, donde el gen modificado se incorpora como parte funcional y permanente del genoma. Una de las técnicas que ha hecho posible esto es la cromatografía con una de sus más grandes variantes como lo es la electroforesis.\nLa electroforesis es la migración de compuestos con carga eléctrica bajo la influencia de un campo eléctrico; estas partículas migran hacia el polo positivo o el negativo, dependiendo de una combinación de su carga, peso molecular y estructura tridimensional. Los métodos electroforéticos son de alta sensibilidad, poder de resolución y versatilidad, y sirven como método de separación de mezclas complejas de ácidos nucléicos, proteínas y otras biomoléculas (Alberts 2015; Lodish 2016).\nLa electroforesis se realiza en cámaras que pueden ser verticales y horizontales y requieren de dos elementos indispensables: la fase móvil y la fase estacionaria. La fase móvil es el medio que permite la movilidad de las moléculas cargadas hacia los electrodos correspondientes cuando se genera un campo eléctrico. La fase estacionaria o soporte, es un polímero gelatinoso con un tamaño de poro homogéneo que está sumergido en la fase móvil. El polímero utilizado para el análisis electroforético de ácidos nucléicos de gran tamaño (100pb-10kb) es la agarosa (Alberts 2015; Lodish 2016).\nPara el caso de fragmentos menores de 500 nucleótidos de largo, existen geles de poliacrilamida especialmente diseñados que permiten la separación de moléculas que se diferencien en un solo nucleótido de longitud. Los poros de los geles de poliacrilamida son demasiado pequeños para permitir que moléculas largas de ADN puedan atravesarlo. Para separar estas moléculas en función de su tamaño, se utilizan geles con poros más grandes, formados por soluciones diluidas de Agarosa (Alberts 2015; Lodish 2016; Green, Sambrook, y Sambrook 2012).\nLa migración de los fragmentos de ácidos nucléicos (ADN o ARN) en un gel de agarosa sometido a un campo eléctrico depende tanto del voltaje del campo, como del tamaño de poro del gel de agarosa. La separación efectiva de los fragmentos de ADN o ARN (resolución) depende tanto del tamaño como de la carga de los distintos fragmentos, en realidad de la relación carga/tamaño. En los geles de Agarosa o Poliacrilamida las bandas de ADN serán invisibles a menos que se marque o se tiña de alguna manera. Transcurrida la electroforesis, la localización relativa de los fragmentos se determina mediante distintos métodos de detección. La tinción con bromuro de etidio, una sonda fluorescente tras iluminación con luz UV, es un método generalizado de detección de fragmentos de ADN, ya que la sonda se intercala entre su doble hélice y emite luz. Un método de detección más sensible que éste, consiste en la incorporación de un radioisótopo a la molécula de ADN antes de la electroforesis, habitualmente, se utiliza el ³²P ya que puede ser incorporado en los fosfatos del ADN y emite partículas ß muy energéticas que son fáciles de detectar por autorradiografía (Alberts 2015; Lodish 2016).\nLa técnica más comúnmente utilizada para la separación del ADN es la electroforesis horizontal entre 0.5% a 6% de Agarosa, usualmente sumergida en uno o dos Buffers de corrido (TAE, TBE o TBX). La concentración de agarosa depende del tamaño de los fragmentos a ser separados. Generalmente, concentraciones altas de agarosa (mayor de 4%), podrían ser usadas solo cuando se van a separar fragmentos de ADN pequeño (&lt;100pb) (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005).\nDentro del campo electroforético, existen dos polos: el polo positivo y el polo negativo, dentro de los cuales se encuentran el ánodo y el cátodo respectivamente. Los ácidos nucléicos son macromoléculas cargadas negativamente, debido a la presencia de grupos fosfato en su estructura. La naturaleza del enlace fosfodiéster de las cadenas polinucleotídicas condiciona la carga de un ácido nucléico, que es aproximadamente igual al número de grupos fosfato lo que provocará su migración hacia el ánodo (Alberts 2015; Lodish 2016).\nActualmente, la técnica de la electroforesis posee algunas variantes que ayudan en la separación de biomoléculas (ADN, ARN, proteínas) dependiendo de las necesidades de las investigaciones científicas como la electroforesis 2D, el isoelectroenfoque (IEF), isotacoforesis, entre otras (Lodish 2016; Westermeier y Gronau 2005).\n\n\nDurante la electroforesis el agua es electrolizada, lo cual genera protones hacia el ánodo, e hidroxilos al cátodo. El extremo catódico de la cámara de electroforesis se vuelve básico, y el extremo del ánodo es ácido. Por lo tanto, se requiere el uso de soluciones Buffer para asegurar moléculas cargadas. Las soluciones tampón (Buffer en inglés) más usadas comúnmente para la electroforesis de ADN son el Tris-Acetato con EDTA pH 8.0 (TAE: Tris- acetato 40mM, EDTA 2mM) y Tris-Borato con EDTA pH 8.0 (TBE: Tris-Borato 89mM, EDTA 1mM).\nA pesar de ser similares, cada buffer tiene propiedades particulares las cuales se usan para situaciones y necesidades diferentes. Se utiliza cualquiera de los dos cuando no interesa recuperar el ADN y cuando éste tiene menos de 12kb-15kb. El TBE es útil cuando el ADN tiene menos de 1kb; mientras que para ADN mayor de 12 a 15kb, se utiliza el TAE y también cuando se desea purificar el ADN (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005)."
+    "text": "El FliSol es el Festival Latinoamericano de Instalación de Software Libre, y es un evento cuya finalidad es promover el Software Libre con conferencias, charlas e instalación de software. El FliSol se realiza en muchos países de Latinoamérica y Europa, generalmente el último sábado de Abril."
   },
   {
-    "objectID": "teaching/electroforesis/electroforesis.html#introducción",
-    "href": "teaching/electroforesis/electroforesis.html#introducción",
-    "title": "Electroforesis en gel de agarosa",
+    "objectID": "posts/2024/flisol/flisol.html#mi-experiencia-en-el-flisol",
+    "href": "posts/2024/flisol/flisol.html#mi-experiencia-en-el-flisol",
+    "title": "FliSol Medellín 2024",
+    "section": "Mi experiencia en el FliSol",
+    "text": "Mi experiencia en el FliSol\nEste año fui por primera vez al FliSol que se realizó el 27 de Abril en la Universidad Pontificia Bolivariana (UPB) en la ciudad de Medellín, Colombia, y en este post les contaré mi experiencia en este evento.\nLlegué muy puntual a las 08:00 a la UPB porque dándole una ojeada al cronograma del evento vi que comenzaba a las 08:00; sin embargo, estando ya en la universidad, revisé bien el cronograma y en realidad a las 08:00 solo empezaba el registro de los asistentes, y la charla inaugural como tal era a las 08:40, así que tuve un buen tiempo de recorrer y conocer la universidad y también de desayunar.\nA las 08:35 me registré y entré al auditorio a esperar la charla. Aquí me sorprendió ver a alrededor de 20 personas en el auditorio, puesto que, según la asistencia a la UbuConLA del año pasado, me esperaba muy poquita gente. Aún así, la asistencia siempre es baja y el auditorio tenía muchas sillas vacías.\nEl primer punto negativo en el evento fue que la charla inaugural no empezó a la hora planteada, sino que comenzó a las 09:00, retrasando así el resto del cronograma. Terminada la charla inaugural, empezaron las conferencias, pero hubo un ajuste de último momento al cronograma y cambiaron la hora y lugar de algunas charlas."
+  },
+  {
+    "objectID": "posts/2024/flisol/flisol.html#las-charlas",
+    "href": "posts/2024/flisol/flisol.html#las-charlas",
+    "title": "FliSol Medellín 2024",
+    "section": "Las charlas",
+    "text": "Las charlas\nLa primera charla que escuché fue la charla de Luisa Fernanda Medina sobre el uso de datos abiertos en las entidades estatales en Colombia, fue una charla muy interesante en la que se ve que se está avanzando desde las instituciones para que los datos estén disponibles de manera abierta al público y para promover el uso de formatos abiertos. Muchos datos gubernamentales son publicados en el portal https://www.datos.gov.co/.\n\n\n\nCharla sobre datos abiertos en Colombia\n\n\nLa siguiente charla fue la de Oscar Barajas, donde nos contó cómo la inteligencia artificial nos puede ayudar hoy en día a escribir código.\n\n\n\nCharla sobre escribir código usando la IA\n\n\nLuego venía la charla de Galoget Latorre, en la que nos habló sobre los deep fakes y cómo ya es muy fácil que muchos contenidos digitales generados por IA parezcan reales. Lamentablemente no pude escuchar esta charla completa porque ya tenía una cita para almorzar a las 12:00 y debido a los cambios y retrasos en el cronograma tuve que salirme antes de que terminara.\nA las 13:00 estaba programada la charla de Miguel Useche, pero comenzó aproximadamente a las 13:15. En esta charla Miguel nos contó cómo contribuir a los proyectos de Software Libre.\n\n\n\nCharla: ¿Cómo contribuir al Software Libre?\n\n\nLa última charla a la que asistí fue sobre el mapeo abierto con OpenStreetMap, estuvo muy animada y los ponentes nos mostraron programas y aplicaciones muy interesantes para mapear nuestro territorio.\n\n\n\nCharla sobre OpenStreetMap"
+  },
+  {
+    "objectID": "posts/2024/flisol/flisol.html#conclusión",
+    "href": "posts/2024/flisol/flisol.html#conclusión",
+    "title": "FliSol Medellín 2024",
+    "section": "Conclusión",
+    "text": "Conclusión\nMe gustaron mucho las charlas del FliSol y me parece muy importante que se siga realizando este evento, aunque eché en falta uno de sus ejes principales: la instalación de Software Libre. Siento que este no fue un evento para novatos en el Software Libre sino para personas ya un tanto iniciadas en el tema, y debería tenerse en cuenta el público que no sabe nada sobre el Software Libre y la Cultura Libre pero quiere conocerlos.\n\n\n\nCharla sobre datos abiertos en Colombia\nCharla sobre escribir código usando la IA\nCharla: ¿Cómo contribuir al Software Libre?\nCharla sobre OpenStreetMap"
+  },
+  {
+    "objectID": "posts/2022/physics.html",
+    "href": "posts/2022/physics.html",
+    "title": "Thoughts of a biologist about the problem of physics",
     "section": "",
-    "text": "Hoy en día es posible separar regiones determinadas de ADN, obtenerlas en cantidades prácticamente ilimitadas y determinar su secuencia de nucleótidos a una gran velocidad. Mediante variaciones sobre estas mismas técnicas, un gen puede ser alterado y ser transferido a células en cultivo o a la línea germinal de animales, donde el gen modificado se incorpora como parte funcional y permanente del genoma. Una de las técnicas que ha hecho posible esto es la cromatografía con una de sus más grandes variantes como lo es la electroforesis.\nLa electroforesis es la migración de compuestos con carga eléctrica bajo la influencia de un campo eléctrico; estas partículas migran hacia el polo positivo o el negativo, dependiendo de una combinación de su carga, peso molecular y estructura tridimensional. Los métodos electroforéticos son de alta sensibilidad, poder de resolución y versatilidad, y sirven como método de separación de mezclas complejas de ácidos nucléicos, proteínas y otras biomoléculas (Alberts 2015; Lodish 2016).\nLa electroforesis se realiza en cámaras que pueden ser verticales y horizontales y requieren de dos elementos indispensables: la fase móvil y la fase estacionaria. La fase móvil es el medio que permite la movilidad de las moléculas cargadas hacia los electrodos correspondientes cuando se genera un campo eléctrico. La fase estacionaria o soporte, es un polímero gelatinoso con un tamaño de poro homogéneo que está sumergido en la fase móvil. El polímero utilizado para el análisis electroforético de ácidos nucléicos de gran tamaño (100pb-10kb) es la agarosa (Alberts 2015; Lodish 2016).\nPara el caso de fragmentos menores de 500 nucleótidos de largo, existen geles de poliacrilamida especialmente diseñados que permiten la separación de moléculas que se diferencien en un solo nucleótido de longitud. Los poros de los geles de poliacrilamida son demasiado pequeños para permitir que moléculas largas de ADN puedan atravesarlo. Para separar estas moléculas en función de su tamaño, se utilizan geles con poros más grandes, formados por soluciones diluidas de Agarosa (Alberts 2015; Lodish 2016; Green, Sambrook, y Sambrook 2012).\nLa migración de los fragmentos de ácidos nucléicos (ADN o ARN) en un gel de agarosa sometido a un campo eléctrico depende tanto del voltaje del campo, como del tamaño de poro del gel de agarosa. La separación efectiva de los fragmentos de ADN o ARN (resolución) depende tanto del tamaño como de la carga de los distintos fragmentos, en realidad de la relación carga/tamaño. En los geles de Agarosa o Poliacrilamida las bandas de ADN serán invisibles a menos que se marque o se tiña de alguna manera. Transcurrida la electroforesis, la localización relativa de los fragmentos se determina mediante distintos métodos de detección. La tinción con bromuro de etidio, una sonda fluorescente tras iluminación con luz UV, es un método generalizado de detección de fragmentos de ADN, ya que la sonda se intercala entre su doble hélice y emite luz. Un método de detección más sensible que éste, consiste en la incorporación de un radioisótopo a la molécula de ADN antes de la electroforesis, habitualmente, se utiliza el ³²P ya que puede ser incorporado en los fosfatos del ADN y emite partículas ß muy energéticas que son fáciles de detectar por autorradiografía (Alberts 2015; Lodish 2016).\nLa técnica más comúnmente utilizada para la separación del ADN es la electroforesis horizontal entre 0.5% a 6% de Agarosa, usualmente sumergida en uno o dos Buffers de corrido (TAE, TBE o TBX). La concentración de agarosa depende del tamaño de los fragmentos a ser separados. Generalmente, concentraciones altas de agarosa (mayor de 4%), podrían ser usadas solo cuando se van a separar fragmentos de ADN pequeño (&lt;100pb) (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005).\nDentro del campo electroforético, existen dos polos: el polo positivo y el polo negativo, dentro de los cuales se encuentran el ánodo y el cátodo respectivamente. Los ácidos nucléicos son macromoléculas cargadas negativamente, debido a la presencia de grupos fosfato en su estructura. La naturaleza del enlace fosfodiéster de las cadenas polinucleotídicas condiciona la carga de un ácido nucléico, que es aproximadamente igual al número de grupos fosfato lo que provocará su migración hacia el ánodo (Alberts 2015; Lodish 2016).\nActualmente, la técnica de la electroforesis posee algunas variantes que ayudan en la separación de biomoléculas (ADN, ARN, proteínas) dependiendo de las necesidades de las investigaciones científicas como la electroforesis 2D, el isoelectroenfoque (IEF), isotacoforesis, entre otras (Lodish 2016; Westermeier y Gronau 2005).\n\n\nDurante la electroforesis el agua es electrolizada, lo cual genera protones hacia el ánodo, e hidroxilos al cátodo. El extremo catódico de la cámara de electroforesis se vuelve básico, y el extremo del ánodo es ácido. Por lo tanto, se requiere el uso de soluciones Buffer para asegurar moléculas cargadas. Las soluciones tampón (Buffer en inglés) más usadas comúnmente para la electroforesis de ADN son el Tris-Acetato con EDTA pH 8.0 (TAE: Tris- acetato 40mM, EDTA 2mM) y Tris-Borato con EDTA pH 8.0 (TBE: Tris-Borato 89mM, EDTA 1mM).\nA pesar de ser similares, cada buffer tiene propiedades particulares las cuales se usan para situaciones y necesidades diferentes. Se utiliza cualquiera de los dos cuando no interesa recuperar el ADN y cuando éste tiene menos de 12kb-15kb. El TBE es útil cuando el ADN tiene menos de 1kb; mientras que para ADN mayor de 12 a 15kb, se utiliza el TAE y también cuando se desea purificar el ADN (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005)."
+    "text": "This post is about my thoughts on the nature of mass."
   },
   {
-    "objectID": "teaching/electroforesis/electroforesis.html#objetivos",
-    "href": "teaching/electroforesis/electroforesis.html#objetivos",
-    "title": "Electroforesis en gel de agarosa",
-    "section": "2 Objetivos",
-    "text": "2 Objetivos\n\n2.1 Competencias actitudinales\n\nComprender los principios de la electroforesis horizontal y cómo permiten la separación de moléculas de ADN y ARN.\n\n\n\n2.2 Competencias procedimentales\n\nRealizar un gel de agarosa para electroforesis horizontal con el fin de visualizar moléculas de ADN y ARN.\nVisualizar el ADN separado utilizando el colorante Bromuro de Etidio (BrEt) mediante la exposición del gel a la luz UV.\nVisualizar moléculas de ARN extraídas de material biológico y verificar su integridad."
+    "objectID": "posts/2022/physics.html#the-problem-of-physics",
+    "href": "posts/2022/physics.html#the-problem-of-physics",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "The problem of physics",
+    "text": "The problem of physics\nAs many people know, the biggest problem of modern physics is that there are two powerfull theories, relativity and quantum mechanics, but that they are not yet able to merge together into a coherent and unified theory that explain both gravity and the microscopic world of particles.\nSome of the symptoms of the disease of physics (the lack of a unified theory) can be seen in aspects such as the Lorentz factor, a mathematical expression that appears frequently in relativity:\n\\[\n\\frac{1}{\\sqrt{1 - \\frac{v^2}{c^2}}},\n\\]\nwhere \\(v\\) is the velocity of a given object and \\(c\\) is the speed of light.\nThis factor appears in the denominator of equations such as that of relativistic momentum:\n\\[\np = \\frac{m_0 v}{\\sqrt{1 - \\frac{v^2}{c^2}}},\n\\]\nwhere \\(m_0\\) is the rest mass (i. e., the mass of the object when it is not moving).\nWe can see that when this equation is applied to massive objects moving at lower speed than light, it gives an answer according to the theory of relativity, and the Lorentz factor is close to 1 when the speed of the object is very small compared to the speed of ligth, giving a value very similar to the momentum in classical mechanics: \\(p = m v\\).\nHowever, if we want to know the momentum of light by using this equation, the Lorentz factor becomes zero and we end up with a mathematical indetermination. This is not a big problem, as we can calculate the momentum of a photon very easily by other means, for example with the equation \\(p = \\frac{h}{\\lambda}\\), where \\(h\\) is the Planck constant and \\(\\lambda\\) is the photon wavelength.\nWhy then we should worry about the indetermination in the equation of the relativistic momentum? Because it shows that moderns theories are incomplete. A good and solid theory should give only one consistent equation that gives the correct answer for the momentum of anything, without making distinctions between photons and other kind of particles."
   },
   {
-    "objectID": "teaching/electroforesis/electroforesis.html#materiales",
-    "href": "teaching/electroforesis/electroforesis.html#materiales",
-    "title": "Electroforesis en gel de agarosa",
-    "section": "3 Materiales",
-    "text": "3 Materiales\n\nFuente de poder\nPlato de Calentamiento o Parrilla Eléctrica\nGuantes Quirúrgicos (Estudiantes)\nToallas de Papel\nCámara de Electrofóresis para Minigeles\nTransiluminador de luz Ultravioleta\nViales de 1.5 ml\nVortex\nMarcadores Indelebles de Punta Fina (Estudiantes)\nMicropipeta de 20 μL\nCaja Pequeña de Therazaki"
+    "objectID": "posts/2022/physics.html#mass-is-a-heavy-topic",
+    "href": "posts/2022/physics.html#mass-is-a-heavy-topic",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "Mass is a heavy topic",
+    "text": "Mass is a heavy topic\nAs it turns out, it seems that the answer to the problem of the modern physics lies in solving an apparently simple question: What exactly is the mass? Why some particles have mass and other don’t?\nAs Einstein found out, mass has a strong connection with energy, which is reflected in the most famous equation of physics:\n\\[\nE = m c^2\n\\]\nHowever, thinking more profoundly about some questions, it seems to me that mass has a very strong connection with a specific kind of energy: Kinetic energy. And in the next lines I will expose why I think mass and movement are closely related."
   },
   {
-    "objectID": "teaching/electroforesis/electroforesis.html#reactivos",
-    "href": "teaching/electroforesis/electroforesis.html#reactivos",
-    "title": "Electroforesis en gel de agarosa",
-    "section": "4 Reactivos",
-    "text": "4 Reactivos\n\nAgarosa de punto de fusión normal.\nBuffer TBE 10X.\nSolución Stock de Bromuro de Etidio, 10mg/ml.\nADN Genómico Humano.\nARN aislado de material vegetal\nMarcador de Peso Molecular 1000pb.\nBuffer de Carga (Azul de Bromofenol, Glicerol, Silencianol y Formamida).\nAgua destilada."
+    "objectID": "posts/2022/physics.html#gravity-and-acceleration",
+    "href": "posts/2022/physics.html#gravity-and-acceleration",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "Gravity and acceleration",
+    "text": "Gravity and acceleration\nLet’s think in a famous mental experiment (Gedankenexperiment). We will imagine we wake up in a super high technology spaceship equipped with all sort of equipment for experimental physics. When we wake up, we notice that there is a force keeping the objects fixed to the ground. The question is, how can we know if the spaceship is still on earth or if it is accelerating through space? As physicists know, there is no way, not even with the most advanced equipment, to know if the force keeping you on the ground is caused by a gravitational field or if it is caused by accelerated movement. This is known as the Equivalence Principle. My question is: If there is no way to distinguish gravity from accelerated movement, why do we consider them as different things? Can be gravity or mass just an special form of movement? Or perhaps movement can be considered as a special form of mass?\n\n\n\nGedankenexperiment. Taken from Medium.com"
   },
   {
-    "objectID": "teaching/electroforesis/electroforesis.html#procedimiento",
-    "href": "teaching/electroforesis/electroforesis.html#procedimiento",
-    "title": "Electroforesis en gel de agarosa",
-    "section": "5 Procedimiento",
-    "text": "5 Procedimiento\nEn esta práctica de laboratorio, la electroforesis se llevará a cabo en una cámara horizontal, a temperatura ambiente, usando buffer TBE pH 8.3 como buffer de corrido, entre 70-100 voltios. Se dejará correr aproximadamente 30 minutos. Para visualizar el ADN, el gel se teñirá con Bromuro de Etidio (concentración final = 0.5 µg/ml) y se observará en un transiluminador UV. Como alternativa de tinción, se puede utilizar una solución al 0.02% de Azul de Metileno. Este tiene como ventaja la no manipulación de sustancias carcinogénicas como el Bromuro de Etidio.\n\n5.1 Preparación de las muestras\nEn una caja de Therazaki adicionar 2 µl de buffer de carga en tantos pozos como muestras tenga (con la misma punta), más uno adicional para el marcador de peso molecular. Adicionar y mezclar en cada uno de estos pozos 5 µl de cada muestra de ADN, utilizando puntas distintas para cada una. Preparar de la misma manera el ADN que se utilizará como marcador de peso molecular. Servir en el gel y dejar correr entre 30 minutos.\n\n\n5.2 Preparación del gel de agarosa, siembra y electroforesis de las muestras\n\nArmar la cámara electroforética.\nDiluir la agarosa en buffer TBE 1X.\nCalentar el recipiente, con la tapa floja, en el horno microondas o en estufa, hasta que la solución hierva.\nDejar enfriar la solución hasta aproximadamente 50ºC.\nAgregar el bromuro de etidio para que quede a una concentración final de 0.5 µg/ml.\n\n\n\n\n\n\n\nImportante\n\n\n\nEl bromuro de etidio es altamente mutagénico, carcinogénico y moderadamente tóxico. Use guantes cuando trabaje con soluciones que contienen este colorante y use máscara cuando trabaje con el reactivo puro.\n\n\n\nServir la solución de agarosa en la bandeja cuando su temperatura sea más o menos 45ºC. Evite los vapores de bromuro de etidio producidos al servir caliente la solución de agarosa.\nEliminar todas las burbujas.\nColocar los peines adecuados.\nDejar polimerizar la agarosa, durante 10 a 15 minutos aproximadamente.\nColocar el molde con el gel en la cubeta de electroforesis.\nCubrir el gel con buffer TBE 1X.\nRetirar los peines cuidadosamente para que los pozos queden bien formados. Nota: Para sacar la peineta, conviene agregar previamente buffer TBE 1X en la zona de los pozos para soltarla mejor.\nSembrar las muestras correspondientes (con cuidado de no romper el gel y evitar que se salgan del pozo).\nConectar la cámara a la fuente de poder con las siguientes especificaciones: 30 minutos, ~80 voltios, 25mA. Nota: Para evitar que las muestras se difundan en el gel, deben servirse y correrse lo más rápido posible.\nCon guantes llevar el gel hasta el transiluminador de luz ultravioleta, apagar la luz y observarlo.\n\n\n\n\n\n\n\nImportante\n\n\n\nLa luz ultravioleta es un agente mutagénico peligroso para la piel y ojos. Debe reducirse el tiempo de exposición al mínimo y usar máscara para proteger cara y ojos."
-  },
-  {
-    "objectID": "teaching/electroforesis/electroforesis.html#trabajo-del-estudiante",
-    "href": "teaching/electroforesis/electroforesis.html#trabajo-del-estudiante",
-    "title": "Electroforesis en gel de agarosa",
-    "section": "6 Trabajo del estudiante",
-    "text": "6 Trabajo del estudiante\nAntes de iniciar la práctica cada estudiante debe entregar un diagrama de flujo describiendo el procedimiento que se realizará."
-  },
-  {
-    "objectID": "teaching/electroforesis/electroforesis.html#referencias",
-    "href": "teaching/electroforesis/electroforesis.html#referencias",
-    "title": "Electroforesis en gel de agarosa",
-    "section": "7 Referencias",
-    "text": "7 Referencias\n\n\nAlberts, Bruce. 2015. Molecular Biology of the Cell. Sixth edition. New York, NY: Garland Science, Taylor and Francis Group.\n\n\nGreen, Michael R., Joseph Sambrook, y Joseph Sambrook. 2012. Molecular Cloning: A Laboratory Manual. 4th ed. Cold Spring Harbor, N.Y: Cold Spring Harbor Laboratory Press.\n\n\nLodish, Harvey F. 2016. Molecular Cell Biology. Eighth edition. New York: W.H. Freeman-Macmillan Learning.\n\n\nWestermeier, Reiner, y Sonja Gronau. 2005. Electrophoresis in Practice: A Guide to Methods and Applications of DNA and Protein Separations. 4th rev. and enl. ed. Weinheim: Wiley-VCH."
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "I am convinced that education is the most powerful tool to transform societies, for this reason teaching is a passion and a duty for me.\nAs part of a scholarship during my MSc I had the opportunity to teach some courses for undergraduate students:\nCurrently I continue to be assistant professor in the courses of General Genetics, Molecular Genetics and Introduction to Cellular Biology. Eventually, I also give introductory courses to Linux and Python."
-  },
-  {
-    "objectID": "teaching.html#didactic-material-in-spanish",
-    "href": "teaching.html#didactic-material-in-spanish",
-    "title": "Teaching",
-    "section": "Didactic material (in Spanish)",
-    "text": "Didactic material (in Spanish)\n\nGuía de instalación de Linux\nIntroducción a Git y GitHub\nGenética con VGLII\nLa teoría del caos\nIntroducción a las bases de datos biológicas\nHerramientas para el análisis de secuencias\nPráctica de laboratorio Electroforesis"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "I have broad research interests ranging from molecular biology and botany to computer science and mathematics."
-  },
-  {
-    "objectID": "research.html#currently",
-    "href": "research.html#currently",
-    "title": "Research",
-    "section": "Currently",
-    "text": "Currently\nI am currently engaged in research projects related to Systems Biology, Machine Learning, X chromosome inactivation and CRISPR systems."
-  },
-  {
-    "objectID": "research.html#as-master-student",
-    "href": "research.html#as-master-student",
-    "title": "Research",
-    "section": "As master student",
-    "text": "As master student\nMy master thesis consisted mainly in studying network motifs in gene regulatory networks able to produce cell differentiation."
-  },
-  {
-    "objectID": "research.html#as-undergraduate-student",
-    "href": "research.html#as-undergraduate-student",
-    "title": "Research",
-    "section": "As undergraduate student",
-    "text": "As undergraduate student\nDuring my time as undergraduate student I worked in “wet lab” research related to infectious diseases in the Biología y Control de Enfermedades Infecciosas (BCEI) lab. I worked mainly with vector competence of the mosquito Aedes aegypti and its interactions with Dengue Virus and Chikungunya Virus. I worked a lot with cell cultures and plaque assays."
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Blog posts",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\nNo matching items\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Juan Camilo Arboleda Rivera",
-    "section": "",
-    "text": "I am a biologist currently working in the Grupo de Fundamentos y Enseñanza de la Física y los Sistemas Dinámicos and the Grupo de Biología Computacional at the University of Antioquia (UdeA), Colombia. I obtained my Master degree in Biology with emphasis on Systems Biology. I also work as professor of the course of Genetics in the Institute of Biology at the UdeA."
-  },
-  {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
-    "title": "Juan Camilo Arboleda Rivera",
-    "section": "Interests",
-    "text": "Interests\nI am mainly interested in the fields of Systems Biology, Molecular Biology, Genetics and Bioinformatics. I am also an enthusiast of Linux and FOSS and would like to learn more about programming and its applications to biology."
+    "objectID": "posts/2022/physics.html#dont-stop-me-now",
+    "href": "posts/2022/physics.html#dont-stop-me-now",
+    "title": "Thoughts of a biologist about the problem of physics",
+    "section": "Don’t stop me now",
+    "text": "Don’t stop me now\nWhat I think is another manifestation of the underlying connection between mass and movement is the fact that massless particles (such as photons of light) are unstopable, they are constantly moving around, while particles with mass are “stopable” and are easier to move if they have less mass.\nThis seems to me as it there were a law of conservation. If we consider mass as a kind of movement, it would seem like every particle had to possess a basal amount of movement, in some of them manifesting as mass.\nThe stuff exposed above is just divagation based on intuition; however, it leads me to some questions, for example:\n\nAre there different limits for the “minimum temperature” of particles with different masses?\nIf some of the mass of protons comes from the movement of gluons, why not to assume that all the mass in the universe comes from a kind of movement?\n\n\nThis is an unfinished article. I will continue to write and improve the ideas in the future."
   },
   {
     "objectID": "teaching/git/git.html",
@@ -294,46 +238,137 @@
     "text": "8 Más información\n\nLibro Pro Git en español\ngit - the simple guide - no deep shit\nGit para científicos\nGetting started with Git and GitHub: the complete begginer’s guide"
   },
   {
-    "objectID": "posts/2022/physics.html",
-    "href": "posts/2022/physics.html",
-    "title": "Thoughts of a biologist about the problem of physics",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Juan Camilo Arboleda Rivera",
     "section": "",
-    "text": "This post is about my thoughts on the nature of mass."
+    "text": "I am a biologist currently working in the Grupo de Fundamentos y Enseñanza de la Física y los Sistemas Dinámicos and the Grupo de Biología Computacional at the University of Antioquia (UdeA), Colombia. I obtained my Master degree in Biology with emphasis on Systems Biology. I also work as professor of the course of Genetics in the Institute of Biology at the UdeA."
   },
   {
-    "objectID": "posts/2022/physics.html#the-problem-of-physics",
-    "href": "posts/2022/physics.html#the-problem-of-physics",
-    "title": "Thoughts of a biologist about the problem of physics",
-    "section": "The problem of physics",
-    "text": "The problem of physics\nAs many people know, the biggest problem of modern physics is that there are two powerfull theories, relativity and quantum mechanics, but that they are not yet able to merge together into a coherent and unified theory that explain both gravity and the microscopic world of particles.\nSome of the symptoms of the disease of physics (the lack of a unified theory) can be seen in aspects such as the Lorentz factor, a mathematical expression that appears frequently in relativity:\n\\[\n\\frac{1}{\\sqrt{1 - \\frac{v^2}{c^2}}},\n\\]\nwhere \\(v\\) is the velocity of a given object and \\(c\\) is the speed of light.\nThis factor appears in the denominator of equations such as that of relativistic momentum:\n\\[\np = \\frac{m_0 v}{\\sqrt{1 - \\frac{v^2}{c^2}}},\n\\]\nwhere \\(m_0\\) is the rest mass (i. e., the mass of the object when it is not moving).\nWe can see that when this equation is applied to massive objects moving at lower speed than light, it gives an answer according to the theory of relativity, and the Lorentz factor is close to 1 when the speed of the object is very small compared to the speed of ligth, giving a value very similar to the momentum in classical mechanics: \\(p = m v\\).\nHowever, if we want to know the momentum of light by using this equation, the Lorentz factor becomes zero and we end up with a mathematical indetermination. This is not a big problem, as we can calculate the momentum of a photon very easily by other means, for example with the equation \\(p = \\frac{h}{\\lambda}\\), where \\(h\\) is the Planck constant and \\(\\lambda\\) is the photon wavelength.\nWhy then we should worry about the indetermination in the equation of the relativistic momentum? Because it shows that moderns theories are incomplete. A good and solid theory should give only one consistent equation that gives the correct answer for the momentum of anything, without making distinctions between photons and other kind of particles."
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Juan Camilo Arboleda Rivera",
+    "section": "Interests",
+    "text": "Interests\nI am mainly interested in the fields of Systems Biology, Molecular Biology, Genetics and Bioinformatics. I am also an enthusiast of Linux and FOSS and would like to learn more about programming and its applications to biology."
   },
   {
-    "objectID": "posts/2022/physics.html#mass-is-a-heavy-topic",
-    "href": "posts/2022/physics.html#mass-is-a-heavy-topic",
-    "title": "Thoughts of a biologist about the problem of physics",
-    "section": "Mass is a heavy topic",
-    "text": "Mass is a heavy topic\nAs it turns out, it seems that the answer to the problem of the modern physics lies in solving an apparently simple question: What exactly is the mass? Why some particles have mass and other don’t?\nAs Einstein found out, mass has a strong connection with energy, which is reflected in the most famous equation of physics:\n\\[\nE = m c^2\n\\]\nHowever, thinking more profoundly about some questions, it seems to me that mass has a very strong connection with a specific kind of energy: Kinetic energy. And in the next lines I will expose why I think mass and movement are closely related."
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFliSol Medellín 2024\n\n\n\n\n\n\nSoftware Libre\n\n\nLinux\n\n\nEventos\n\n\n\n\n\n\n\n\n\nApr 29, 2024\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\nJuan Camilo Arboleda Rivera\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
-    "objectID": "posts/2022/physics.html#gravity-and-acceleration",
-    "href": "posts/2022/physics.html#gravity-and-acceleration",
-    "title": "Thoughts of a biologist about the problem of physics",
-    "section": "Gravity and acceleration",
-    "text": "Gravity and acceleration\nLet’s think in a famous mental experiment (Gedankenexperiment). We will imagine we wake up in a super high technology spaceship equipped with all sort of equipment for experimental physics. When we wake up, we notice that there is a force keeping the objects fixed to the ground. The question is, how can we know if the spaceship is still on earth or if it is accelerating through space? As physicists know, there is no way, not even with the most advanced equipment, to know if the force keeping you on the ground is caused by a gravitational field or if it is caused by accelerated movement. This is known as the Equivalence Principle. My question is: If there is no way to distinguish gravity from accelerated movement, why do we consider them as different things? Can be gravity or mass just an special form of movement? Or perhaps movement can be considered as a special form of mass?\n\n\n\nGedankenexperiment. Taken from Medium.com"
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "I have broad research interests ranging from molecular biology and botany to computer science and mathematics."
   },
   {
-    "objectID": "posts/2022/physics.html#dont-stop-me-now",
-    "href": "posts/2022/physics.html#dont-stop-me-now",
-    "title": "Thoughts of a biologist about the problem of physics",
-    "section": "Don’t stop me now",
-    "text": "Don’t stop me now\nWhat I think is another manifestation of the underlying connection between mass and movement is the fact that massless particles (such as photons of light) are unstopable, they are constantly moving around, while particles with mass are “stopable” and are easier to move if they have less mass.\nThis seems to me as it there were a law of conservation. If we consider mass as a kind of movement, it would seem like every particle had to possess a basal amount of movement, in some of them manifesting as mass.\nThe stuff exposed above is just divagation based on intuition; however, it leads me to some questions, for example:\n\nAre there different limits for the “minimum temperature” of particles with different masses?\nIf some of the mass of protons comes from the movement of gluons, why not to assume that all the mass in the universe comes from a kind of movement?\n\n\nThis is an unfinished article. I will continue to write and improve the ideas in the future."
+    "objectID": "research.html#currently",
+    "href": "research.html#currently",
+    "title": "Research",
+    "section": "Currently",
+    "text": "Currently\nI am currently engaged in research projects related to Systems Biology, Machine Learning, X chromosome inactivation and CRISPR systems."
+  },
+  {
+    "objectID": "research.html#as-master-student",
+    "href": "research.html#as-master-student",
+    "title": "Research",
+    "section": "As master student",
+    "text": "As master student\nMy master thesis consisted mainly in studying network motifs in gene regulatory networks able to produce cell differentiation."
+  },
+  {
+    "objectID": "research.html#as-undergraduate-student",
+    "href": "research.html#as-undergraduate-student",
+    "title": "Research",
+    "section": "As undergraduate student",
+    "text": "As undergraduate student\nDuring my time as undergraduate student I worked in “wet lab” research related to infectious diseases in the Biología y Control de Enfermedades Infecciosas (BCEI) lab. I worked mainly with vector competence of the mosquito Aedes aegypti and its interactions with Dengue Virus and Chikungunya Virus. I worked a lot with cell cultures and plaque assays."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I am convinced that education is the most powerful tool to transform societies, for this reason teaching is a passion and a duty for me.\nAs part of a scholarship during my MSc I had the opportunity to teach some courses for undergraduate students:\nCurrently I continue to be assistant professor in the courses of General Genetics, Molecular Genetics and Introduction to Cellular Biology. Eventually, I also give introductory courses to Linux and Python."
+  },
+  {
+    "objectID": "teaching.html#didactic-material-in-spanish",
+    "href": "teaching.html#didactic-material-in-spanish",
+    "title": "Teaching",
+    "section": "Didactic material (in Spanish)",
+    "text": "Didactic material (in Spanish)\n\nGuía de instalación de Linux\nIntroducción a Git y GitHub\nGenética con VGLII\nLa teoría del caos\nIntroducción a las bases de datos biológicas\nHerramientas para el análisis de secuencias\nPráctica de laboratorio Electroforesis"
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html",
+    "href": "teaching/electroforesis/electroforesis.html",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "",
+    "text": "Hoy en día es posible separar regiones determinadas de ADN, obtenerlas en cantidades prácticamente ilimitadas y determinar su secuencia de nucleótidos a una gran velocidad. Mediante variaciones sobre estas mismas técnicas, un gen puede ser alterado y ser transferido a células en cultivo o a la línea germinal de animales, donde el gen modificado se incorpora como parte funcional y permanente del genoma. Una de las técnicas que ha hecho posible esto es la cromatografía con una de sus más grandes variantes como lo es la electroforesis.\nLa electroforesis es la migración de compuestos con carga eléctrica bajo la influencia de un campo eléctrico; estas partículas migran hacia el polo positivo o el negativo, dependiendo de una combinación de su carga, peso molecular y estructura tridimensional. Los métodos electroforéticos son de alta sensibilidad, poder de resolución y versatilidad, y sirven como método de separación de mezclas complejas de ácidos nucléicos, proteínas y otras biomoléculas (Alberts 2015; Lodish 2016).\nLa electroforesis se realiza en cámaras que pueden ser verticales y horizontales y requieren de dos elementos indispensables: la fase móvil y la fase estacionaria. La fase móvil es el medio que permite la movilidad de las moléculas cargadas hacia los electrodos correspondientes cuando se genera un campo eléctrico. La fase estacionaria o soporte, es un polímero gelatinoso con un tamaño de poro homogéneo que está sumergido en la fase móvil. El polímero utilizado para el análisis electroforético de ácidos nucléicos de gran tamaño (100pb-10kb) es la agarosa (Alberts 2015; Lodish 2016).\nPara el caso de fragmentos menores de 500 nucleótidos de largo, existen geles de poliacrilamida especialmente diseñados que permiten la separación de moléculas que se diferencien en un solo nucleótido de longitud. Los poros de los geles de poliacrilamida son demasiado pequeños para permitir que moléculas largas de ADN puedan atravesarlo. Para separar estas moléculas en función de su tamaño, se utilizan geles con poros más grandes, formados por soluciones diluidas de Agarosa (Alberts 2015; Lodish 2016; Green, Sambrook, y Sambrook 2012).\nLa migración de los fragmentos de ácidos nucléicos (ADN o ARN) en un gel de agarosa sometido a un campo eléctrico depende tanto del voltaje del campo, como del tamaño de poro del gel de agarosa. La separación efectiva de los fragmentos de ADN o ARN (resolución) depende tanto del tamaño como de la carga de los distintos fragmentos, en realidad de la relación carga/tamaño. En los geles de Agarosa o Poliacrilamida las bandas de ADN serán invisibles a menos que se marque o se tiña de alguna manera. Transcurrida la electroforesis, la localización relativa de los fragmentos se determina mediante distintos métodos de detección. La tinción con bromuro de etidio, una sonda fluorescente tras iluminación con luz UV, es un método generalizado de detección de fragmentos de ADN, ya que la sonda se intercala entre su doble hélice y emite luz. Un método de detección más sensible que éste, consiste en la incorporación de un radioisótopo a la molécula de ADN antes de la electroforesis, habitualmente, se utiliza el ³²P ya que puede ser incorporado en los fosfatos del ADN y emite partículas ß muy energéticas que son fáciles de detectar por autorradiografía (Alberts 2015; Lodish 2016).\nLa técnica más comúnmente utilizada para la separación del ADN es la electroforesis horizontal entre 0.5% a 6% de Agarosa, usualmente sumergida en uno o dos Buffers de corrido (TAE, TBE o TBX). La concentración de agarosa depende del tamaño de los fragmentos a ser separados. Generalmente, concentraciones altas de agarosa (mayor de 4%), podrían ser usadas solo cuando se van a separar fragmentos de ADN pequeño (&lt;100pb) (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005).\nDentro del campo electroforético, existen dos polos: el polo positivo y el polo negativo, dentro de los cuales se encuentran el ánodo y el cátodo respectivamente. Los ácidos nucléicos son macromoléculas cargadas negativamente, debido a la presencia de grupos fosfato en su estructura. La naturaleza del enlace fosfodiéster de las cadenas polinucleotídicas condiciona la carga de un ácido nucléico, que es aproximadamente igual al número de grupos fosfato lo que provocará su migración hacia el ánodo (Alberts 2015; Lodish 2016).\nActualmente, la técnica de la electroforesis posee algunas variantes que ayudan en la separación de biomoléculas (ADN, ARN, proteínas) dependiendo de las necesidades de las investigaciones científicas como la electroforesis 2D, el isoelectroenfoque (IEF), isotacoforesis, entre otras (Lodish 2016; Westermeier y Gronau 2005).\n\n\nDurante la electroforesis el agua es electrolizada, lo cual genera protones hacia el ánodo, e hidroxilos al cátodo. El extremo catódico de la cámara de electroforesis se vuelve básico, y el extremo del ánodo es ácido. Por lo tanto, se requiere el uso de soluciones Buffer para asegurar moléculas cargadas. Las soluciones tampón (Buffer en inglés) más usadas comúnmente para la electroforesis de ADN son el Tris-Acetato con EDTA pH 8.0 (TAE: Tris- acetato 40mM, EDTA 2mM) y Tris-Borato con EDTA pH 8.0 (TBE: Tris-Borato 89mM, EDTA 1mM).\nA pesar de ser similares, cada buffer tiene propiedades particulares las cuales se usan para situaciones y necesidades diferentes. Se utiliza cualquiera de los dos cuando no interesa recuperar el ADN y cuando éste tiene menos de 12kb-15kb. El TBE es útil cuando el ADN tiene menos de 1kb; mientras que para ADN mayor de 12 a 15kb, se utiliza el TAE y también cuando se desea purificar el ADN (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005)."
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html#introducción",
+    "href": "teaching/electroforesis/electroforesis.html#introducción",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "",
+    "text": "Hoy en día es posible separar regiones determinadas de ADN, obtenerlas en cantidades prácticamente ilimitadas y determinar su secuencia de nucleótidos a una gran velocidad. Mediante variaciones sobre estas mismas técnicas, un gen puede ser alterado y ser transferido a células en cultivo o a la línea germinal de animales, donde el gen modificado se incorpora como parte funcional y permanente del genoma. Una de las técnicas que ha hecho posible esto es la cromatografía con una de sus más grandes variantes como lo es la electroforesis.\nLa electroforesis es la migración de compuestos con carga eléctrica bajo la influencia de un campo eléctrico; estas partículas migran hacia el polo positivo o el negativo, dependiendo de una combinación de su carga, peso molecular y estructura tridimensional. Los métodos electroforéticos son de alta sensibilidad, poder de resolución y versatilidad, y sirven como método de separación de mezclas complejas de ácidos nucléicos, proteínas y otras biomoléculas (Alberts 2015; Lodish 2016).\nLa electroforesis se realiza en cámaras que pueden ser verticales y horizontales y requieren de dos elementos indispensables: la fase móvil y la fase estacionaria. La fase móvil es el medio que permite la movilidad de las moléculas cargadas hacia los electrodos correspondientes cuando se genera un campo eléctrico. La fase estacionaria o soporte, es un polímero gelatinoso con un tamaño de poro homogéneo que está sumergido en la fase móvil. El polímero utilizado para el análisis electroforético de ácidos nucléicos de gran tamaño (100pb-10kb) es la agarosa (Alberts 2015; Lodish 2016).\nPara el caso de fragmentos menores de 500 nucleótidos de largo, existen geles de poliacrilamida especialmente diseñados que permiten la separación de moléculas que se diferencien en un solo nucleótido de longitud. Los poros de los geles de poliacrilamida son demasiado pequeños para permitir que moléculas largas de ADN puedan atravesarlo. Para separar estas moléculas en función de su tamaño, se utilizan geles con poros más grandes, formados por soluciones diluidas de Agarosa (Alberts 2015; Lodish 2016; Green, Sambrook, y Sambrook 2012).\nLa migración de los fragmentos de ácidos nucléicos (ADN o ARN) en un gel de agarosa sometido a un campo eléctrico depende tanto del voltaje del campo, como del tamaño de poro del gel de agarosa. La separación efectiva de los fragmentos de ADN o ARN (resolución) depende tanto del tamaño como de la carga de los distintos fragmentos, en realidad de la relación carga/tamaño. En los geles de Agarosa o Poliacrilamida las bandas de ADN serán invisibles a menos que se marque o se tiña de alguna manera. Transcurrida la electroforesis, la localización relativa de los fragmentos se determina mediante distintos métodos de detección. La tinción con bromuro de etidio, una sonda fluorescente tras iluminación con luz UV, es un método generalizado de detección de fragmentos de ADN, ya que la sonda se intercala entre su doble hélice y emite luz. Un método de detección más sensible que éste, consiste en la incorporación de un radioisótopo a la molécula de ADN antes de la electroforesis, habitualmente, se utiliza el ³²P ya que puede ser incorporado en los fosfatos del ADN y emite partículas ß muy energéticas que son fáciles de detectar por autorradiografía (Alberts 2015; Lodish 2016).\nLa técnica más comúnmente utilizada para la separación del ADN es la electroforesis horizontal entre 0.5% a 6% de Agarosa, usualmente sumergida en uno o dos Buffers de corrido (TAE, TBE o TBX). La concentración de agarosa depende del tamaño de los fragmentos a ser separados. Generalmente, concentraciones altas de agarosa (mayor de 4%), podrían ser usadas solo cuando se van a separar fragmentos de ADN pequeño (&lt;100pb) (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005).\nDentro del campo electroforético, existen dos polos: el polo positivo y el polo negativo, dentro de los cuales se encuentran el ánodo y el cátodo respectivamente. Los ácidos nucléicos son macromoléculas cargadas negativamente, debido a la presencia de grupos fosfato en su estructura. La naturaleza del enlace fosfodiéster de las cadenas polinucleotídicas condiciona la carga de un ácido nucléico, que es aproximadamente igual al número de grupos fosfato lo que provocará su migración hacia el ánodo (Alberts 2015; Lodish 2016).\nActualmente, la técnica de la electroforesis posee algunas variantes que ayudan en la separación de biomoléculas (ADN, ARN, proteínas) dependiendo de las necesidades de las investigaciones científicas como la electroforesis 2D, el isoelectroenfoque (IEF), isotacoforesis, entre otras (Lodish 2016; Westermeier y Gronau 2005).\n\n\nDurante la electroforesis el agua es electrolizada, lo cual genera protones hacia el ánodo, e hidroxilos al cátodo. El extremo catódico de la cámara de electroforesis se vuelve básico, y el extremo del ánodo es ácido. Por lo tanto, se requiere el uso de soluciones Buffer para asegurar moléculas cargadas. Las soluciones tampón (Buffer en inglés) más usadas comúnmente para la electroforesis de ADN son el Tris-Acetato con EDTA pH 8.0 (TAE: Tris- acetato 40mM, EDTA 2mM) y Tris-Borato con EDTA pH 8.0 (TBE: Tris-Borato 89mM, EDTA 1mM).\nA pesar de ser similares, cada buffer tiene propiedades particulares las cuales se usan para situaciones y necesidades diferentes. Se utiliza cualquiera de los dos cuando no interesa recuperar el ADN y cuando éste tiene menos de 12kb-15kb. El TBE es útil cuando el ADN tiene menos de 1kb; mientras que para ADN mayor de 12 a 15kb, se utiliza el TAE y también cuando se desea purificar el ADN (Green, Sambrook, y Sambrook 2012; Westermeier y Gronau 2005)."
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html#objetivos",
+    "href": "teaching/electroforesis/electroforesis.html#objetivos",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "2 Objetivos",
+    "text": "2 Objetivos\n\n2.1 Competencias actitudinales\n\nComprender los principios de la electroforesis horizontal y cómo permiten la separación de moléculas de ADN y ARN.\n\n\n\n2.2 Competencias procedimentales\n\nRealizar un gel de agarosa para electroforesis horizontal con el fin de visualizar moléculas de ADN y ARN.\nVisualizar el ADN separado utilizando el colorante Bromuro de Etidio (BrEt) mediante la exposición del gel a la luz UV.\nVisualizar moléculas de ARN extraídas de material biológico y verificar su integridad."
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html#materiales",
+    "href": "teaching/electroforesis/electroforesis.html#materiales",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "3 Materiales",
+    "text": "3 Materiales\n\nFuente de poder\nPlato de Calentamiento o Parrilla Eléctrica\nGuantes Quirúrgicos (Estudiantes)\nToallas de Papel\nCámara de Electrofóresis para Minigeles\nTransiluminador de luz Ultravioleta\nViales de 1.5 ml\nVortex\nMarcadores Indelebles de Punta Fina (Estudiantes)\nMicropipeta de 20 μL\nCaja Pequeña de Therazaki"
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html#reactivos",
+    "href": "teaching/electroforesis/electroforesis.html#reactivos",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "4 Reactivos",
+    "text": "4 Reactivos\n\nAgarosa de punto de fusión normal.\nBuffer TBE 10X.\nSolución Stock de Bromuro de Etidio, 10mg/ml.\nADN Genómico Humano.\nARN aislado de material vegetal\nMarcador de Peso Molecular 1000pb.\nBuffer de Carga (Azul de Bromofenol, Glicerol, Silencianol y Formamida).\nAgua destilada."
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html#procedimiento",
+    "href": "teaching/electroforesis/electroforesis.html#procedimiento",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "5 Procedimiento",
+    "text": "5 Procedimiento\nEn esta práctica de laboratorio, la electroforesis se llevará a cabo en una cámara horizontal, a temperatura ambiente, usando buffer TBE pH 8.3 como buffer de corrido, entre 70-100 voltios. Se dejará correr aproximadamente 30 minutos. Para visualizar el ADN, el gel se teñirá con Bromuro de Etidio (concentración final = 0.5 µg/ml) y se observará en un transiluminador UV. Como alternativa de tinción, se puede utilizar una solución al 0.02% de Azul de Metileno. Este tiene como ventaja la no manipulación de sustancias carcinogénicas como el Bromuro de Etidio.\n\n5.1 Preparación de las muestras\nEn una caja de Therazaki adicionar 2 µl de buffer de carga en tantos pozos como muestras tenga (con la misma punta), más uno adicional para el marcador de peso molecular. Adicionar y mezclar en cada uno de estos pozos 5 µl de cada muestra de ADN, utilizando puntas distintas para cada una. Preparar de la misma manera el ADN que se utilizará como marcador de peso molecular. Servir en el gel y dejar correr entre 30 minutos.\n\n\n5.2 Preparación del gel de agarosa, siembra y electroforesis de las muestras\n\nArmar la cámara electroforética.\nDiluir la agarosa en buffer TBE 1X.\nCalentar el recipiente, con la tapa floja, en el horno microondas o en estufa, hasta que la solución hierva.\nDejar enfriar la solución hasta aproximadamente 50ºC.\nAgregar el bromuro de etidio para que quede a una concentración final de 0.5 µg/ml.\n\n\n\n\n\n\n\nImportante\n\n\n\nEl bromuro de etidio es altamente mutagénico, carcinogénico y moderadamente tóxico. Use guantes cuando trabaje con soluciones que contienen este colorante y use máscara cuando trabaje con el reactivo puro.\n\n\n\nServir la solución de agarosa en la bandeja cuando su temperatura sea más o menos 45ºC. Evite los vapores de bromuro de etidio producidos al servir caliente la solución de agarosa.\nEliminar todas las burbujas.\nColocar los peines adecuados.\nDejar polimerizar la agarosa, durante 10 a 15 minutos aproximadamente.\nColocar el molde con el gel en la cubeta de electroforesis.\nCubrir el gel con buffer TBE 1X.\nRetirar los peines cuidadosamente para que los pozos queden bien formados. Nota: Para sacar la peineta, conviene agregar previamente buffer TBE 1X en la zona de los pozos para soltarla mejor.\nSembrar las muestras correspondientes (con cuidado de no romper el gel y evitar que se salgan del pozo).\nConectar la cámara a la fuente de poder con las siguientes especificaciones: 30 minutos, ~80 voltios, 25mA. Nota: Para evitar que las muestras se difundan en el gel, deben servirse y correrse lo más rápido posible.\nCon guantes llevar el gel hasta el transiluminador de luz ultravioleta, apagar la luz y observarlo.\n\n\n\n\n\n\n\nImportante\n\n\n\nLa luz ultravioleta es un agente mutagénico peligroso para la piel y ojos. Debe reducirse el tiempo de exposición al mínimo y usar máscara para proteger cara y ojos."
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html#trabajo-del-estudiante",
+    "href": "teaching/electroforesis/electroforesis.html#trabajo-del-estudiante",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "6 Trabajo del estudiante",
+    "text": "6 Trabajo del estudiante\nAntes de iniciar la práctica cada estudiante debe entregar un diagrama de flujo describiendo el procedimiento que se realizará."
+  },
+  {
+    "objectID": "teaching/electroforesis/electroforesis.html#referencias",
+    "href": "teaching/electroforesis/electroforesis.html#referencias",
+    "title": "Electroforesis en gel de agarosa",
+    "section": "7 Referencias",
+    "text": "7 Referencias\n\n\nAlberts, Bruce. 2015. Molecular Biology of the Cell. Sixth edition. New York, NY: Garland Science, Taylor and Francis Group.\n\n\nGreen, Michael R., Joseph Sambrook, y Joseph Sambrook. 2012. Molecular Cloning: A Laboratory Manual. 4th ed. Cold Spring Harbor, N.Y: Cold Spring Harbor Laboratory Press.\n\n\nLodish, Harvey F. 2016. Molecular Cell Biology. Eighth edition. New York: W.H. Freeman-Macmillan Learning.\n\n\nWestermeier, Reiner, y Sonja Gronau. 2005. Electrophoresis in Practice: A Guide to Methods and Applications of DNA and Protein Separations. 4th rev. and enl. ed. Weinheim: Wiley-VCH."
+  },
+  {
+    "objectID": "posts/2022/coffee-tremors.html",
+    "href": "posts/2022/coffee-tremors.html",
+    "title": "Maths and coffee tremors",
+    "section": "",
+    "text": "Maths and coffee, two of the most beatiful things in life combined here in this little analysis of a map equation.\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/2024/curso-python/curso-python.html",
     "href": "posts/2024/curso-python/curso-python.html",
     "title": "Python course 2024-1",
     "section": "",
-    "text": "This semester, I offered a Python course at the Institute of Biology at the University of Antioquia. At first, I thought there were not many people interested; however, on the first day of the course, the room was plenty of people, so much so that all the chairs were taken and many had to sit down on the floor.\nThere were in total more or less 40 people, and this suggests to me that Biology students at the University of Antioquia are claiming for courses on subjects about programming and digital technologies.\nAs there were many people, I decided to create two groups, one from 10:00 to 12:00, and the other from 13:00 to 15:00. However, I knew that desertion was to start at some point.\nAs predicted, some students didn’t return, but a large group of them is still actively participating in the course and are making big advances in learning Python, so I feel very proud of them.\nThis is one of the efforts to promote computational Biology and I feel very glad with this experience. Here is a photo of me and some of the students:\n\n\n\n\n Back to top"
+    "text": "This semester, I offered a Python course at the Institute of Biology at the University of Antioquia. At first, I thought there were not many people interested; however, on the first day of the course, the room was plenty of people, so much so that all the chairs were taken and many had to sit down on the floor.\nThere were in total more or less 40 people, and this suggests to me that Biology students at the University of Antioquia are claiming for courses on subjects about programming and digital technologies.\nAs there were many people, I decided to create two groups, one from 10:00 to 12:00, and the other from 13:00 to 15:00. However, I knew that desertion was to start at some point.\nAs predicted, some students didn’t return, but a large group of them is still actively participating in the course and are making big advances in learning Python, so I feel very proud of them.\nThis is one of the efforts to promote Computational Biology and I feel very glad with this experience. Here is a photo of me and some of the students:\n\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/2023/bases-de-datos.html",
