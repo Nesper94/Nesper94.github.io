@@ -3,6 +3,12 @@ title: 'Python course 2024-1'
 author:
   - name: Juan Camilo Arboleda Rivera
     email: juan.arboleda2@udea.edu.co
+
+categories:
+  - Python
+  - Educación
+  - Programación
+
 date: 2024-04-19
 date-modified: last-modified
 lightbox: true

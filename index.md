@@ -24,6 +24,8 @@ about:
       href: https://twitter.com/Nesper94
     - text: "{{< fa brands orcid >}} ORCID"
       href: https://orcid.org/0000-0002-0030-056X
+
+comments: false
 ---
 
 I am a biologist currently working in the [Grupo de Fundamentos y Enseñanza

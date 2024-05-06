@@ -5,6 +5,7 @@ website:
   title: "Juan C. Arboleda R."
   favicon: imgs/nea-onnim.svg
   back-to-top-navigation: true
+
   navbar:
     background: '#202025'
     foreground: '#dcdcff'
@@ -31,6 +32,10 @@ website:
         href: https://twitter.com/Nesper94
     
     logo: imgs/nea-onnim.svg
+
+  comments:
+    utterances:
+      repo: Nesper94/Nesper94.github.io
 
 format:
   html:

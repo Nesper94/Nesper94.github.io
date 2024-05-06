@@ -1,6 +1,6 @@
 ---
 title: "Research"
-permalink: /research/
+comments: false
 ---
 
 I have broad research interests ranging from molecular biology and botany to

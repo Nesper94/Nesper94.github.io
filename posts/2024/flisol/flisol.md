@@ -3,10 +3,12 @@ title: 'FliSol Medellín 2024'
 author:
   - name: Juan Camilo Arboleda Rivera
     email: juan.arboleda2@udea.edu.co
+
 categories:
   - Software Libre
   - Linux
   - Eventos
+
 date: 2024-04-29
 date-modified: last-modified
 lightbox: true
