@@ -25,15 +25,31 @@ software, es muy útil en diferentes contextos.
 
 ## Empezando con Git
 
-En primer lugar verificamos si tenemos instalado Git en la línea de comandos
-de Ubuntu:
+Instalar Git es muy fácil:
+
+::: {.panel-tabset}
+
+### En Linux
+Si no lo tenemos instalado lo instalamos con el comando:
+
+```bash
+sudo apt install git
+```
+
+Podemos verificar si funcionó la instalación con el comando:
 
 ```bash
 git --version
 ```
 
-Si no lo tenemos instalado lo instalamos con el comando `sudo apt install
-git`.
+### En Windows
+Puedes descargar el instalador de Git en [este
+enlace](https://git-scm.com/download/win).
+
+En el proceso de instalación podemos dejar la configuración por defecto y
+luego de finalizar buscamos en el menú de Windows la aplicación **Git Bash**.
+
+:::
 
 Empecemos a usar Git con unos pequeños ejemplos. En primer lugar vamos a
 crear un nuevo proyecto, cualquier cosa en la que estemos trabajando.
@@ -128,6 +144,11 @@ Hagamos el primer commit:
 ```bash
 git commit -m 'Añadir el archivo cuento.txt'
 ```
+
+Los mensajes de los commits deberían ser útiles y explicar el cambio que se
+está registrando. En [este
+enlace](https://www.conventionalcommits.org/es/) puedes encontrar más
+información sobre cómo escribir un buen commit.
 
 Veamos de nuevo el estado del repositorio:
 
@@ -276,6 +297,19 @@ decidimos conservar los cambios de la nueva rama, podemos volver a fusionar
 las dos ramas:
 
 ![](fusión-ramas.png){width=90% fig-align='center'}
+
+### ¿Cómo usar las ramas?
+
+Se pueden usar las ramas como uno quiera y mejor lo prefiera; sin embargo,
+en el mundo del desarrollo de código ya se han establecido algunos flujos
+de trabajo muy convenientes, por ejemplo, mi preferido es el esquema de
+GitFlow:
+
+![Flujo de trabajo GitFlow](modelo-git-flow.png)
+
+Como puede verse, está diseñado para el desarrollo de software en el mundo
+de la programación, sin embargo, puede usarse sin mayores cambios para el
+desarrollo de código en el ámbito de la investigación.
 
 ## Trabajando remotamente
 
