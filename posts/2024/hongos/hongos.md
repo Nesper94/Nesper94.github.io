@@ -9,6 +9,10 @@ categories:
   - Biodiversidad
   - Biología
 
+other-links:
+  - text: Manual de colecta de hongos
+    href: https://jbb.gov.co/nosotros/publicaciones/manual-de-hongos-con-laminillas/
+
 date: 2024-05-06
 date-modified: last-modified
 lightbox: true
@@ -54,3 +58,10 @@ Y también unos bellos *Coprinellus*:
 ![](20240506_091022.jpg)
 
 ![](20240506_091625.jpg)
+
+Lo que quiero hacer es aprender algo de QGIS y crear un mapa de la zona para
+reportar las localizaciones exactas de las especies que he visto y tal vez
+hacer un seguimiento temporal.
+
+Puedes descargar un manual de colecta de hongos en [este
+enlace](https://jbb.gov.co/nosotros/publicaciones/manual-de-hongos-con-laminillas/).
