@@ -145,6 +145,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#alineamiento-de-secuencias" id="toc-alineamiento-de-secuencias" class="nav-link" data-scroll-target="#alineamiento-de-secuencias">Alineamiento de secuencias</a>
   <ul class="collapse">
   <li><a href="#alineamiento-local-vs.-alineamiento-global." id="toc-alineamiento-local-vs.-alineamiento-global." class="nav-link" data-scroll-target="#alineamiento-local-vs.-alineamiento-global.">Alineamiento local vs.&nbsp;alineamiento global.</a></li>
+  <li><a href="#ejercicio" id="toc-ejercicio" class="nav-link" data-scroll-target="#ejercicio">Ejercicio</a></li>
   </ul></li>
   <li><a href="#blast-basic-local-alignment-search-tool" id="toc-blast-basic-local-alignment-search-tool" class="nav-link" data-scroll-target="#blast-basic-local-alignment-search-tool">BLAST (Basic Local Alignment Search Tool)</a></li>
   <li><a href="#búsqueda-de-homología-con-hmmer" id="toc-búsqueda-de-homología-con-hmmer" class="nav-link" data-scroll-target="#búsqueda-de-homología-con-hmmer">Búsqueda de homología con HMMER</a></li>
@@ -187,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 8, 2024</p>
+      <p class="date-modified">May 14, 2024</p>
     </div>
   </div>
     
@@ -223,8 +224,26 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="imgs/alignment-types.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="imgs/alignment-types.jpg" class="img-fluid"></a></p>
 <p>¿Cómo alinear secuencias?</p>
 <p><a href="imgs/align1.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="imgs/align1.gif" class="img-fluid"></a></p>
-<p>Y si las alineamos así…</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Y si las alineamos así…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p><a href="imgs/align2.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="imgs/align2.gif" class="img-fluid"></a></p>
+<p>¿Cuál alineamiento parece mejor y por qué?</p>
+</div>
+</div>
+</div>
+</section>
+<section id="ejercicio" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio">Ejercicio</h3>
 <p>Busquemos secuencias (por ejemplo del gen Smaug) en la base de datos <a href="https://www.orthodb.org/?">OrthoDB</a> y hagamos un <a href="https://www.ebi.ac.uk/Tools/msa/mafft/">alineamiento con MAFFT</a>.</p>
 <p>Para visualizar el alineamiento vamos a usar el software gratuito <a href="https://www.jalview.org/">JalView</a>.</p>
 </section>
@@ -839,7 +858,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="Nesper94/Nesper94.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
