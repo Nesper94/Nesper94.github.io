@@ -58,9 +58,17 @@ Veamos varios tipos de alineamientos:
 
 ![](imgs/align1.gif){.lightbox}
 
-Y si las alineamos así...
+::: {.callout-warning collapse="true"}
+
+#### Y si las alineamos así...
 
 ![](imgs/align2.gif){.lightbox}
+
+¿Cuál alineamiento parece mejor y por qué?
+
+:::
+
+### Ejercicio
 
 Busquemos secuencias (por ejemplo del gen Smaug) en la base de datos
 [OrthoDB](https://www.orthodb.org/?) y hagamos un
