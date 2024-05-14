@@ -49,6 +49,20 @@ enlace](https://git-scm.com/download/win).
 En el proceso de instalación podemos dejar la configuración por defecto y
 luego de finalizar buscamos en el menú de Windows la aplicación **Git Bash**.
 
+### En MacOS
+Primero, asegúrate de tener instalado [homebrew](https://brew.sh/). Luego
+ejecuta el siguiente comando en una terminal:
+
+```zsh
+brew install git
+```
+
+Podemos verificar si funcionó la instalación con el comando:
+
+```zsh
+git --version
+```
+
 :::
 
 Empecemos a usar Git con unos pequeños ejemplos. En primer lugar vamos a
