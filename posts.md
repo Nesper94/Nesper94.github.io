@@ -1,7 +1,7 @@
 ---
 title: "Blog posts"
 listing:
-  contents: "posts/**/*.md"
+  contents: "posts/**/*.{qmd,md}"
   sort: "date desc"
   categories: true
   type: default
