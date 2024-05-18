@@ -12,6 +12,8 @@ categories:
 other-links:
   - text: Manual de colecta de hongos
     href: https://jbb.gov.co/nosotros/publicaciones/manual-de-hongos-con-laminillas/
+  - text: Geolocalización de los hongos
+    href: hongos.tsv
 
 date: 2024-05-06
 date-modified: last-modified
@@ -53,7 +55,7 @@ Y también unos bellos *Coprinellus*:
 
 ![](20240506_085755.jpg)
 
-![](20240506_090155.jpg)
+![*Leucocoprinus fragilissimus*](20240506_090155.jpg)
 
 ![](20240506_091022.jpg)
 
@@ -62,6 +64,28 @@ Y también unos bellos *Coprinellus*:
 Lo que quiero hacer es aprender algo de QGIS y crear un mapa de la zona para
 reportar las localizaciones exactas de las especies que he visto y tal vez
 hacer un seguimiento temporal.
+
+## Proyecto de mapeo
+
+Ya comencé con el proyecto de mapeo:
+
+![](hongos.png)
+
+Los datos de localización y enlaces a las fotos se encuentran en la
+siguiente tabla que puedes descargar:
+
+[{{<fa download>}} `hongos.tsv`](hongos.tsv)
+
+```{python}
+#| echo: False
+
+import pandas as pd
+from itables import show
+
+df = pd.read_csv('hongos.tsv', sep='\t')
+#df.style.hide()
+show(df, buttons = ['csv'])
+```
 
 Puedes descargar un manual de colecta de hongos en [este
 enlace](https://jbb.gov.co/nosotros/publicaciones/manual-de-hongos-con-laminillas/).
