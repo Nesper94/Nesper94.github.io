@@ -87,5 +87,10 @@ df = pd.read_csv('hongos.tsv', sep='\t')
 show(df, buttons = ['csv'])
 ```
 
+## Actualización 2024-05-20
+
+Estos reportes sobre los hongos los he subido también a
+[iNaturalist](https://colombia.inaturalist.org/observations/216990184).
+
 Puedes descargar un manual de colecta de hongos en [este
 enlace](https://jbb.gov.co/nosotros/publicaciones/manual-de-hongos-con-laminillas/).
