@@ -9,6 +9,10 @@ author:
     email: juan.arboleda2@udea.edu.co
 lightbox: true
 code-block-background: true
+code-links:
+  - text: 'Código fuente del tutorial'
+    icon: github
+    href: https://github.com/Nesper94/Nesper94.github.io/blob/a738e8f4bbc453f3d4f6c49f58834c8fd100d26a/teaching/git/git.md?plain=1
 ---
 
 ## ¿Qué es el control de versiones?
