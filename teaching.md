@@ -31,3 +31,14 @@ I also give introductory courses to Linux and Python.
   secuencias](posts/2023/análisis-de-secuencias.md)
 - [Práctica de laboratorio
   Electroforesis](teaching/electroforesis/electroforesis.md)
+
+## Slides
+
+Here are the slides I use for my courses. These slides are made with LaTeX
+so you will need to compile them to PDF:
+
+| Course | Source code |
+| ------ | ---- |
+| Genetics | <https://gitlab.com/Nesper94/diapositivas-genetica> |
+| Systems Biology | <https://gitlab.com/Nesper94/curso-biologia-de-sistemas> |
+| Introduction to Cell Biology and Genetics | <https://gitlab.com/Nesper94/diapositivas-biologia-celular-y-genetica> |
