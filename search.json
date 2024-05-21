@@ -203,6 +203,13 @@
     "text": "Didactic material (in Spanish)\n\nGuía de instalación de Linux\nIntroducción a Git y GitHub\nGenética con VGLII\nLa teoría del caos\nIntroducción a las bases de datos biológicas\nHerramientas para el análisis de secuencias\nPráctica de laboratorio Electroforesis"
   },
   {
+    "objectID": "teaching.html#slides",
+    "href": "teaching.html#slides",
+    "title": "Teaching",
+    "section": "Slides",
+    "text": "Slides\nHere are the slides I use for my courses. These slides are made with LaTeX so you will need to compile them to PDF:\n\n\n\nCourse\nSource code\n\n\n\n\nGenetics\nhttps://gitlab.com/Nesper94/diapositivas-genetica\n\n\nSystems Biology\nhttps://gitlab.com/Nesper94/curso-biologia-de-sistemas\n\n\nIntroduction to Cell Biology and Genetics\nhttps://gitlab.com/Nesper94/diapositivas-biologia-celular-y-genetica"
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
