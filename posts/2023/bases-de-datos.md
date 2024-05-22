@@ -1,11 +1,13 @@
 ---
 title: 'Introducción a las bases de datos biológicas'
 date: 2023-10-02
+date-modified: last-modified
 author: Juan Camilo Arboleda Rivera
 categories:
   - Bases de datos
   - Biología Computacional
   - Bioinformática
+license: "CC BY-SA"
 ---
 
 ¿Qué son las bases de datos biológicas y cómo usarlas?
@@ -76,6 +78,10 @@ por el hecho de ser **primaria**.
 Busquemos el gen *Sonic hedgehog* en GenBank y descarguemos la información
 en los formatos GenBank y FASTA y veamos la estructura interna de estos
 archivos.
+
+En [este enlace](https://www.ncbi.nlm.nih.gov/genbank/samplerecord/) puedes
+encontrar la explicación detallada del formato GenBank, también conocido
+como GBFF (GenBank File Format).
 
 ### El formato FASTA
 
