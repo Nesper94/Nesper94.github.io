@@ -1,13 +1,22 @@
 ---
 title: 'Introducción a Git y GitHub'
+date: 2024-05-21
 date-modified: last-modified
 lang: es
 license: "CC BY-SA"
 number-sections: true
+
 author:
-  - name: Juan Camilo Arboleda Rivera
-    email: juan.arboleda2@udea.edu.co
+  name:
+    given: Juan Camilo
+    family: Arboleda Rivera
+
+  email: juan.arboleda2@udea.edu.co
+
 lightbox: true
+citation:
+  url: https://nesper94.github.io/teaching/git/git.html
+
 code-block-background: true
 code-links:
   - text: 'Código fuente del tutorial'
