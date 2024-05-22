@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Juan Camilo Arboleda Rivera">
-<meta name="dcterms.date" content="2024-04-19">
+<meta name="dcterms.date" content="2024-05-21">
 
-<title>Juan C. Arboleda R. - Python course 2024-1</title>
+<title>Juan C. Arboleda R. - Tips para jóvenes científicos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,9 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -136,18 +133,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mantente-atento-a-la-gente-que-trabaja-en-tu-área" id="toc-mantente-atento-a-la-gente-que-trabaja-en-tu-área" class="nav-link active" data-scroll-target="#mantente-atento-a-la-gente-que-trabaja-en-tu-área">Mantente atento a la gente que trabaja en tu área</a></li>
+  <li><a href="#tsv-el-formato-perfecto" id="toc-tsv-el-formato-perfecto" class="nav-link" data-scroll-target="#tsv-el-formato-perfecto">TSV, el formato perfecto</a></li>
+  <li><a href="#lleva-una-bitácora-o-cuaderno-de-laboratorio" id="toc-lleva-una-bitácora-o-cuaderno-de-laboratorio" class="nav-link" data-scroll-target="#lleva-una-bitácora-o-cuaderno-de-laboratorio">Lleva una bitácora o cuaderno de laboratorio</a>
+  <ul class="collapse">
+  <li><a href="#scripts" id="toc-scripts" class="nav-link" data-scroll-target="#scripts">Scripts</a></li>
+  </ul></li>
+  <li><a href="#control-de-versiones" id="toc-control-de-versiones" class="nav-link" data-scroll-target="#control-de-versiones">Control de versiones</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Python course 2024-1</h1>
+<h1 class="title">Tips para jóvenes científicos</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Ciencia</div>
     <div class="quarto-category">Educación</div>
-    <div class="quarto-category">Programación</div>
   </div>
   </div>
 
@@ -158,21 +166,21 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Juan Camilo Arboleda Rivera <a href="mailto:juan.arboleda2@udea.edu.co" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Juan Camilo Arboleda Rivera </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 19, 2024</p>
+      <p class="date">May 21, 2024</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">May 6, 2024</p>
+      <p class="date-modified">May 21, 2024</p>
     </div>
   </div>
     
@@ -183,14 +191,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This semester, I offered a Python course at the Institute of Biology at the University of Antioquia. At first, I thought there were not many people interested; however, on the first day of the course, the room was plenty of people, so much so that all the chairs were taken and many had to sit down on the floor.</p>
-<p>There were in total more or less 40 people, and this suggests to me that Biology students at the University of Antioquia are claiming for courses on subjects about programming and digital technologies.</p>
-<p>As there were many people, I decided to create two groups, one from 10:00 to 12:00, and the other from 13:00 to 15:00. However, I knew that desertion was to start at some point.</p>
-<p>As predicted, some students didn’t return, but a large group of them is still actively participating in the course and are making big advances in learning Python, so I feel very proud of them.</p>
-<p>This is one of the efforts to promote Computational Biology and I feel very glad with this experience. Here is a photo of me and some of the students:</p>
-<p><a href="20240408_115936.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="20240408_115936.jpg" class="img-fluid"></a></p>
+<p>En este post encontrarás algunos consejos para la vida científica y académica provenientes de cosas valiosas que he aprendido a partir de mi propia experiencia. Espero te sean útiles.</p>
+<section id="mantente-atento-a-la-gente-que-trabaja-en-tu-área" class="level2">
+<h2 class="anchored" data-anchor-id="mantente-atento-a-la-gente-que-trabaja-en-tu-área">Mantente atento a la gente que trabaja en tu área</h2>
+<p>Identifica a los investigadores que trabajan en tu tema de interés y cuyo trabajo te guste más. Está pendiente de sus publicaciones y actividad y síguelos en todas las redes sociales que puedas. Si estás al tanto de su trabajo y de su laboratorio puedes encontrar la oportunidad perfecta para trabajar con ellos en una pasantía, maestría o doctorado.</p>
+</section>
+<section id="tsv-el-formato-perfecto" class="level2">
+<h2 class="anchored" data-anchor-id="tsv-el-formato-perfecto">TSV, el formato perfecto</h2>
+<p>Guarda siempre que puedas tus datos en formato tabla.</p>
+<blockquote class="blockquote">
+<p>“Dadme una tabla de datos y analizaré el mundo”<br>
+–Arquímedes (?)</p>
+</blockquote>
+<p>Está bien, en realidad no lo dijo Arquímedes sino yo, y es que al tener los datos en una tabla bien ordenada y con un buen formato puedes hacer miles de análisis diferentes usando herramientas como R, Python y muchas más. Ahora, el formato <code>TSV</code> cuyas siglas vienen de Valores Separados por Tabulación (Tab Separated Values) es la mejor opción por las siguientes razones:</p>
+<ol type="1">
+<li><p>Es un formato de texto plano, lo que significa que tus archivos se podrán abrir en un futuro (tal vez incluso dentro de 100 años), sin ninguna complicación, ya que los archivos de texto plano se pueden leer fácilmente con muchísimos programas y el formato <code>TSV</code> no es propiedad de ninguna compañía que un día decida cambiar la especificación.</p></li>
+<li><p>Aunque el formato <code>CSV</code> (Comma Separated Values, Valores Separados por Coma) es muy popular y similar al <code>TSV</code>, es mucho más preferible este último, por la sencilla razón de que una tabulación es un caracter mucho menos común que una coma, entonces se evitan complicaciones y errores al usar <code>TSV</code>.</p></li>
+<li><p>Es un formato que prácticamente cualquier programa de análisis de datos es capaz de leer y cargar.</p></li>
+</ol>
+</section>
+<section id="lleva-una-bitácora-o-cuaderno-de-laboratorio" class="level2">
+<h2 class="anchored" data-anchor-id="lleva-una-bitácora-o-cuaderno-de-laboratorio">Lleva una bitácora o cuaderno de laboratorio</h2>
+<p>Hay que escribir <em>absolutamente</em> todo, dentro de un mes ya habrás olvidado las condiciones en las que hiciste los experimentos, o por qué decidiste hacer un análisis y no otro, o por qué marcaste una muestra como “Godzilla42”.</p>
+<p>En general en la ciencia, y diría yo en la vida, una de las palabras más importantes es: <strong>Registro</strong>. Hay que intentar llevar registros de todo, hasta de cuántas nubes había en el momento en el que colectaste esa nueva especie de planta, nunca se sabe qué información es valiosa y es mejor que sobre y no que falte.</p>
+<p>¡Cuánto daríamos por que las civilizaciones antiguas hubieran registrado hasta el más mínimo detalle de su vida diaria!</p>
+<section id="scripts" class="level3">
+<h3 class="anchored" data-anchor-id="scripts">Scripts</h3>
+<p>La versión computacional del cuaderno de laboratorio serán los scripts. Nunca olvides tu código. Además así podrás compartirlo para que la ciencia sea de verdad reproducible, transparente, y para que otras personas puedan aprender cómo hiciste lo que hiciste.</p>
+<p>Hay personas que prefieren que en el código los comentarios se limiten a lo estrictamente necesario, yo opino que es mejor que sobren los comentarios en el código para que no quede lugar a dudas de las razones por las cuales se usó determinada línea de código o para ayudarle a un novato a aprender más sobre el análisis que hiciste.</p>
+</section>
+</section>
+<section id="control-de-versiones" class="level2">
+<h2 class="anchored" data-anchor-id="control-de-versiones">Control de versiones</h2>
+<p>Aprende a usar sistemas de control de versiones como Git, verás que te solucionará muchos problemas. En lugar de tener una carpeta llena de archivos como <code>tesis</code>, <code>tesis_versión2</code>, <code>tesis_versión2.1</code>, <code>tesis_final</code>, <code>tesis_final_esta_sí</code>, usa Git y verás cómo te cambia la vida y te permite llevar un <em>registro</em> de todos los cambios que hagas a un documento o a un proyecto.</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -754,31 +790,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="Nesper94/Nesper94.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 
