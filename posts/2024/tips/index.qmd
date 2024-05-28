@@ -32,7 +32,9 @@ trabajar con ellos en una pasantía, maestría o doctorado.
 
 ## TSV, el formato perfecto
 
-Guarda siempre que puedas tus datos en formato tabla.
+Guarda siempre que puedas tus datos en formato tabla, y asegúrate de hacerlo
+de [manera "limpia"](https://es.r4ds.hadley.nz/12-tidy.html) (Más
+información sobre Tidy data [aquí](https://es.wikipedia.org/wiki/Tidy_data)).
 
 > "Dadme una tabla de datos y analizaré el mundo"\
 > --Arquímedes (?)
@@ -47,7 +49,7 @@ Separated Values) es la mejor opción por las siguientes razones:
 abrir en un futuro (tal vez incluso dentro de 100 años), sin ninguna
 complicación, ya que los archivos de texto plano se pueden leer fácilmente
 con muchísimos programas y el formato `TSV` no es propiedad de ninguna
-compañía que un día decida cambiar la especificación.
+compañía que un día decida cambiar su especificación.
 
 1. Aunque el formato `CSV` (Comma Separated Values, Valores Separados por
 Coma) es muy popular y similar al `TSV`, es mucho más preferible este
@@ -95,3 +97,5 @@ archivos como `tesis`, `tesis_versión2`, `tesis_versión2.1`, `tesis_final`,
 llevar un *registro* de todos los cambios que hagas a un documento o a un
 proyecto.
 
+Aquí te dejo un enlace a un [tutorial de Git y
+GitHub](https://nesper94.github.io/teaching/git/git.html).
