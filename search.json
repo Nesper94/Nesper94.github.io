@@ -107,35 +107,42 @@
   {
     "objectID": "posts/2024/tips/index.html",
     "href": "posts/2024/tips/index.html",
-    "title": "Tips para jóvenes científicos",
+    "title": "Consejos para jóvenes científicos",
     "section": "",
     "text": "En este post encontrarás algunos consejos para la vida científica y académica provenientes de cosas valiosas que he aprendido a partir de mi propia experiencia. Espero te sean útiles."
   },
   {
+    "objectID": "posts/2024/tips/index.html#se-autodidacta",
+    "href": "posts/2024/tips/index.html#se-autodidacta",
+    "title": "Consejos para jóvenes científicos",
+    "section": "Se autodidacta",
+    "text": "Se autodidacta\nEn un curso universitario de un semestre el tiempo es muy limitado, y solo se puede rascar la superficie de un tema y enseñar a los estudiantes nociones básicas. Si realmente quieres ser el mejor en lo que haces, debes sí o sí buscar información por tu propia cuenta, leer libros, blogs, publicaciones académicas. Si no te preocupas tú mismo por aprender nuevas cosas sino solo lo que te cuentan en los cursos, no vas a llegar muy lejos y tu educación será deficiente."
+  },
+  {
     "objectID": "posts/2024/tips/index.html#mantente-atento-a-la-gente-que-trabaja-en-tu-área",
     "href": "posts/2024/tips/index.html#mantente-atento-a-la-gente-que-trabaja-en-tu-área",
-    "title": "Tips para jóvenes científicos",
+    "title": "Consejos para jóvenes científicos",
     "section": "Mantente atento a la gente que trabaja en tu área",
     "text": "Mantente atento a la gente que trabaja en tu área\nIdentifica a los investigadores que trabajan en tu tema de interés y cuyo trabajo te guste más. Está pendiente de sus publicaciones y actividad y síguelos en todas las redes sociales que puedas. Si estás al tanto de su trabajo y de su laboratorio puedes encontrar la oportunidad perfecta para trabajar con ellos en una pasantía, maestría o doctorado."
   },
   {
     "objectID": "posts/2024/tips/index.html#tsv-el-formato-perfecto",
     "href": "posts/2024/tips/index.html#tsv-el-formato-perfecto",
-    "title": "Tips para jóvenes científicos",
+    "title": "Consejos para jóvenes científicos",
     "section": "TSV, el formato perfecto",
     "text": "TSV, el formato perfecto\nGuarda siempre que puedas tus datos en formato tabla.\n\n“Dadme una tabla de datos y analizaré el mundo”\n–Arquímedes (?)\n\nEstá bien, en realidad no lo dijo Arquímedes sino yo, y es que al tener los datos en una tabla bien ordenada y con un buen formato puedes hacer miles de análisis diferentes usando herramientas como R, Python y muchas más. Ahora, el formato TSV cuyas siglas vienen de Valores Separados por Tabulación (Tab Separated Values) es la mejor opción por las siguientes razones:\n\nEs un formato de texto plano, lo que significa que tus archivos se podrán abrir en un futuro (tal vez incluso dentro de 100 años), sin ninguna complicación, ya que los archivos de texto plano se pueden leer fácilmente con muchísimos programas y el formato TSV no es propiedad de ninguna compañía que un día decida cambiar la especificación.\nAunque el formato CSV (Comma Separated Values, Valores Separados por Coma) es muy popular y similar al TSV, es mucho más preferible este último, por la sencilla razón de que una tabulación es un caracter mucho menos común que una coma, entonces se evitan complicaciones y errores al usar TSV.\nEs un formato que prácticamente cualquier programa de análisis de datos es capaz de leer y cargar."
   },
   {
     "objectID": "posts/2024/tips/index.html#lleva-una-bitácora-o-cuaderno-de-laboratorio",
     "href": "posts/2024/tips/index.html#lleva-una-bitácora-o-cuaderno-de-laboratorio",
-    "title": "Tips para jóvenes científicos",
+    "title": "Consejos para jóvenes científicos",
     "section": "Lleva una bitácora o cuaderno de laboratorio",
     "text": "Lleva una bitácora o cuaderno de laboratorio\nHay que escribir absolutamente todo, dentro de un mes ya habrás olvidado las condiciones en las que hiciste los experimentos, o por qué decidiste hacer un análisis y no otro, o por qué marcaste una muestra como “Godzilla42”.\nEn general en la ciencia, y diría yo en la vida, una de las palabras más importantes es: Registro. Hay que intentar llevar registros de todo, hasta de cuántas nubes había en el momento en el que colectaste esa nueva especie de planta, nunca se sabe qué información es valiosa y es mejor que sobre y no que falte.\n¡Cuánto daríamos por que las civilizaciones antiguas hubieran registrado hasta el más mínimo detalle de su vida diaria!\n\nScripts\nLa versión computacional del cuaderno de laboratorio serán los scripts. Nunca olvides tu código. Además así podrás compartirlo para que la ciencia sea de verdad reproducible, transparente, y para que otras personas puedan aprender cómo hiciste lo que hiciste.\nHay personas que prefieren que en el código los comentarios se limiten a lo estrictamente necesario, yo opino que es mejor que sobren los comentarios en el código para que no quede lugar a dudas de las razones por las cuales se usó determinada línea de código o para ayudarle a un novato a aprender más sobre el análisis que hiciste."
   },
   {
     "objectID": "posts/2024/tips/index.html#control-de-versiones",
     "href": "posts/2024/tips/index.html#control-de-versiones",
-    "title": "Tips para jóvenes científicos",
+    "title": "Consejos para jóvenes científicos",
     "section": "Control de versiones",
     "text": "Control de versiones\nAprende a usar sistemas de control de versiones como Git, verás que te solucionará muchos problemas. En lugar de tener una carpeta llena de archivos como tesis, tesis_versión2, tesis_versión2.1, tesis_final, tesis_final_esta_sí, usa Git y verás cómo te cambia la vida y te permite llevar un registro de todos los cambios que hagas a un documento o a un proyecto."
   },
@@ -291,7 +298,7 @@
     "href": "posts.html",
     "title": "Blog posts",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nTips para jóvenes científicos\n\n\n\n\n\n\nCiencia\n\n\nEducación\n\n\n\n\n\n\n\n\n\nMay 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHongos hasta para tirar pa’l techo\n\n\n\n\n\n\nHongos\n\n\nBiodiversidad\n\n\nBiología\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFliSol Medellín 2024\n\n\n\n\n\n\nSoftware Libre\n\n\nLinux\n\n\nEventos\n\n\n\n\n\n\n\n\n\nApr 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\nPython\n\n\nEducación\n\n\nProgramación\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nConsejos para jóvenes científicos\n\n\n\n\n\n\nCiencia\n\n\nEducación\n\n\n\n\n\n\n\n\n\nMay 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHongos hasta para tirar pa’l techo\n\n\n\n\n\n\nHongos\n\n\nBiodiversidad\n\n\nBiología\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFliSol Medellín 2024\n\n\n\n\n\n\nSoftware Libre\n\n\nLinux\n\n\nEventos\n\n\n\n\n\n\n\n\n\nApr 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\nPython\n\n\nEducación\n\n\nProgramación\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "research.html",

@@ -44,8 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -138,13 +136,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#proyecto-de-mapeo" id="toc-proyecto-de-mapeo" class="nav-link active" data-scroll-target="#proyecto-de-mapeo">Proyecto de mapeo</a></li>
-  </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://jbb.gov.co/nosotros/publicaciones/manual-de-hongos-con-laminillas/"><i class="bi bi-link-45deg"></i>Manual de colecta de hongos</a></li></ul></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -180,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">May 18, 2024</p>
+      <p class="date-modified">May 22, 2024</p>
     </div>
   </div>
     
@@ -206,28 +198,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Y también unos bellos <em>Coprinellus</em>:</p>
 <p><a href="20240506_085750.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="20240506_085750.jpg" class="img-fluid"></a></p>
 <p><a href="20240506_085755.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="20240506_085755.jpg" class="img-fluid"></a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="20240506_090155.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10" title="Leucocoprinus fragilissimus"><img src="20240506_090155.jpg" class="img-fluid figure-img" alt="Leucocoprinus fragilissimus"></a></p>
-<figcaption><em>Leucocoprinus fragilissimus</em></figcaption>
-</figure>
-</div>
+<p><a href="20240506_090155.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="20240506_090155.jpg" class="img-fluid"></a></p>
 <p><a href="20240506_091022.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="20240506_091022.jpg" class="img-fluid"></a></p>
 <p><a href="20240506_091625.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="20240506_091625.jpg" class="img-fluid"></a></p>
-<p>Lo que quiero hacer es aprender algo de QGIS y crear un mapa de la zona para reportar las localizaciones exactas de las especies que he visto y tal vez hacer un seguimiento temporal.</p>
-<section id="proyecto-de-mapeo" class="level2">
-<h2 class="anchored" data-anchor-id="proyecto-de-mapeo">Proyecto de mapeo</h2>
-<p>Ya comencé con el proyecto de mapeo:</p>
-<p><a href="hongos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="hongos.png" class="img-fluid"></a></p>
-<p>Los datos de localización y enlaces a las fotos se encuentran en la siguiente tabla que puedes descargar:</p>
-<p><a href="hongos.tsv"><i class="fa-solid fa-download" aria-label="download"></i> <code>hongos.tsv</code></a></p>
-<p>Puedes descargar un manual de colecta de hongos en <a href="https://jbb.gov.co/nosotros/publicaciones/manual-de-hongos-con-laminillas/">este enlace</a>.</p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-10"><em>Leucocoprinus fragilissimus</em></span>
-</div>
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -791,7 +766,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="Nesper94/Nesper94.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
