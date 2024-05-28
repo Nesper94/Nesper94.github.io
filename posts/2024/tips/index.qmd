@@ -1,5 +1,5 @@
 ---
-title: 'Tips para jóvenes científicos'
+title: 'Consejos para jóvenes científicos'
 date: 2024-05-21
 date-modified: last-modified
 author: Juan Camilo Arboleda Rivera
@@ -11,6 +11,16 @@ categories:
 En este post encontrarás algunos consejos para la vida científica y
 académica provenientes de cosas valiosas que he aprendido a partir de mi
 propia experiencia. Espero te sean útiles.
+
+## Se autodidacta
+
+En un curso universitario de un semestre el tiempo es muy limitado, y solo
+se puede rascar la superficie de un tema y enseñar a los estudiantes
+nociones básicas. Si realmente quieres ser el mejor en lo que haces, debes
+sí o sí buscar información por tu propia cuenta, leer libros, blogs,
+publicaciones académicas. Si no te preocupas tú mismo por aprender nuevas
+cosas sino solo lo que te cuentan en los cursos, no vas a llegar muy lejos y
+tu educación será deficiente.
 
 ## Mantente atento a la gente que trabaja en tu área
 
