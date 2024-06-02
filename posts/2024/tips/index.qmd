@@ -30,6 +30,17 @@ síguelos en todas las redes sociales que puedas. Si estás al tanto de su
 trabajo y de su laboratorio puedes encontrar la oportunidad perfecta para
 trabajar con ellos en una pasantía, maestría o doctorado.
 
+## Mantente actualizado con la literatura
+
+La ciencia en el mundo actual se mueve a velocidades alucinantes y a veces
+es difícil seguirle el paso, pero te recomiendo que siempre estés atento a
+las últimas publicaciones en el área de tu interés. Una muy buena forma de
+mantenerse al tanto con lo último de lo último es crear una cuenta en
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/) y crear una alerta de correo
+electrónico, de esta manera, te llegará un email con los artículos más
+recientes. Yo por ejemplo la configuré para que cada semana me alerte sobre
+las nuevas publicaciones según unas palabras de búsqueda determinadas.
+
 ## TSV, el formato perfecto
 
 Guarda siempre que puedas tus datos en formato tabla, y asegúrate de hacerlo
