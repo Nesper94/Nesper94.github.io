@@ -1,0 +1,129 @@
+---
+title: 'Consejos para jóvenes científicos'
+date: 2024-05-21
+date-modified: last-modified
+author: Juan Camilo Arboleda Rivera
+categories:
+  - Ciencia
+  - Educación
+---
+
+En este post encontrarás algunos consejos para la vida científica y
+académica provenientes de cosas valiosas que he aprendido a partir de mi
+propia experiencia. Espero te sean útiles.
+
+## Se autodidacta
+
+En un curso universitario de un semestre el tiempo es muy limitado, y solo
+se puede rascar la superficie de un tema y enseñar a los estudiantes
+nociones básicas. Si realmente quieres ser el mejor en lo que haces, debes
+sí o sí buscar información por tu propia cuenta, leer libros, blogs,
+publicaciones académicas. Si no te preocupas tú mismo por aprender nuevas
+cosas sino solo lo que te cuentan en los cursos, no vas a llegar muy lejos y
+tu educación será deficiente.
+
+## Mantente atento a la gente que trabaja en tu área
+
+Identifica a los investigadores que trabajan en tu tema de interés y cuyo
+trabajo te guste más. Está pendiente de sus publicaciones y actividad y
+síguelos en todas las redes sociales que puedas. Si estás al tanto de su
+trabajo y de su laboratorio puedes encontrar la oportunidad perfecta para
+trabajar con ellos en una pasantía, maestría o doctorado.
+
+## Mantente actualizado con la literatura
+
+La ciencia en el mundo actual se mueve a velocidades alucinantes y a veces
+es difícil seguirle el paso, pero te recomiendo que siempre estés atento a
+las últimas publicaciones en el área de tu interés. Una muy buena forma de
+mantenerse al tanto con lo último de lo último es crear una cuenta en
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/) y crear una alerta de correo
+electrónico, de esta manera, te llegará un email con los artículos más
+recientes. Yo por ejemplo la configuré para que cada semana me alerte sobre
+las nuevas publicaciones según unas palabras de búsqueda determinadas.
+
+## ¡Usa Zotero!
+
+Montañas y montañas de artículos por leer se van acumulando, y además tienes
+que citar toda esa literatura en tus documentos y hacerlo en el formato
+apropiado. Todo se vuelve peor cuando tienes que cambiar el formato de las
+referencias porque ya no te las piden en formato APA sino en formato
+Vancouver...
+
+Afortunadamente existe la solución perfecta para organizar tus referencias,
+tomar notas sobre ellas, guardar los PDFs, hacer anotaciones en ellos, y
+citar todo esto de manera sencilla en LibreOffice, documentos de Google o
+Microsoft Word, además de permitir tener librerías colaborativas para
+compartir las referencias con tus amigos y colaboradores de manera sencilla
+y eficiente. Esa solución se llama [Zotero](https://www.zotero.org/), un
+gestor de referencias que es gratuito y de software libre. ¡Úsalo lo más
+pronto que puedas!
+
+## TSV, el formato perfecto
+
+Guarda siempre que puedas tus datos en formato tabla, y asegúrate de hacerlo
+de [manera "limpia"](https://es.r4ds.hadley.nz/12-tidy.html) (Más
+información sobre Tidy data [aquí](https://es.wikipedia.org/wiki/Tidy_data)).
+
+> "Dadme una tabla de datos y analizaré el mundo"\
+> --Arquímedes (?)
+
+Está bien, en realidad no lo dijo Arquímedes sino yo, y es que al tener los
+datos en una tabla bien ordenada y con un buen formato puedes hacer miles de
+análisis diferentes usando herramientas como R, Python y muchas más. Ahora,
+el formato `TSV` cuyas siglas vienen de Valores Separados por Tabulación (Tab
+Separated Values) es la mejor opción por las siguientes razones:
+
+1. Es un formato de texto plano, lo que significa que tus archivos se podrán
+abrir en un futuro (tal vez incluso dentro de 100 años), sin ninguna
+complicación, ya que los archivos de texto plano se pueden leer fácilmente
+con muchísimos programas y el formato `TSV` no es propiedad de ninguna
+compañía que un día decida cambiar su especificación.
+
+1. Aunque el formato `CSV` (Comma Separated Values, Valores Separados por
+Coma) es muy popular y similar al `TSV`, es mucho más preferible este
+último, por la sencilla razón de que una tabulación es un caracter mucho
+menos común que una coma, entonces se evitan complicaciones y errores al
+usar `TSV`.
+
+1. Es un formato que prácticamente cualquier programa de análisis de datos
+es capaz de leer y cargar.
+
+## Lleva una bitácora o cuaderno de laboratorio
+
+Hay que escribir *absolutamente* todo, dentro de un mes ya habrás olvidado
+las condiciones en las que hiciste los experimentos, o por qué decidiste hacer
+un análisis y no otro, o por qué marcaste una muestra como "Godzilla42".
+
+En general en la ciencia, y diría yo en la vida, una de las palabras más
+importantes es: **Registro**. Hay que intentar llevar registros de todo, hasta
+de cuántas nubes había en el momento en el que colectaste esa nueva especie de
+planta, nunca se sabe qué información es valiosa y es mejor que sobre y no que
+falte.
+
+¡Cuánto daríamos por que las civilizaciones antiguas hubieran registrado
+hasta el más mínimo detalle de su vida diaria!
+
+### Scripts
+
+La versión computacional del cuaderno de laboratorio serán los scripts.
+Nunca olvides tu código. Además así podrás compartirlo para que la ciencia
+sea de verdad reproducible, transparente, y para que otras personas puedan
+aprender cómo hiciste lo que hiciste.
+
+Hay personas que prefieren que en el código los comentarios se limiten a lo
+estrictamente necesario, yo opino que es mejor que sobren los comentarios en
+el código para que no quede lugar a dudas de las razones por las cuales se
+usó determinada línea de código o para ayudarle a un novato a aprender más
+sobre el análisis que hiciste.
+
+## Control de versiones
+
+Aprende a usar sistemas de control de versiones como Git, verás que te
+solucionará muchos problemas. En lugar de tener una carpeta llena de
+archivos como `tesis`, `tesis_versión2`, `tesis_versión2.1`, `tesis_final`,
+`tesis_final_esta_sí`, usa Git y verás cómo te cambia la vida y te permite
+llevar un *registro* de todos los cambios que hagas a un documento o a un
+proyecto.
+
+Aquí te dejo un enlace a un [tutorial de Git y
+GitHub](https://nesper94.github.io/teaching/git/git.html).
