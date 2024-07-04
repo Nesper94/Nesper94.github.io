@@ -127,7 +127,10 @@ El formato [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) (FASTA with
 Quality) es muy similar al FASTA pero incluye también información sobre la 
 calidad de la secuencia:
 
-![Formato FASTQ](https://www.researchgate.net/publication/309134977/figure/fig2/AS:417452136648711@1476539753452/A-sample-of-the-FASTQ-file.png)
+[![Formato
+FASTQ](https://upload.wikimedia.org/wikipedia/commons/c/cc/Formato-fastq.svg){title="Nesper94,
+CC BY 4.0
+&lt;https://creativecommons.org/licenses/by/4.0&gt;"}](https://commons.wikimedia.org/wiki/File:Formato-fastq.svg)
 
 Utilizando la línea de comandos en Linux también es posible descargar
 archivos FASTQ después de instalar la herramienta `SRA Toolkit`:
