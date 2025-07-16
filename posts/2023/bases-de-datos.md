@@ -173,14 +173,5 @@ es Software Libre ;)
 Esta es una base de datos de proteínas, en donde se puede encontrar gran
 cantidad de información asociada a ellas.
 
-## [Interpro (Antes llamado Pfam)](https://www.ebi.ac.uk/interpro/)
-
-Base de datos sobre análisis funcional de proteínas, su clasificación en
-familias de proteínas y predicción de dominios funcionales y sitios
-importantes. También se pueden encontrar alineamientos múltiples de
-proteínas.
-
-![alineamiento múltiple de proteínas](https://d3i71xaburhd42.cloudfront.net/a556ba6f4ae669b253de9a4a7cfa25f3d7b58742/4-Figure2-1.png)
-
 Si quieres aprender más sobre bioinformática puedes seguir [este
 tutorial](https://www.ebi.ac.uk/training/online/courses/bioinformatics-terrified/).
