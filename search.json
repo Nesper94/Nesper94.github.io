@@ -84,18 +84,25 @@
     "text": "Recursos adicionales\nhttps://viralzone.expasy.org/e_learning/alignments/content.html"
   },
   {
-    "objectID": "posts/2025/urania/index.html",
-    "href": "posts/2025/urania/index.html",
-    "title": "Urania",
+    "objectID": "posts/2021/repressilator-C++.html",
+    "href": "posts/2021/repressilator-C++.html",
+    "title": "Simulando el Represilador en C++",
     "section": "",
-    "text": "Urania es un género de polillas diurnas de la familia Uraniidae. Este género tiene solamente cuatro especies, Urania fulgens, Urania leilus, Urania boisduvalii y Urania sloanus, de las cuales Urania sloanus lamentablemente se extinguió a principios del siglo XX.\nLas polillas del género Urania son migratorias, estas se alimentan de lianas del género Omphalea, pero se cree que la planta va aumentando su toxicidad en respuesta al ataque de los insectos hasta que se vuelven demasiado tóxicas para Urania y allí es cuando les toca migrar.\nDesde que conocí a las Uranias y sus migraciones llamaron poderosamente mi atención y me generaron un montón de preguntas y de curiosidad. Verdaderamente me he enamorado y he quedado cautivado con estos organismos.\nEste es un poema que escribí para ellas:\n\nTú que cruzas el cielo buscando la vida,\n¿a dónde vas Urania, musa de la astronomía?\nQuizás decidiste dejar la noche y volar de día\npara que recordemos que aun en el día\nsobre nosotros están las estrellas.\n\n\n\n\n Back to top"
+    "text": "En este tutorial vamos a simular el comportamiento del circuito genético conocido como Represilador. Este circuito fue descrito por Elowitz et. al en el año 2000 en su artículo “A synthetic oscillatory network of transcriptional regulators”."
   },
   {
-    "objectID": "posts/2024/ana-frank/index.html",
-    "href": "posts/2024/ana-frank/index.html",
-    "title": "El diario de Ana Frank",
-    "section": "",
-    "text": "Hace poco me leí por fin El diario de Ana Frank, un libro que tenía pendiente por leer desde hace mucho tiempo, aquí comento algunas de mis impresiones sobre él.\nA la pobre Ana no solo le tocó vivir una guerra horrible, sino además vivirla siendo mujer, adolescente y judía.\n\n\n\n Back to top"
+    "objectID": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
+    "href": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
+    "title": "Simulando el Represilador en C++",
+    "section": "¿Qué es el Represilador?",
+    "text": "¿Qué es el Represilador?\nEl Represilador es una red de regulación genética sintética, es decir, no existe en la naturaleza sino que fue diseñada y creada en el laboratorio. Esta red consiste básicamente en 3 genes: LacI, tetR y cI, los cuales son todos ellos represores de la expresión genética. Cada gen produce una proteína que reprime al siguiente gen como se muestra en la siguiente imagen:"
+  },
+  {
+    "objectID": "posts/2021/repressilator-C++.html#código-fuente",
+    "href": "posts/2021/repressilator-C++.html#código-fuente",
+    "title": "Simulando el Represilador en C++",
+    "section": "Código fuente",
+    "text": "Código fuente\nPuedes descargar el código fuente del represilador aquí. Brevemente, lo que hacemos es definir una función en la cual le asignamos valores a los parámetros del sistema y luego definimos las ecuaciones diferenciales.\nPara compilar nuestro código, ejecutamos el siguiente comando:\ng++ -I /path/to/boost/ -o represilador represilador.cpp\nPara ejecutar el programa y guardar los resultados de la simulación en un archivo llamado rep.tsv, ejecutamos el siguiente comando:\n./represilador &gt; rep.tsv\nYa que tenemos los datos de la simulación, vamos a visualizarlos usando Python.\nimport matplotlib.pyplot as plt\nfrom pandas import read_csv\n\ndf = read_csv('rep.tsv', sep='\\t')\n\nplt.figure(figsize=(15,5))\nplt.plot(df.Tiempo, df.LacI, 'r', label='LacI')\nplt.plot(df.Tiempo, df.TetR, 'y', label='TetR')\nplt.plot(df.Tiempo, df.cI, 'b', label='cI')\nplt.legend()"
   },
   {
     "objectID": "posts/2024/tips/index.html",
@@ -291,7 +298,7 @@
     "href": "posts.html",
     "title": "Blog posts",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nUrania\n\n\n\n\n\n\nPolillas\n\n\nBiodiversidad\n\n\nBiología\n\n\nUrania fulgens\n\n\n\n\n\n\n\n\n\nJan 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEl diario de Ana Frank\n\n\n\n\n\n\n\n\n\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMemorias de tinta\n\n\nRecuerdos que viajan en el tiempo\n\n\n\n\n\n\n\n\nJun 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nConsejos para jóvenes científicos\n\n\n\n\n\n\nCiencia\n\n\nEducación\n\n\n\n\n\n\n\n\n\nMay 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHongos hasta para tirar pa’l techo\n\n\n\n\n\n\nHongos\n\n\nBiodiversidad\n\n\nBiología\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFliSol Medellín 2024\n\n\n\n\n\n\nSoftware Libre\n\n\nLinux\n\n\nEventos\n\n\n\n\n\n\n\n\n\nApr 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\nPython\n\n\nEducación\n\n\nProgramación\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMemorias de tinta\n\n\nRecuerdos que viajan en el tiempo\n\n\n\n\n\n\n\n\nJun 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nConsejos para jóvenes científicos\n\n\n\n\n\n\nCiencia\n\n\nEducación\n\n\n\n\n\n\n\n\n\nMay 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHongos hasta para tirar pa’l techo\n\n\n\n\n\n\nHongos\n\n\nBiodiversidad\n\n\nBiología\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFliSol Medellín 2024\n\n\n\n\n\n\nSoftware Libre\n\n\nLinux\n\n\nEventos\n\n\n\n\n\n\n\n\n\nApr 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\nPython\n\n\nEducación\n\n\nProgramación\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "research.html",
@@ -474,27 +481,6 @@
     "title": "Python course 2024-1",
     "section": "",
     "text": "This semester, I offered a Python course at the Institute of Biology at the University of Antioquia. At first, I thought there were not many people interested; however, on the first day of the course, the room was plenty of people, so much so that all the chairs were taken and many had to sit down on the floor.\nThere were in total more or less 40 people, and this suggests to me that Biology students at the University of Antioquia are claiming for courses on subjects about programming and digital technologies.\nAs there were many people, I decided to create two groups, one from 10:00 to 12:00, and the other from 13:00 to 15:00. However, I knew that desertion was to start at some point.\nAs predicted, some students didn’t return, but a large group of them is still actively participating in the course and are making big advances in learning Python, so I feel very proud of them.\nThis is one of the efforts to promote Computational Biology and I feel very glad with this experience. Here is a photo of me and some of the students:\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "posts/2021/repressilator-C++.html",
-    "href": "posts/2021/repressilator-C++.html",
-    "title": "Simulando el Represilador en C++",
-    "section": "",
-    "text": "En este tutorial vamos a simular el comportamiento del circuito genético conocido como Represilador. Este circuito fue descrito por Elowitz et. al en el año 2000 en su artículo “A synthetic oscillatory network of transcriptional regulators”."
-  },
-  {
-    "objectID": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
-    "href": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
-    "title": "Simulando el Represilador en C++",
-    "section": "¿Qué es el Represilador?",
-    "text": "¿Qué es el Represilador?\nEl Represilador es una red de regulación genética sintética, es decir, no existe en la naturaleza sino que fue diseñada y creada en el laboratorio. Esta red consiste básicamente en 3 genes: LacI, tetR y cI, los cuales son todos ellos represores de la expresión genética. Cada gen produce una proteína que reprime al siguiente gen como se muestra en la siguiente imagen:"
-  },
-  {
-    "objectID": "posts/2021/repressilator-C++.html#código-fuente",
-    "href": "posts/2021/repressilator-C++.html#código-fuente",
-    "title": "Simulando el Represilador en C++",
-    "section": "Código fuente",
-    "text": "Código fuente\nPuedes descargar el código fuente del represilador aquí. Brevemente, lo que hacemos es definir una función en la cual le asignamos valores a los parámetros del sistema y luego definimos las ecuaciones diferenciales.\nPara compilar nuestro código, ejecutamos el siguiente comando:\ng++ -I /path/to/boost/ -o represilador represilador.cpp\nPara ejecutar el programa y guardar los resultados de la simulación en un archivo llamado rep.tsv, ejecutamos el siguiente comando:\n./represilador &gt; rep.tsv\nYa que tenemos los datos de la simulación, vamos a visualizarlos usando Python.\nimport matplotlib.pyplot as plt\nfrom pandas import read_csv\n\ndf = read_csv('rep.tsv', sep='\\t')\n\nplt.figure(figsize=(15,5))\nplt.plot(df.Tiempo, df.LacI, 'r', label='LacI')\nplt.plot(df.Tiempo, df.TetR, 'y', label='TetR')\nplt.plot(df.Tiempo, df.cI, 'b', label='cI')\nplt.legend()"
   },
   {
     "objectID": "posts/2023/bases-de-datos.html",
