@@ -39,7 +39,7 @@
     "href": "posts/2023/análisis-de-secuencias.html#introducción",
     "title": "Herramientas bioinformáticas para el análisis de secuencias",
     "section": "Introducción",
-    "text": "Introducción\nYa conocimos diferentes bases de datos con información biológica; sin embargo, estos datos solo son útiles si son analizados. Debido a la gran cantidad de datos existentes y a la necesidad de hacer múltiples cálculos y procedimientos rápidamente, la mayoría de análisis de datos biológicos en la actualidad se realizan con la ayuda de programas computacionales y algoritmos capaces de procesas grandes cantidades de información. A pesar de esto, sigue siendo esencial que los investigadores y en general usuarios de estos programas, comprendan aspectos básicos de su funcionamiento y las teorías biológicas en las que se fundamentan para poder interpretar adecuadamente sus resultados.\nEn este práctica conoceremos algunas de las herramientas más útiles para el análisis de secuencias biológicas."
+    "text": "Introducción\nYa conocimos diferentes bases de datos con información biológica; sin embargo, estos datos solo son útiles si son analizados. Debido a la gran cantidad de datos existentes y a la necesidad de hacer múltiples cálculos y procedimientos rápidamente, la mayoría de análisis de datos biológicos en la actualidad se realizan con la ayuda de programas computacionales y algoritmos capaces de procesar grandes cantidades de información. A pesar de esto, sigue siendo esencial que los investigadores y en general usuarios de estos programas, comprendan aspectos básicos de su funcionamiento y las teorías biológicas en las que se fundamentan para poder interpretar adecuadamente sus resultados.\nEn esta práctica conoceremos algunas de las herramientas más útiles para el análisis de secuencias biológicas."
   },
   {
     "objectID": "posts/2023/análisis-de-secuencias.html#objetivos",
@@ -84,25 +84,18 @@
     "text": "Recursos adicionales\nhttps://viralzone.expasy.org/e_learning/alignments/content.html"
   },
   {
-    "objectID": "posts/2021/repressilator-C++.html",
-    "href": "posts/2021/repressilator-C++.html",
-    "title": "Simulando el Represilador en C++",
+    "objectID": "posts/2025/urania/index.html",
+    "href": "posts/2025/urania/index.html",
+    "title": "Urania",
     "section": "",
-    "text": "En este tutorial vamos a simular el comportamiento del circuito genético conocido como Represilador. Este circuito fue descrito por Elowitz et. al en el año 2000 en su artículo “A synthetic oscillatory network of transcriptional regulators”."
+    "text": "Urania es un género de polillas diurnas de la familia Uraniidae. Este género tiene solamente cuatro especies, Urania fulgens, Urania leilus, Urania boisduvalii y Urania sloanus, de las cuales Urania sloanus lamentablemente se extinguió a principios del siglo XX.\nLas polillas del género Urania son migratorias, estas se alimentan de lianas del género Omphalea, pero se cree que la planta va aumentando su toxicidad en respuesta al ataque de los insectos hasta que se vuelven demasiado tóxicas para Urania y allí es cuando les toca migrar.\nDesde que conocí a las Uranias y sus migraciones llamaron poderosamente mi atención y me generaron un montón de preguntas y de curiosidad. Verdaderamente me he enamorado y he quedado cautivado con estos organismos.\nEste es un poema que escribí para ellas:\n\nTú que cruzas el cielo buscando la vida,\n¿a dónde vas Urania, musa de la astronomía?\nQuizás decidiste dejar la noche y volar de día\npara que recordemos que aun en el día\nsobre nosotros están las estrellas.\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
-    "href": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
-    "title": "Simulando el Represilador en C++",
-    "section": "¿Qué es el Represilador?",
-    "text": "¿Qué es el Represilador?\nEl Represilador es una red de regulación genética sintética, es decir, no existe en la naturaleza sino que fue diseñada y creada en el laboratorio. Esta red consiste básicamente en 3 genes: LacI, tetR y cI, los cuales son todos ellos represores de la expresión genética. Cada gen produce una proteína que reprime al siguiente gen como se muestra en la siguiente imagen:"
-  },
-  {
-    "objectID": "posts/2021/repressilator-C++.html#código-fuente",
-    "href": "posts/2021/repressilator-C++.html#código-fuente",
-    "title": "Simulando el Represilador en C++",
-    "section": "Código fuente",
-    "text": "Código fuente\nPuedes descargar el código fuente del represilador aquí. Brevemente, lo que hacemos es definir una función en la cual le asignamos valores a los parámetros del sistema y luego definimos las ecuaciones diferenciales.\nPara compilar nuestro código, ejecutamos el siguiente comando:\ng++ -I /path/to/boost/ -o represilador represilador.cpp\nPara ejecutar el programa y guardar los resultados de la simulación en un archivo llamado rep.tsv, ejecutamos el siguiente comando:\n./represilador &gt; rep.tsv\nYa que tenemos los datos de la simulación, vamos a visualizarlos usando Python.\nimport matplotlib.pyplot as plt\nfrom pandas import read_csv\n\ndf = read_csv('rep.tsv', sep='\\t')\n\nplt.figure(figsize=(15,5))\nplt.plot(df.Tiempo, df.LacI, 'r', label='LacI')\nplt.plot(df.Tiempo, df.TetR, 'y', label='TetR')\nplt.plot(df.Tiempo, df.cI, 'b', label='cI')\nplt.legend()"
+    "objectID": "posts/2024/ana-frank/index.html",
+    "href": "posts/2024/ana-frank/index.html",
+    "title": "El diario de Ana Frank",
+    "section": "",
+    "text": "Hace poco me leí por fin El diario de Ana Frank, un libro que tenía pendiente por leer desde hace mucho tiempo, aquí comento algunas de mis impresiones sobre él.\nA la pobre Ana no solo le tocó vivir una guerra horrible, sino además vivirla siendo mujer, adolescente y judía.\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/2024/tips/index.html",
@@ -280,6 +273,27 @@
     "text": "Slides\nHere are the slides I use for my courses. These slides are made with LaTeX so you will need to compile them to PDF:\n\n\n\nCourse\nSource code\n\n\n\n\nGenetics\nhttps://gitlab.com/Nesper94/diapositivas-genetica\n\n\nSystems Biology\nhttps://gitlab.com/Nesper94/curso-biologia-de-sistemas\n\n\nIntroduction to Cell Biology and Genetics\nhttps://gitlab.com/Nesper94/diapositivas-biologia-celular-y-genetica"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Juan Camilo Arboleda Rivera",
+    "section": "",
+    "text": "I am a biologist currently working in the Grupo de Fundamentos y Enseñanza de la Física y los Sistemas Dinámicos and the Grupo de Biología Computacional at the University of Antioquia (UdeA), Colombia. I obtained my Master degree in Biology with emphasis on Systems Biology. I also work as professor of the course of Genetics in the Institute of Biology at the UdeA."
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Juan Camilo Arboleda Rivera",
+    "section": "Interests",
+    "text": "Interests\nI am mainly interested in the fields of migrations, Systems Biology, Molecular Biology, Genetics and Bioinformatics. I am also an enthusiast of Linux and FOSS and would like to learn more about programming and its applications to biology."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nUrania\n\n\n\n\n\n\nPolillas\n\n\nBiodiversidad\n\n\nBiología\n\n\nUrania fulgens\n\n\n\n\n\n\n\n\n\nJan 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEl diario de Ana Frank\n\n\n\n\n\n\n\n\n\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMemorias de tinta\n\n\nRecuerdos que viajan en el tiempo\n\n\n\n\n\n\n\n\nJun 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nConsejos para jóvenes científicos\n\n\n\n\n\n\nCiencia\n\n\nEducación\n\n\n\n\n\n\n\n\n\nMay 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHongos hasta para tirar pa’l techo\n\n\n\n\n\n\nHongos\n\n\nBiodiversidad\n\n\nBiología\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFliSol Medellín 2024\n\n\n\n\n\n\nSoftware Libre\n\n\nLinux\n\n\nEventos\n\n\n\n\n\n\n\n\n\nApr 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\nPython\n\n\nEducación\n\n\nProgramación\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -308,25 +322,18 @@
     "text": "As undergraduate student\nDuring my time as undergraduate student I worked in “wet lab” research related to infectious diseases in the Biología y Control de Enfermedades Infecciosas (BCEI) lab. I worked mainly with vector competence of the mosquito Aedes aegypti and its interactions with Dengue Virus and Chikungunya Virus. I worked a lot with cell cultures and plaque assays."
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Blog posts",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre mí",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMemorias de tinta\n\n\nRecuerdos que viajan en el tiempo\n\n\n\n\n\n\n\n\nJun 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nConsejos para jóvenes científicos\n\n\n\n\n\n\nCiencia\n\n\nEducación\n\n\n\n\n\n\n\n\n\nMay 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHongos hasta para tirar pa’l techo\n\n\n\n\n\n\nHongos\n\n\nBiodiversidad\n\n\nBiología\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFliSol Medellín 2024\n\n\n\n\n\n\nSoftware Libre\n\n\nLinux\n\n\nEventos\n\n\n\n\n\n\n\n\n\nApr 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPython course 2024-1\n\n\n\n\n\n\nPython\n\n\nEducación\n\n\nProgramación\n\n\n\n\n\n\n\n\n\nApr 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas bioinformáticas para el análisis de secuencias\n\n\n\n\n\n\nAlineamiento de secuencias\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducción a las bases de datos biológicas\n\n\n\n\n\n\nBases de datos\n\n\nBiología Computacional\n\n\nBioinformática\n\n\n\n\n\n\n\n\n\nOct 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts of a biologist about the problem of physics\n\n\n\n\n\n\nPhysics\n\n\nGravity\n\n\nQuantum theory\n\n\nMass\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMaths and coffee tremors\n\n\n\n\n\n\nMaths\n\n\nCoffee\n\n\n\n\n\n\n\n\n\nJan 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSimulando el Represilador en C++\n\n\n\n\n\n\nSystems biology\n\n\nODEs\n\n\nSynthetic circuits\n\n\n\n\n\n\n\n\n\nDec 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nAnother conection between phi and Fibonacci numbers\n\n\n\n\n\n\nMaths\n\n\nFibonacci\n\n\n\n\n\n\n\n\n\nAug 10, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nLa teoría del Caos\n\n\n\n\n\n\nCaos\n\n\nDivulgación\n\n\nCiencia\n\n\n\nBreve artículo de divulgación nacido de un hilo de Twitter que publiqué para explicar en qué consiste la teoría del Caos.\n\n\n\n\n\nJun 27, 2020\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "La ciudad del pez elefante\nLos viajes más increíbles: Maravillas de la navegación animal\nEl infinito en un junco - Irene Vallejo\nGuía del autoestopista galáctico - Douglas Adams\nEl pulgar del panda - Stephen Jay Gould\nColapso - Jared Diamond\nUn mundo feliz - Aldous Huxley\nFrankenstein - Mary Shelley\nMisery - Stephen King\nTodos los de Julio Verne, pero especialmente le tengo mucho carino a 20.000 leguas de viaje submarino\nEl silmarilión - J. R. R. Tokien\nEl lenguaje de las matemáticas - Keith Devlin\n¿Está usted de broma Sr. Feynman?\nEl placer de descubrir - Richard Feynman\nEl nombre de la rosa - Umberto Eco\nNuestra señora de París - Victor Hugo\nRobinson Crusoe - Daniel Defoe\nEl octavo día de la creación\nAlicia en el país de las maravillas - Lewis Carroll\nRaíces - Alex Haley\nGödel, Escher, Bach, un eterno y grácil bucle - Douglas Hofstadter"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Juan Camilo Arboleda Rivera",
+    "objectID": "about.html#libros-favoritos",
+    "href": "about.html#libros-favoritos",
+    "title": "Sobre mí",
     "section": "",
-    "text": "I am a biologist currently working in the Grupo de Fundamentos y Enseñanza de la Física y los Sistemas Dinámicos and the Grupo de Biología Computacional at the University of Antioquia (UdeA), Colombia. I obtained my Master degree in Biology with emphasis on Systems Biology. I also work as professor of the course of Genetics in the Institute of Biology at the UdeA."
-  },
-  {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
-    "title": "Juan Camilo Arboleda Rivera",
-    "section": "Interests",
-    "text": "Interests\nI am mainly interested in the fields of Systems Biology, Molecular Biology, Genetics and Bioinformatics. I am also an enthusiast of Linux and FOSS and would like to learn more about programming and its applications to biology."
+    "text": "La ciudad del pez elefante\nLos viajes más increíbles: Maravillas de la navegación animal\nEl infinito en un junco - Irene Vallejo\nGuía del autoestopista galáctico - Douglas Adams\nEl pulgar del panda - Stephen Jay Gould\nColapso - Jared Diamond\nUn mundo feliz - Aldous Huxley\nFrankenstein - Mary Shelley\nMisery - Stephen King\nTodos los de Julio Verne, pero especialmente le tengo mucho carino a 20.000 leguas de viaje submarino\nEl silmarilión - J. R. R. Tokien\nEl lenguaje de las matemáticas - Keith Devlin\n¿Está usted de broma Sr. Feynman?\nEl placer de descubrir - Richard Feynman\nEl nombre de la rosa - Umberto Eco\nNuestra señora de París - Victor Hugo\nRobinson Crusoe - Daniel Defoe\nEl octavo día de la creación\nAlicia en el país de las maravillas - Lewis Carroll\nRaíces - Alex Haley\nGödel, Escher, Bach, un eterno y grácil bucle - Douglas Hofstadter"
   },
   {
     "objectID": "teaching/git/git.html",
@@ -469,6 +476,27 @@
     "text": "This semester, I offered a Python course at the Institute of Biology at the University of Antioquia. At first, I thought there were not many people interested; however, on the first day of the course, the room was plenty of people, so much so that all the chairs were taken and many had to sit down on the floor.\nThere were in total more or less 40 people, and this suggests to me that Biology students at the University of Antioquia are claiming for courses on subjects about programming and digital technologies.\nAs there were many people, I decided to create two groups, one from 10:00 to 12:00, and the other from 13:00 to 15:00. However, I knew that desertion was to start at some point.\nAs predicted, some students didn’t return, but a large group of them is still actively participating in the course and are making big advances in learning Python, so I feel very proud of them.\nThis is one of the efforts to promote Computational Biology and I feel very glad with this experience. Here is a photo of me and some of the students:\n\n\n\n\n Back to top"
   },
   {
+    "objectID": "posts/2021/repressilator-C++.html",
+    "href": "posts/2021/repressilator-C++.html",
+    "title": "Simulando el Represilador en C++",
+    "section": "",
+    "text": "En este tutorial vamos a simular el comportamiento del circuito genético conocido como Represilador. Este circuito fue descrito por Elowitz et. al en el año 2000 en su artículo “A synthetic oscillatory network of transcriptional regulators”."
+  },
+  {
+    "objectID": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
+    "href": "posts/2021/repressilator-C++.html#qué-es-el-represilador",
+    "title": "Simulando el Represilador en C++",
+    "section": "¿Qué es el Represilador?",
+    "text": "¿Qué es el Represilador?\nEl Represilador es una red de regulación genética sintética, es decir, no existe en la naturaleza sino que fue diseñada y creada en el laboratorio. Esta red consiste básicamente en 3 genes: LacI, tetR y cI, los cuales son todos ellos represores de la expresión genética. Cada gen produce una proteína que reprime al siguiente gen como se muestra en la siguiente imagen:"
+  },
+  {
+    "objectID": "posts/2021/repressilator-C++.html#código-fuente",
+    "href": "posts/2021/repressilator-C++.html#código-fuente",
+    "title": "Simulando el Represilador en C++",
+    "section": "Código fuente",
+    "text": "Código fuente\nPuedes descargar el código fuente del represilador aquí. Brevemente, lo que hacemos es definir una función en la cual le asignamos valores a los parámetros del sistema y luego definimos las ecuaciones diferenciales.\nPara compilar nuestro código, ejecutamos el siguiente comando:\ng++ -I /path/to/boost/ -o represilador represilador.cpp\nPara ejecutar el programa y guardar los resultados de la simulación en un archivo llamado rep.tsv, ejecutamos el siguiente comando:\n./represilador &gt; rep.tsv\nYa que tenemos los datos de la simulación, vamos a visualizarlos usando Python.\nimport matplotlib.pyplot as plt\nfrom pandas import read_csv\n\ndf = read_csv('rep.tsv', sep='\\t')\n\nplt.figure(figsize=(15,5))\nplt.plot(df.Tiempo, df.LacI, 'r', label='LacI')\nplt.plot(df.Tiempo, df.TetR, 'y', label='TetR')\nplt.plot(df.Tiempo, df.cI, 'b', label='cI')\nplt.legend()"
+  },
+  {
     "objectID": "posts/2023/bases-de-datos.html",
     "href": "posts/2023/bases-de-datos.html",
     "title": "Introducción a las bases de datos biológicas",
@@ -543,14 +571,7 @@
     "href": "posts/2023/bases-de-datos.html#uniprot",
     "title": "Introducción a las bases de datos biológicas",
     "section": "Uniprot",
-    "text": "Uniprot\nEsta es una base de datos de proteínas, en donde se puede encontrar gran cantidad de información asociada a ellas."
-  },
-  {
-    "objectID": "posts/2023/bases-de-datos.html#interpro-antes-llamado-pfam",
-    "href": "posts/2023/bases-de-datos.html#interpro-antes-llamado-pfam",
-    "title": "Introducción a las bases de datos biológicas",
-    "section": "Interpro (Antes llamado Pfam)",
-    "text": "Interpro (Antes llamado Pfam)\nBase de datos sobre análisis funcional de proteínas, su clasificación en familias de proteínas y predicción de dominios funcionales y sitios importantes. También se pueden encontrar alineamientos múltiples de proteínas.\n\n\n\nalineamiento múltiple de proteínas\n\n\nSi quieres aprender más sobre bioinformática puedes seguir este tutorial."
+    "text": "Uniprot\nEsta es una base de datos de proteínas, en donde se puede encontrar gran cantidad de información asociada a ellas.\nSi quieres aprender más sobre bioinformática puedes seguir este tutorial."
   },
   {
     "objectID": "posts/2020/fibonacci.html",
