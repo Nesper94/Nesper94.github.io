@@ -508,7 +508,7 @@
     "href": "posts/2023/bases-de-datos.html#bases-de-datos-biológicas",
     "title": "Introducción a las bases de datos biológicas",
     "section": "Bases de datos biológicas",
-    "text": "Bases de datos biológicas\n\nNCBI\n\nGenBank: Base de datos primaria\nSequence Read Archive (SRA): Primaria\nBasic Local Alignment Search Tool (BLAST): En realidad no es una base de datos sino una herramienta de alineamiento de secuencias\nRefSeq: Base de datos curada\nExpressed Sequence Tags (ESTs)\n\nOnline Mendelian Inheritance in Man (OMIM)\nENA\nProtein Data Bank (PDB)\nUniprot/Swiss-Prot: Curada\nProtein families (Pfam)\n\n¡Hay muchísimas más bases de datos!"
+    "text": "Bases de datos biológicas\n\nNCBI\n\nGenBank: Base de datos primaria\nSequence Read Archive (SRA): Primaria\nBasic Local Alignment Search Tool (BLAST): En realidad no es una base de datos sino una herramienta de alineamiento de secuencias\nRefSeq: Base de datos curada\nPubMed\n\nProtein Data Bank (PDB)\nUniprot/Swiss-Prot: Curada\nEnsembl\nEuropean Nucleotide Archive (ENA)\n\n¡Hay muchísimas más bases de datos!"
   },
   {
     "objectID": "posts/2023/bases-de-datos.html#mantenerse-actualizado",
@@ -532,20 +532,6 @@
     "text": "SRA (Sequence Read Archive)\nBase de datos con secuencias en bruto. Busquemos en esta base de datos el gen Zelda y descarguemos archivos en formato FASTQ.\n\n\n\n\n\n\nTip\n\n\n\nLos archivos FASTQ pueden ser muy pesados, para evitar una descarga lenta, podemos descargar archivos de ejemplo mucho más ligeros en este enlace.\n\n\n\nEl formato FASTQ\nEl formato FASTQ (FASTA with Quality) es muy similar al FASTA pero incluye también información sobre la calidad de la secuencia:\n\n\n\nFormato FASTQ\n\n\nUtilizando la línea de comandos en Linux también es posible descargar archivos FASTQ después de instalar la herramienta SRA Toolkit:\nfastq-dump --stdout -X 2 SRR390728\nTambién hay servidores que hacen sus datos disponibles mediante FTP, a ellos podemos acceder mediante una interfaz web o también mediante una línea de comandos en Linux:\nftp ftp.1000genomes.ebi.ac.uk"
   },
   {
-    "objectID": "posts/2023/bases-de-datos.html#ena-european-nucleotide-archive",
-    "href": "posts/2023/bases-de-datos.html#ena-european-nucleotide-archive",
-    "title": "Introducción a las bases de datos biológicas",
-    "section": "ENA (European Nucleotide Archive)",
-    "text": "ENA (European Nucleotide Archive)\nEste es un repositorio de datos similar al NCBI y que contiene información de muchos tipos diferentes. Vayamos allí y busquemos una secuencia."
-  },
-  {
-    "objectID": "posts/2023/bases-de-datos.html#omim-online-mendelian-inheritance-in-man",
-    "href": "posts/2023/bases-de-datos.html#omim-online-mendelian-inheritance-in-man",
-    "title": "Introducción a las bases de datos biológicas",
-    "section": "OMIM (Online Mendelian Inheritance in Man)",
-    "text": "OMIM (Online Mendelian Inheritance in Man)\nOMIM como su nombre lo indica es una base de datos especializada en caracteres de Herencia Mendeliana en el ser humano."
-  },
-  {
     "objectID": "posts/2023/bases-de-datos.html#protein-data-bank",
     "href": "posts/2023/bases-de-datos.html#protein-data-bank",
     "title": "Introducción a las bases de datos biológicas",
@@ -557,7 +543,21 @@
     "href": "posts/2023/bases-de-datos.html#uniprot",
     "title": "Introducción a las bases de datos biológicas",
     "section": "Uniprot",
-    "text": "Uniprot\nEsta es una base de datos de proteínas, en donde se puede encontrar gran cantidad de información asociada a ellas.\nSi quieres aprender más sobre bioinformática puedes seguir este tutorial."
+    "text": "Uniprot\nEsta es una base de datos de proteínas, en donde se puede encontrar gran cantidad de información asociada a ellas."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#ensembl",
+    "href": "posts/2023/bases-de-datos.html#ensembl",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "Ensembl",
+    "text": "Ensembl\nEs una base de datos bioinformática que almacena y permite consultar información genética y genómica de diferentes especies, como genes, ADN, proteínas y mutaciones."
+  },
+  {
+    "objectID": "posts/2023/bases-de-datos.html#ena-european-nucleotide-archive",
+    "href": "posts/2023/bases-de-datos.html#ena-european-nucleotide-archive",
+    "title": "Introducción a las bases de datos biológicas",
+    "section": "ENA (European Nucleotide Archive)",
+    "text": "ENA (European Nucleotide Archive)\nEste es un repositorio de datos similar al NCBI y que contiene información de muchos tipos diferentes. Vayamos allí y busquemos una secuencia.\nSi quieres aprender más sobre bioinformática puedes seguir este tutorial."
   },
   {
     "objectID": "posts/2020/fibonacci.html",
