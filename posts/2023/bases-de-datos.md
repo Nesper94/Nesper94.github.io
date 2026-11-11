@@ -51,14 +51,11 @@ biológica.
     * **Basic Local Alignment Search Tool (BLAST):** En realidad no es una base 
  de datos sino una herramienta de alineamiento de secuencias
     * **RefSeq:** Base de datos curada
-    * **Expressed Sequence Tags (ESTs)**
-
-* **Online Mendelian Inheritance in Man (OMIM)**
- 
-* **ENA**
+    * **PubMed**
 * **Protein Data Bank (PDB)**
 * **Uniprot/Swiss-Prot:** Curada
-* **Protein families (Pfam)**
+* **Ensembl**
+* **European Nucleotide Archive (ENA)**
 
 ¡Hay muchísimas más bases de datos!
 
@@ -147,16 +144,6 @@ comandos en Linux:
 ftp ftp.1000genomes.ebi.ac.uk
 ```
 
-## [ENA (European Nucleotide Archive)](https://www.ebi.ac.uk/ena/browser/home)
-
-Este es un repositorio de datos similar al NCBI y que contiene información
-de muchos tipos diferentes. Vayamos allí y busquemos una secuencia.
-
-## [OMIM (Online Mendelian Inheritance in Man)](https://omim.org/)
-
-OMIM como su nombre lo indica es una base de datos especializada en caracteres 
-de **Herencia Mendeliana** en el ser humano.
-
 ## [Protein Data Bank](https://www.rcsb.org/)
 
 Esta es una base de datos de estructuras de proteínas, muy útil en biología 
@@ -172,6 +159,17 @@ es Software Libre ;)
 
 Esta es una base de datos de proteínas, en donde se puede encontrar gran
 cantidad de información asociada a ellas.
+
+## [Ensembl](https://www.ensembl.org/)
+
+Es una base de datos bioinformática que almacena y permite consultar
+información genética y genómica de diferentes especies, como genes, ADN,
+proteínas y mutaciones.
+
+## [ENA (European Nucleotide Archive)](https://www.ebi.ac.uk/ena/browser/home)
+
+Este es un repositorio de datos similar al NCBI y que contiene información
+de muchos tipos diferentes. Vayamos allí y busquemos una secuencia.
 
 Si quieres aprender más sobre bioinformática puedes seguir [este
 tutorial](https://www.ebi.ac.uk/training/online/courses/bioinformatics-terrified/).
